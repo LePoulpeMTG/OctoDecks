@@ -1,3 +1,3 @@
 Asset venant d'illustrator
 CLR: Mana Color
-USURE : (Anciennement ETAT) Usure comme sur CardMArket
+USURE : (Anciennement ETAT) Usure comme sur CardMarket

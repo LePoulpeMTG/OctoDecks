@@ -13,31 +13,32 @@ OctoDeck est conçu pour être **multiplateforme**, **offline-first** et **perso
 
 ## 🧱 Structure du monorepo
 
+```plaintext
 octodeck/
 ├── apps/
-│ ├── viewer_mobile/ # Appli Flutter Android/iOS (scan à venir)
-│ ├── viewer_desktop/ # Flutter Windows/macOS (mode offline)
-│ ├── web_user/ # Interface web publique (exploration, collection)
-│ └── web_admin/ # Backoffice (Scryfall, suivi utilisateurs)
+│   ├── viewer_mobile/        # Appli Flutter Android/iOS (scan à venir)
+│   ├── viewer_desktop/       # Flutter Windows/macOS (mode offline)
+│   ├── web_user/             # Interface web publique (exploration, collection)
+│   └── web_admin/            # Backoffice (Scryfall, suivi utilisateurs)
 │
 ├── core/
-│ ├── models/ # Objets partagés (Card, Set, User...)
-│ ├── services/ # Base, API, synchro, parsing
-│ └── auth/ # Système d’identification & rôles
+│   ├── models/               # Objets partagés (Card, Set, User...)
+│   ├── services/             # Base, API, synchro, parsing
+│   └── auth/                 # Système d’identification & rôles
 │
 ├── scripts/
-│ ├── update_scryfall.py # MAJ automatique des cartes
-│ ├── verify_layouts.py # Vérifie les layouts Scryfall inconnus
-│ ├── import_manabox.py # Import depuis export CSV Manabox
-│ └── track_prices.py # Historique prix par set/carte
+│   ├── update_scryfall.py    # MAJ automatique des cartes
+│   ├── verify_layouts.py     # Vérifie les layouts Scryfall inconnus
+│   ├── import_manabox.py     # Import depuis export CSV Manabox
+│   └── track_prices.py       # Historique prix par set/carte
 │
 ├── data/
-│ ├── base.sqlite # Base locale pour tests/démo
-│ ├── snapshots/ # Données d’évolution des prix
-│ └── cache/ # Temp ou fichiers de parsing
+│   ├── base.sqlite           # Base locale pour tests/démo
+│   ├── snapshots/            # Données d’évolution des prix
+│   └── cache/                # Temp ou fichiers de parsing
 │
-├── assets/ # Logos, icônes, visuels
-├── docs/ # Architecture, schémas, TODO techniques
+├── assets/                   # Logos, icônes, visuels
+├── docs/                     # Architecture, schémas, TODO techniques
 ├── LICENSE
 └── README.md
 

@@ -1,90 +1,146 @@
-# 📚 Structure de la base de données `octobase_reference`
+# 📦 OctoBase Reference Layout
 
-Ce document référence toutes les tables nécessaires pour structurer une base de données locale ou distante contenant les données issues de la source JSON des cartes Magic (ex-Scryfall), renommée ici pour une intégration neutre.
-
----
-
-## 📦 1. `sets`
-Une ligne par édition.
-
-| Champ         | Type      | Description                            |
-|---------------|-----------|----------------------------------------|
-| id            | TEXT PK   | Code du set (ex: "neo")                |
-| name          | TEXT      | Nom complet de l'édition               |
-| release_date  | TEXT      | Date de sortie                         |
-| set_type      | TEXT      | Type de set (core, expansion, etc.)    |
-| total_cards   | INTEGER   | Nombre total de cartes                 |
-| digital       | BOOLEAN   | 1 = uniquement digital                 |
+Ce document définit les tables principales de la base de données **OctoBase**, utilisée comme source centrale pour toutes les applications OctoDecks (web, mobile, desktop).
 
 ---
 
-## 🧬 2. `cards`
-Une ligne par carte "conceptuelle", identifiée par `oracle_id`.
+## 📁 1. `cards`
 
-| Champ           | Type      | Description                                |
-|-----------------|-----------|--------------------------------------------|
-| oracle_id       | TEXT PK   | Identifiant oracle                         |
-| name            | TEXT      | Nom de la carte                            |
-| type_line       | TEXT      | Type                                        |
-| cmc             | REAL      | Converted mana cost                        |
-| color_identity  | TEXT      | "WUBRG" concaténé                          |
-| keywords        | TEXT      | Mots-clés concaténés (ex: "Flying;Trample")|
-| layout          | TEXT      | Layout principal (normal, transform...)    |
-
----
-
-## 🖨️ 3. `prints`
-Une ligne par impression (set + collector + langue)
-
-| Champ             | Type      | Description                              |
-|------------------|-----------|------------------------------------------|
-| scry_id          | TEXT PK   | ID unique de l’impression (UUID)         |
-| oracle_id        | TEXT FK   | Référence vers `cards.oracle_id`         |
-| set_id           | TEXT FK   | Référence vers `sets.id`                 |
-| collector_number | TEXT      | Numéro de collection                     |
-| lang             | TEXT      | Langue (ex: "en", "fr")                  |
-| rarity           | TEXT      | Rareté                                   |
-| foil             | BOOLEAN   | Disponible en foil                       |
-| nonfoil          | BOOLEAN   | Disponible en version normale            |
-| image_uri        | TEXT      | URL de l’image                           |
-| cardmarket_id    | INTEGER   | ID MKM si dispo                          |
+| Champ            | Type    | Description                                   |
+|------------------|---------|-----------------------------------------------|
+| oracle_id        | TEXT PK | ID unique partagé entre éditions             |
+| name             | TEXT    | Nom (VO)                                      |
+| type_line        | TEXT    | Type complet (« Creature — Elf Wizard », …)   |
+| cmc              | REAL    | Coût converti de mana                         |
+| color_identity   | TEXT    | Couleurs (concat. « WUBRG »)                 |
+| keywords         | TEXT    | Mots-clés séparés par `;`                     |
+| edhrec_rank      | INTEGER | Classement EDHRec                             |
+| is_reserved      | BOOL    | Dans la reserved list ?                       |
+| is_promo         | BOOL    | Carte promotionnelle ?                        |
+| layout           | TEXT    | Layout principal (normal, transform, …)       |
 
 ---
 
-## 💶 4. `prices_daily_card`
-Suivi journalier des prix par carte (par impression).
+## 📁 2. `prints`
 
-| Champ       | Type    | Description                        |
-|-------------|---------|------------------------------------|
-| scry_id     | TEXT    | Réf vers `prints.scry_id`          |
-| date        | TEXT    | AAAA-MM-JJ                         |
-| eur         | REAL    | Prix € standard                    |
-| eur_foil    | REAL    | Prix € foil                        |
-| usd         | REAL    | Prix $ standard                    |
-| usd_foil    | REAL    | Prix $ foil                        |
-| usd_etched  | REAL    | Prix $ etched                      |
-
----
-
-## 💶 5. `prices_weekly_card`
-Même structure que `prices_daily_card`, stockée 1 fois par semaine.
-
----
-
-## 📊 6. `prices_daily_set`
-Moyennes quotidiennes des sets.
-
-| Champ         | Type    | Description                           |
-|---------------|---------|---------------------------------------|
-| set_id        | TEXT    | Réf vers `sets.id`                    |
-| date          | TEXT    | AAAA-MM-JJ                            |
-| avg_eur       | REAL    | Moyenne €                             |
-| total_cards   | INTEGER | Nombre de cartes prises en compte     |
+| Champ             | Type    | Description                                   |
+|-------------------|---------|-----------------------------------------------|
+| scryfall_id       | TEXT PK | ID unique de l’impression                     |
+| oracle_id         | TEXT FK | Réf. vers `cards.oracle_id`                  |
+| set_code          | TEXT FK | Réf. vers `sets.set_code`                    |
+| collector_number  | TEXT    | Numéro de collection                          |
+| lang              | TEXT    | Langue (« en », « fr », …)                    |
+| rarity            | TEXT    | Rareté (« common », « mythic », …)            |
+| layout            | TEXT    | Layout (normal, modal_dfc, …)                 |
+| image_uri         | TEXT    | URL image principale                          |
+| card_faces_json   | TEXT    | JSON brut des faces (recto/verso)             |
+| scryfall_uri      | TEXT    | Lien fiche VO                                 |
+| cardmarket_uri    | TEXT    | Lien MKM (si dispo)                           |
+| foil              | BOOL    | Existe en foil ?                              |
+| nonfoil           | BOOL    | Existe en non-foil ?                          |
 
 ---
 
-## 📊 7. `prices_weekly_set`
-Mêmes données que ci-dessus, agrégées à la semaine.
+## 📁 3. `sets`
+
+| Champ        | Type   | Description                        |
+|--------------|--------|------------------------------------|
+| set_code     | TEXT PK| Code (ex. « neo »)                 |
+| name         | TEXT   | Nom complet                        |
+| release_date | TEXT   | AAAA-MM-JJ                         |
+| set_type     | TEXT   | Core, expansion, commander, …      |
+| total_cards  | INT    | Nombre total de cartes             |
+| is_digital   | BOOL   | 1 si digital-only                  |
 
 ---
 
+## 📁 4. `prices_daily_card`
+
+Historique **quotidien** par impression.
+
+| Champ       | Type | Description                        |
+|-------------|------|------------------------------------|
+| scryfall_id | TEXT | Réf. `prints.scryfall_id`          |
+| date        | TEXT | AAAA-MM-JJ                         |
+| eur         | REAL | Prix € VO                          |
+| eur_foil    | REAL | Prix € foil                        |
+| usd         | REAL | Prix $ VO                          |
+| usd_foil    | REAL | Prix $ foil                        |
+| usd_etched  | REAL | Prix $ etched                      |
+
+---
+
+## 📁 5. `prices_weekly_card`
+
+Même colonnes que `prices_daily_card`, mais **une ligne par semaine** (`week` ISO-8601).
+
+---
+
+## 📁 6. `prices_daily_set`
+
+| Champ       | Type | Description                    |
+|-------------|------|--------------------------------|
+| set_code    | TEXT | Réf. `sets.set_code`           |
+| date        | TEXT | AAAA-MM-JJ                     |
+| avg_eur     | REAL | Prix moyen € sur le set        |
+| avg_usd     | REAL | Prix moyen $ sur le set        |
+| total_cards | INT  | Cartes comptabilisées          |
+
+---
+
+## 📁 7. `prices_weekly_set`
+
+Même logique qu’en **daily**, mais **une ligne par semaine**.
+
+---
+
+## 📁 8. `users` *(Firestore, pas SQLite)*
+
+| Champ      | Type  | Description                    |
+|------------|-------|--------------------------------|
+| user_id    | TEXT  | UID Firebase                   |
+| email      | TEXT  | Email                          |
+| created_at | TEXT  | Date création                  |
+
+---
+
+## 📁 9. `set_localizations`
+
+| Champ        | Type  | Description                                  |
+|--------------|-------|----------------------------------------------|
+| set_code     | TEXT  | Code du set                                  |
+| lang         | TEXT  | Code langue (« fr », « es », …)              |
+| is_enabled   | BOOL  | Activé dans OctoDecks ?                      |
+| is_available | BOOL  | Présent chez la source Scryfall ?            |
+| PRIMARY KEY  | (set_code, lang) |
+
+---
+
+## 📁 10. `card_localizations`
+
+| Champ             | Type | Description                             |
+|-------------------|------|-----------------------------------------|
+| oracle_id         | TEXT | Réf. `cards.oracle_id`                  |
+| set_code          | TEXT | Réf. `sets.set_code`                    |
+| collector_number  | TEXT | Numéro                                  |
+| lang              | TEXT | Langue traduite                         |
+| name              | TEXT | Nom traduit                             |
+| oracle_text       | TEXT | Texte oracle traduit                    |
+| flavor_text       | TEXT | (Optionnel) Texte d’ambiance traduit    |
+| PRIMARY KEY       | (oracle_id, set_code, lang) |
+
+---
+
+## 📁 11. Données utilisateur hors BDD centrale
+
+Ces collections vivent **dans Firestore** ou en **SQLite locale** par user :
+
+- `/users/{uid}/collection`
+- `/users/{uid}/wishlist`
+- `/users/{uid}/decks`
+- `/users/{uid}/trade`
+- `/users/{uid}/sell`
+
+---
+
+*Document généré le 24 juin 2025 – OctoDecks 🐙*

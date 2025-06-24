@@ -43,14 +43,15 @@ Ce document définit les tables principales de la base de données **OctoBase**,
 
 ## 📁 3. `sets`
 
-| Champ        | Type   | Description                        |
-|--------------|--------|------------------------------------|
-| set_code     | TEXT PK| Code (ex. « neo »)                 |
-| name         | TEXT   | Nom complet                        |
-| release_date | TEXT   | AAAA-MM-JJ                         |
-| set_type     | TEXT   | Core, expansion, commander, …      |
-| total_cards  | INT    | Nombre total de cartes             |
-| is_digital   | BOOL   | 1 si digital-only                  |
+| Champ        | Type                             | Description                                |
+|--------------|----------------------------------|--------------------------------------------|
+| set_id       | INTEGER PK AUTOINCREMENT         | Identifiant interne (ordre chronologique)  |
+| set_code     | TEXT UNIQUE                      | Code officiel du set (ex. « neo »)         |
+| name         | TEXT                             | Nom complet de l’édition                   |
+| release_date | TEXT                             | Date de sortie (AAAA-MM-JJ)                |
+| set_type     | TEXT                             | core, expansion, commander, …              |
+| total_cards  | INTEGER                          | Nombre total de cartes                     |
+| is_digital   | BOOLEAN DEFAULT 0                | 1 si set uniquement digital                |
 
 ---
 

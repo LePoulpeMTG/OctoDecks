@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "octodecks"
+  },
+  "targets": {
+    "octodecks": {
+      "hosting": {
+        "admin": [
+          "adminoctodecks"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

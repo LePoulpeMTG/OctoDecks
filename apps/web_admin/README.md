@@ -98,8 +98,9 @@ Elle permet de centraliser les mises à jour de la base de cartes depuis Scryfal
 
 ---
 
-## 🚀 Build & Déploiement
+## 🚀 Déploiement (Firebase Hosting)
 
-Pour construire l’application web :
-cd apps/web_admin
-flutter build web
+- Build Flutter Web : `flutter build web`
+- Initialiser Firebase (une fois) : `firebase init hosting`
+- Déploiement : `firebase deploy`
+- L'app sera accessible sur : `https://octodeck-admin.web.app` (ou autre)

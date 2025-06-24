@@ -13,7 +13,6 @@ OctoDeck est conçu pour être **multiplateforme**, **offline-first** et **perso
 
 ## 🧱 Structure du monorepo
 
-```plaintext
 octodeck/
 ├── apps/
 │   ├── viewer_mobile/        # Appli Flutter Android/iOS (scan à venir)

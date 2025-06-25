@@ -37,25 +37,20 @@ jobs:
       - name: Upload DB to Firebase
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          FIREBASE_PROJECT_ID:      ${{ secrets.FIREBASE_PROJECT_ID }}
+          FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
         run: |
           python - <<'PY'
           import json, os, firebase_admin
           from firebase_admin import credentials, storage
 
-          # --- DEBUG : affiche les valeurs utilisées ---
-          print("DEBUG project_id =", os.environ["FIREBASE_PROJECT_ID"])
-
-          cred_json = json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT'])
-          cred      = credentials.Certificate(cred_json)
+          cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
           firebase_admin.initialize_app(cred, {
-              'storageBucket': f"{os.environ['FIREBASE_PROJECT_ID']}.appspot.com"
+              'storageBucket': os.environ['FIREBASE_BUCKET']
           })
 
           bucket = storage.bucket()
-          print("DEBUG bucket.name =", bucket.name)   # doit montrer xxx.appspot.com
-
-          blob   = bucket.blob("octobase/octobase_reference.db")
+          print("DEBUG bucket.name =", bucket.name)      # doit afficher octodecks-133419866202
+          blob = bucket.blob("octobase/octobase_reference.db")
           blob.upload_from_filename("database/octobase_reference.db",
                                     content_type="application/octet-stream")
           print("✅ Upload Firebase terminé")

@@ -184,6 +184,19 @@ def insert_legalities(cur, card):
                 INSERT OR IGNORE INTO card_legalities
                 (oracle_id, format, status) VALUES (?,?,?)
             """, (card["oracle_id"], fmt, status))
+            
+SCHEMA_FILE = Path("database/schema/schema_octobase.sql")
+
+def ensure_schema(conn):
+    cur = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='cards';"
+    )
+    if cur.fetchone():
+        return   # les tables existent déjà
+    print("➡️  Création du schéma SQLite…")
+    sql = SCHEMA_FILE.read_text(encoding="utf-8")
+    conn.executescript(sql)
+    conn.commit()
 
 # -------------------------------------------------------------------------
 # MAIN
@@ -241,7 +254,9 @@ def main():
             insert_localization(cur, card, front, back)
             insert_legalities(cur, card)
 
-
+    conn = open_db()
+    ensure_schema(conn)
+    cur = conn.cursor()
     conn.commit()
     conn.close()
 

@@ -1,0 +1,57 @@
+name: Update OctoBase
+
+on:
+  # Déclencheur automatique : tous les jours à 02 h UTC
+  schedule:
+    - cron: '0 2 * * *'
+  # Déclencheur manuel via bouton "Run workflow"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Récupère le code du dépôt
+      - uses: actions/checkout@v4
+
+      # 2) Installe Python 3.11
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      # 3) Installe les dépendances nécessaires
+      - name: Install Python dependencies
+        run: pip install ijson tqdm requests firebase-admin
+
+      # 4) Exécute le script d'import
+      - name: Create database folder
+        run: mkdir -p database
+      - name: Run importer script
+        run: python tools/import_all_cards.py
+
+      # 5) Charge la base SQLite dans Firebase Storage
+      - name: Upload DB to Firebase Storage
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_PROJECT_ID:      ${{ secrets.FIREBASE_PROJECT_ID }}
+        run: |
+          python - <<'PY'
+          import json, os, firebase_admin
+          from firebase_admin import credentials, storage
+
+          # --- Initialisation Firebase ---
+          cred_json = json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT'])
+          cred      = credentials.Certificate(cred_json)
+          firebase_admin.initialize_app(cred, {
+              'storageBucket': f"{os.environ['FIREBASE_PROJECT_ID']}.appspot.com"
+          })
+
+          # --- Upload ---
+          bucket = storage.bucket()
+          blob   = bucket.blob("octobase/octobase_reference.db")
+          blob.upload_from_filename("database/octobase_reference.db",
+                                    content_type="application/octet-stream")
+          print("✅ Upload Firebase terminé")
+          PY

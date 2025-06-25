@@ -26,6 +26,8 @@ jobs:
         run: pip install ijson tqdm requests firebase-admin
 
       # 4) Exécute le script d'import
+      - name: Create database folder
+        run: mkdir -p database
       - name: Run importer script
         run: python tools/import_all_cards.py
 

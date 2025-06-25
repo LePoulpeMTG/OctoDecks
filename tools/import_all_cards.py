@@ -202,6 +202,10 @@ def ensure_schema(conn):
 # MAIN
 # -------------------------------------------------------------------------
 def main():
+    conn = open_db()
+    ensure_schema(conn)
+    cur = conn.cursor()
+
     bulk_file = download_bulk_if_needed()
     conn = open_db()
     cur  = conn.cursor()
@@ -254,15 +258,13 @@ def main():
             insert_localization(cur, card, front, back)
             insert_legalities(cur, card)
 
-    conn = open_db()
-    ensure_schema(conn)
-    cur = conn.cursor()
+
     conn.commit()
     conn.close()
 
     if new_layout_flag:
         save_layout_map(layout_map)
-        print("✔ layouts_by_face.json mis à jour.")
+        print("✅ layouts_by_face.json mis à jour.")
 
     print("✅ Import terminé.")
 

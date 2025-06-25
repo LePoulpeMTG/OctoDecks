@@ -51,40 +51,55 @@ def open_db():
     return conn
 
 # -------------------------------------------------------------------------
-# TÉLÉCHARGEMENT BULK DATA
+#  TÉLÉCHARGEMENT BULK DATA (all_cards)
 # -------------------------------------------------------------------------
-def latest_bulk_info():
-    url = "https://api.scryfall.com/bulk-data"
-    data = requests.get(url, timeout=60).json()["data"]
-    rec = next(d for d in data if d["type"] == "all_cards")
-    return rec["download_uri"], rec["updated_at"]
-
+import requests, gzip, shutil
 from tqdm import tqdm
-import math, requests, shutil
+
+def latest_bulk_info():
+    """Retourne (download_uri, updated_at, ext)"""
+    url  = "https://api.scryfall.com/bulk-data"
+    data = requests.get(url, timeout=60).json()["data"]
+    rec  = next(d for d in data if d["type"] == "all_cards")
+    dl   = rec["download_uri"]
+    ext  = ".gz" if dl.endswith(".gz") else ".json"
+    return dl, rec["updated_at"], ext
 
 def download_bulk_if_needed():
-    dl_url, updated_at = latest_bulk_info()
-    tag   = updated_at.split("T")[0]      # 2025-06-25
-    fname = f"all-cards-{tag}.json"
-    fpath = BULK_DIR / fname
-    if fpath.exists():
-        print("Bulk déjà présent :", fname)
-        return fpath
+    BULK_DIR.mkdir(parents=True, exist_ok=True)          # ← crée dossier
+    dl_url, updated_at, ext = latest_bulk_info()
+    tag    = updated_at.split("T")[0]                    # ex. 2025-06-25
+    fname  = f"all-cards-{tag}.json{ext}"
+    fpath  = BULK_DIR / fname
 
-    # ─── Téléchargement avec barre de progression ─────────────────────────────
-    print("Téléchargement du bulk :", fname)
-    with requests.get(dl_url, stream=True, timeout=300) as r:
-        r.raise_for_status()
-        total = int(r.headers.get("Content-Length", 0))
-        chunk = 1 << 20                           # 1 MiB
-        with open(fpath, "wb") as fh, tqdm(
-            total=total, unit="B", unit_scale=True, unit_divisor=1024
-        ) as bar:
-            for data in r.iter_content(chunk_size=chunk):
-                fh.write(data)
-                bar.update(len(data))
+    # ── Si le fichier existe mais est invalide, on le supprime
+    if fpath.exists():
+        try:
+            opener = gzip.open if ext == ".gz" else open
+            with opener(fpath, "rb") as fh:
+                fh.read(2)   # lecture test
+        except (OSError, gzip.BadGzipFile):
+            print(f"[WARN] {fname} corrompu → suppression")
+            fpath.unlink()
+
+    # ── Téléchargement si nécessaire
+    if not fpath.exists():
+        print("Téléchargement du bulk :", fname)
+        with requests.get(dl_url, stream=True, timeout=300) as r:
+            r.raise_for_status()
+            total = int(r.headers.get("Content-Length", 0))
+            chunk = 1 << 20  # 1 MiB
+            with open(fpath, "wb") as fh, tqdm(
+                total=total, unit="B", unit_scale=True, unit_divisor=1024
+            ) as bar:
+                for data in r.iter_content(chunk_size=chunk):
+                    fh.write(data)
+                    bar.update(len(data))
+    else:
+        print("Bulk déjà présent :", fname)
 
     return fpath
+
 
 
 # -------------------------------------------------------------------------

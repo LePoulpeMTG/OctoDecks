@@ -195,7 +195,15 @@ def main():
     layout_map = load_layout_map()
     new_layout_flag = False
 
-    with gzip.open(bulk_file, "rb") as fh:
+    bulk_file = download_bulk_if_needed()
+
+# ── Ouverture adaptée au suffixe (.json.gz ou .json)
+    if bulk_file.suffix == ".gz":
+        fh = gzip.open(bulk_file, "rb")
+    else:
+        fh = bulk_file.open("rb")
+
+    with fh:
         cards = ijson.items(fh, "item")
 
         # UNE SEULE boucle for !

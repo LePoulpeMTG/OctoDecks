@@ -202,6 +202,20 @@ def main():
         fh = gzip.open(bulk_file, "rb")
     else:
         fh = bulk_file.open("rb")
+# -----------------------------------------------------------------
+#  Ouverture du bulk : test des 2 octets magiques
+# -----------------------------------------------------------------
+    def smart_open(path: Path):
+        """Retourne un fichier en mode binaire, gzip ou brut selon le header."""
+        with path.open("rb") as probe:
+            magic = probe.read(2)
+        if magic == b"\x1f\x8b":              # 0x1f 0x8b ⇒ gzip
+            return gzip.open(path, "rb")
+        else:
+            return path.open("rb")
+
+    # Usage
+    fh = smart_open(bulk_file)
 
     with fh:
         cards = ijson.items(fh, "item")

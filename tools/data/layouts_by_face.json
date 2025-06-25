@@ -1,0 +1,28 @@
+{
+  "one_face": [
+    "normal",
+    "saga",
+    "meld",
+    "case",
+    "planar",
+    "scheme",
+    "vanguard",
+    "token",
+    "emblem",
+    "augment",
+    "host",
+    "art_series",
+    "class",
+    "split",
+    "flip",
+    "adventure",
+    "leveler"
+  ],
+  "two_faces": [
+    "transform",
+    "modal_dfc",
+    "reversible_card",
+    "double_faced_token",
+    "battle"
+  ]
+}

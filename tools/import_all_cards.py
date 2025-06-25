@@ -13,7 +13,7 @@ from tqdm import tqdm
 # -------------------------------------------------------------------------
 # CONFIGURATION
 # -------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]  # LePoulpeMTG_OctoDecks
+PROJECT_ROOT = Path(__file__).resolve().parents[1]  # LePoulpeMTG_OctoDecks
 DB_PATH      = PROJECT_ROOT / "database" / "octobase_reference.db"
 BULK_DIR     = PROJECT_ROOT / "tools" / "data" / "bulk"
 LAYOUT_FILE  = PROJECT_ROOT / "tools" / "data" / "layouts_by_face.json"
@@ -44,6 +44,8 @@ def face_count_from_card(card: dict) -> int:
 # BDD
 # -------------------------------------------------------------------------
 def open_db():
+    print(">>> DB_PATH =", DB_PATH.resolve())
+    print(">>> Existe  :", DB_PATH.exists())
     conn = sqlite3.connect(DB_PATH)
     conn.execute("PRAGMA foreign_keys = ON;")
     return conn
@@ -57,20 +59,33 @@ def latest_bulk_info():
     rec = next(d for d in data if d["type"] == "all_cards")
     return rec["download_uri"], rec["updated_at"]
 
+from tqdm import tqdm
+import math, requests, shutil
+
 def download_bulk_if_needed():
     dl_url, updated_at = latest_bulk_info()
-    tag = updated_at.split("T")[0]          # ex. 2025-06-25
+    tag   = updated_at.split("T")[0]      # 2025-06-25
     fname = f"all-cards-{tag}.json.gz"
     fpath = BULK_DIR / fname
     if fpath.exists():
         print("Bulk déjà présent :", fname)
         return fpath
+
+    # ─── Téléchargement avec barre de progression ─────────────────────────────
     print("Téléchargement du bulk :", fname)
     with requests.get(dl_url, stream=True, timeout=300) as r:
         r.raise_for_status()
-        with open(fpath, "wb") as fh:
-            shutil.copyfileobj(r.raw, fh)
+        total = int(r.headers.get("Content-Length", 0))
+        chunk = 1 << 20                           # 1 MiB
+        with open(fpath, "wb") as fh, tqdm(
+            total=total, unit="B", unit_scale=True, unit_divisor=1024
+        ) as bar:
+            for data in r.iter_content(chunk_size=chunk):
+                fh.write(data)
+                bar.update(len(data))
+
     return fpath
+
 
 # -------------------------------------------------------------------------
 # INSERTIONS

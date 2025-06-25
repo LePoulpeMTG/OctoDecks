@@ -185,7 +185,7 @@ def insert_legalities(cur, card):
                 (oracle_id, format, status) VALUES (?,?,?)
             """, (card["oracle_id"], fmt, status))
             
-SCHEMA_FILE = Path("data/schema/schema_octobase.sql")
+SCHEMA_FILE = Path("database/schema/schema_octobase.sql")
 
 def ensure_schema(conn):
     cur = conn.execute(

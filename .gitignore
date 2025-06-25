@@ -1,4 +1,4 @@
 
 /tools/data/bulk
-/database
+/database/*.db
 /.venv

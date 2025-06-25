@@ -65,7 +65,7 @@ import math, requests, shutil
 def download_bulk_if_needed():
     dl_url, updated_at = latest_bulk_info()
     tag   = updated_at.split("T")[0]      # 2025-06-25
-    fname = f"all-cards-{tag}.json.gz"
+    fname = f"all-cards-{tag}.json"
     fpath = BULK_DIR / fname
     if fpath.exists():
         print("Bulk déjà présent :", fname)

@@ -185,18 +185,21 @@ def insert_legalities(cur, card):
                 (oracle_id, format, status) VALUES (?,?,?)
             """, (card["oracle_id"], fmt, status))
             
-SCHEMA_FILE = Path("database/schema/schema_octobase.sql")
+SCHEMA_FILE = Path("data/schema/schema_octobase.sql")
 
 def ensure_schema(conn):
     cur = conn.execute(
         "SELECT name FROM sqlite_master WHERE type='table' AND name='cards';"
     )
-    if cur.fetchone():
-        return   # les tables existent déjà
+    if cur.fetchone():        # les tables existent, on sort
+        return
+    if not SCHEMA_FILE.exists():
+        raise FileNotFoundError(f"Schema file absent: {SCHEMA_FILE}")
     print("➡️  Création du schéma SQLite…")
     sql = SCHEMA_FILE.read_text(encoding="utf-8")
     conn.executescript(sql)
     conn.commit()
+
 
 # -------------------------------------------------------------------------
 # MAIN
@@ -204,6 +207,7 @@ def ensure_schema(conn):
 def main():
     conn = open_db()
     ensure_schema(conn)
+    print("✅ Schéma vérifié / créé") 
     cur = conn.cursor()
 
     bulk_file = download_bulk_if_needed()

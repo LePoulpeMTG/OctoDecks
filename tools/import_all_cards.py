@@ -91,10 +91,27 @@ def download_bulk_if_needed():
 # INSERTIONS
 # -------------------------------------------------------------------------
 def extract_images(card, face_cnt):
-    if face_cnt == 2:
-        faces = card["card_faces"]
-        return faces[0]["image_uris"]["normal"], faces[1]["image_uris"]["normal"]
-    return card["image_uris"]["normal"], None
+    try:
+        if face_cnt == 1:
+            # Une seule face : on prend image_uris direct
+            if "image_uris" in card:
+                return card["image_uris"].get("normal"), None
+            else:
+                return None, None  # Pas d’image dispo (token vide, etc.)
+        elif face_cnt == 2:
+            faces = card.get("card_faces", [])
+            if len(faces) >= 2:
+                front = faces[0].get("image_uris", {}).get("normal")
+                back = faces[1].get("image_uris", {}).get("normal")
+                return front, back
+            else:
+                return None, None
+        else:
+            return None, None
+    except Exception as e:
+        print(f"[ERR] extract_images(): {e}")
+        return None, None
+
 
 def insert_core(cur, card):
     cur.execute("""
@@ -165,13 +182,20 @@ def main():
 
     with gzip.open(bulk_file, "rb") as fh:
         cards = ijson.items(fh, "item")
+
+        # UNE SEULE boucle for !
         for card in tqdm(cards, unit="cards"):
+            # 1) Skip si oracle_id manquant (tokens, helpers…)
+            if "oracle_id" not in card:
+                continue
+            # 2) Ajout dynamique d’un layout inconnu
             if card["layout"] not in layout_map:
                 fc = face_count_from_card(card)
                 layout_map[card["layout"]] = fc
                 new_layout_flag = True
                 print(f"[WARN] nouveau layout {card['layout']} → {fc} face(s)")
 
+            # 3) Traitement normal
             face_cnt = layout_map[card["layout"]]
             front, back = extract_images(card, face_cnt)
 
@@ -179,6 +203,7 @@ def main():
             insert_print(cur, card, set_id, front, back)
             insert_localization(cur, card, front, back)
             insert_legalities(cur, card)
+
 
     conn.commit()
     conn.close()

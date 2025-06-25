@@ -1,28 +1,30 @@
 {
   "one_face": [
-    "normal",
-    "saga",
-    "meld",
-    "case",
-    "planar",
-    "scheme",
-    "vanguard",
-    "token",
-    "emblem",
-    "augment",
-    "host",
-    "art_series",
-    "class",
-    "split",
-    "flip",
     "adventure",
-    "leveler"
+    "art_series",
+    "augment",
+    "case",
+    "class",
+    "emblem",
+    "flip",
+    "host",
+    "leveler",
+    "meld",
+    "mutate",
+    "normal",
+    "planar",
+    "prototype",
+    "saga",
+    "scheme",
+    "split",
+    "token",
+    "vanguard"
   ],
   "two_faces": [
-    "transform",
+    "battle",
+    "double_faced_token",
     "modal_dfc",
     "reversible_card",
-    "double_faced_token",
-    "battle"
+    "transform"
   ]
 }

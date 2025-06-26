@@ -9,6 +9,14 @@ import sqlite3, gzip, ijson, json, shutil, requests, hashlib, os, sys
 from datetime import datetime
 from pathlib import Path
 from tqdm import tqdm
+from contextlib import contextmanager
+import gzip, io
+
+@contextmanager
+def smart_open(path: Path):
+    opener = gzip.open if path.suffix == ".gz" else open
+    with opener(path, "rb") as fh:
+        yield fh
 
 # -------------------------------------------------------------------------
 # CONFIGURATION
@@ -276,12 +284,6 @@ def main():
     if new_layout_flag:
         save_layout_map(layout_map)
         print("✔ layouts_by_face.json mis à jour.")
-
-    print("✅ Import terminé.")
-
-    if new_layout_flag:
-        save_layout_map(layout_map)
-        print("✅ layouts_by_face.json mis à jour.")
 
     print("✅ Import terminé.")
 

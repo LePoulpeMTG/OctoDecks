@@ -36,6 +36,13 @@ jobs:
         blob.download_to_filename("database/octobase_reference.db")
         print("📥 DB téléchargée")
         PY
+    - name: DEBUG show table structure
+      run: |
+        sqlite3 database/octobase_reference.db \
+          "PRAGMA table_info(prices_daily_set);" > dbg.txt
+        cat dbg.txt
+
+
 
     # --- Calcul des prix journaliers ---
     - name: Build daily price tables

@@ -238,7 +238,7 @@ def main():
         return                               # Rien à faire
 
     # ───────── 3) Télécharge le nouveau bulk et mémorise le tag
-    bulk_path = download_bulk(url, tag)      # télécharge .json(.gz)
+    bulk_path = download_bulk_if_needed(url, tag)      # télécharge .json(.gz)
     TAG_FILE.write_text(tag, encoding="utf-8")
 
     # ───────── 4) Charge la map des layouts

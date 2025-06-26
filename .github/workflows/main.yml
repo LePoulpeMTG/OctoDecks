@@ -28,9 +28,13 @@ jobs:
       # 4) Exécute le script d'import
       - name: Supprimer ancienne base
         run: rm -f database/octobase_reference.db 
+
       - name: Create database folder
         run: mkdir -p database
-
+      - name: DEBUG table prices_daily_set
+        run: |
+          sqlite3 database/octobase_reference.db \
+            "PRAGMA table_info(prices_daily_set);"
 
       - name: Run importer script
         run: python tools/import_all_cards.py

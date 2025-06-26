@@ -232,11 +232,11 @@ def main():
     if tag == stored_tag():
         print("ℹ️  Bulk déjà traité :", tag, "→ skip download")
         return  # on sort, pas d'import
-
+    bulk_file = download_bulk_if_needed()
     bulk_path = download_bulk(url, tag)
     TAG_FILE.write_text(tag, encoding="utf-8")
 
-    bulk_file = download_bulk_if_needed()
+    
     conn = open_db()
     cur  = conn.cursor()
     layout_map = load_layout_map()

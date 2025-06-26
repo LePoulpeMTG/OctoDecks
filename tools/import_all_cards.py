@@ -18,7 +18,7 @@ DB_PATH      = PROJECT_ROOT / "database" / "octobase_reference.db"
 BULK_DIR     = PROJECT_ROOT / "tools" / "data" / "bulk"
 LAYOUT_FILE  = PROJECT_ROOT / "tools" / "data" / "layouts_by_face.json"
 BULK_DIR.mkdir(parents=True, exist_ok=True)
-
+TAG_FILE = Path("tools/data/last_bulk_tag.txt")
 WANTED_FORMATS = {
     "standard", "pioneer", "modern",
     "legacy", "vintage", "commander", "pauper"
@@ -49,6 +49,13 @@ def open_db():
     conn = sqlite3.connect(DB_PATH)
     conn.execute("PRAGMA foreign_keys = ON;")
     return conn
+
+# -------------------------------------------------------------------------
+#  VERIFIER DATE MAJ BULK DATA (all_cards)
+# -------------------------------------------------------------------------
+def stored_tag():
+    return TAG_FILE.read_text().strip() if TAG_FILE.exists() else None
+
 
 # -------------------------------------------------------------------------
 #  TÉLÉCHARGEMENT BULK DATA (all_cards)
@@ -209,7 +216,14 @@ def main():
     ensure_schema(conn)
     print("✅ Schéma vérifié / créé") 
     cur = conn.cursor()
+    url, tag = latest_bulk_info()          # ex. '2025-06-27'
+    if tag == stored_tag():
+        print("ℹ️  Bulk déjà traité :", tag, "→ skip download")
+        return  # on sort, pas d'import
 
+    bulk_path = download_bulk(url, tag)
+    TAG_FILE.write_text(tag, encoding="utf-8")
+    
     bulk_file = download_bulk_if_needed()
     conn = open_db()
     cur  = conn.cursor()

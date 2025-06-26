@@ -98,6 +98,31 @@ CREATE TABLE prices_weekly_card (
   PRIMARY KEY (scryfall_id, week),
   FOREIGN KEY (scryfall_id) REFERENCES prints (scryfall_id)
 );
+-- ------------------------------
+-- prices_daily_set
+-- ------------------------------
+CREATE TABLE IF NOT EXISTS prices_daily_set (
+  set_code    TEXT NOT NULL,          -- FK vers sets.set_code
+  date        TEXT NOT NULL,          -- AAAA-MM-JJ
+  avg_eur     REAL,
+  avg_usd     REAL,
+  total_cards INTEGER,
+  PRIMARY KEY (set_code, date),
+  FOREIGN KEY (set_code) REFERENCES sets (set_code)
+);
+
+-- ------------------------------
+-- prices_weekly_set
+-- ------------------------------
+CREATE TABLE IF NOT EXISTS prices_weekly_set (
+  set_code    TEXT NOT NULL,
+  week        TEXT NOT NULL,          -- ISO-8601 (ex. 2025-27)
+  avg_eur     REAL,
+  avg_usd     REAL,
+  total_cards INTEGER,
+  PRIMARY KEY (set_code, week),
+  FOREIGN KEY (set_code) REFERENCES sets (set_code)
+);
 
 -- ------------------------------
 -- prices_daily_set

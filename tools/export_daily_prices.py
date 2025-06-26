@@ -8,8 +8,8 @@ import sqlite3, datetime, json, pathlib, sys
 
 DB_PATH   = pathlib.Path("database/octobase_reference.db")
 OUT_FILE  = pathlib.Path("prices_daily.json")
-TODAY     = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-
+from datetime import datetime, timezone
+TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 def insert_daily_set(cur):
     # moyenne du set = moyenne des cartes du jour
     cur.execute("""

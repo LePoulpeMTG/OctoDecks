@@ -23,20 +23,19 @@ jobs:
       run: |
         python - <<'PY'
         import json, os, firebase_admin
-        from firebase_admin import storage as fb_storage
+        from firebase_admin import storage as fb_storage, credentials
 
-        cred = firebase_admin.credentials.Certificate(
-            json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
-        firebase_admin.initialize_app(cred, {
-            'storageBucket': os.environ['FIREBASE_BUCKET']
-        })
+        if not firebase_admin._apps:
+            cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+            firebase_admin.initialize_app(cred, {
+                'storageBucket': os.environ['FIREBASE_BUCKET']
+            })
 
         bucket = fb_storage.bucket()
         blob   = bucket.blob("octobase/octobase_reference.db")
         blob.download_to_filename("database/octobase_reference.db")
         print("DB téléchargée")
         PY
-
     # --- Recalcul hebdo ---
     - name: Build weekly price tables
       run: python tools/build_weekly_prices.py
@@ -49,13 +48,13 @@ jobs:
       run: |
         python - <<'PY'
         import json, os, firebase_admin
-        from firebase_admin import storage as fb_storage
+        from firebase_admin import storage as fb_storage, credentials
 
-        cred = firebase_admin.credentials.Certificate(
-            json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
-        firebase_admin.initialize_app(cred, {
-            'storageBucket': os.environ['FIREBASE_BUCKET']
-        })
+        if not firebase_admin._apps:
+            cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+            firebase_admin.initialize_app(cred, {
+                'storageBucket': os.environ['FIREBASE_BUCKET']
+            })
 
         bucket = fb_storage.bucket()
         blob   = bucket.blob("octobase/octobase_reference.db")

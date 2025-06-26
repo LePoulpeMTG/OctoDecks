@@ -2,68 +2,64 @@ name: Export daily prices
 
 on:
   schedule:
-    - cron: '15 2 * * *'     # chaque jour 02:15 UTC (≃ 04:15 Paris)
-  workflow_dispatch:          # exécution manuelle
+    - cron: '0 3 * * *'   # Tous les jours à 03:00 UTC
+  workflow_dispatch:       # Lancement manuel possible
 
 jobs:
   daily:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v4
 
+    # --- Install des dépendances Firebase ---
     - run: pip install --quiet firebase-admin google-cloud-storage
 
-    # --- 1) Récupère la DB la plus récente depuis le bucket --------------
-    - name: Download DB
+    # --- Télécharger la base depuis Firebase Storage ---
+    - name: Download current DB
       env:
         FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
       run: |
         python - <<'PY'
         import json, os, firebase_admin
-        from firebase_admin import storage as fb_storage
-        cred = firebase_admin.credentials.Certificate(
-            json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
-        firebase_admin.initialize_app(cred, {
-            'storageBucket': os.environ['FIREBASE_BUCKET']
-        })
-        bucket = storage.bucket()
+        from firebase_admin import storage as fb_storage, credentials
+
+        if not firebase_admin._apps:
+            cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+            firebase_admin.initialize_app(cred, {
+                'storageBucket': os.environ['FIREBASE_BUCKET']
+            })
+
+        bucket = fb_storage.bucket()
         blob   = bucket.blob("octobase/octobase_reference.db")
         blob.download_to_filename("database/octobase_reference.db")
-        print("DB téléchargée")
+        print("📥 DB téléchargée")
         PY
 
-    # --- 2) Ajoute daily_set + export JSON ------------------------------
-    - name: Build & export prices_daily
-      run: |
-        python tools/export_daily_prices.py
+    # --- Calcul des prix journaliers ---
+    - name: Build daily price tables
+      run: python tools/build_daily_prices.py
 
-    # --- 3) Upload JSON + DB mise à jour --------------------------------
-    - name: Upload DB & JSON
+    # --- Re-upload de la base mise à jour ---
+    - name: Upload DB back
       env:
         FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
       run: |
         python - <<'PY'
-        import json, os, firebase_admin, datetime, pathlib
-        from firebase_admin import storage as fb_storage
+        import json, os, firebase_admin
+        from firebase_admin import storage as fb_storage, credentials
 
-        cred = firebase_admin.credentials.Certificate(
-            json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
-        firebase_admin.initialize_app(cred, {
-            'storageBucket': os.environ['FIREBASE_BUCKET']
-        })
+        if not firebase_admin._apps:
+            cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+            firebase_admin.initialize_app(cred, {
+                'storageBucket': os.environ['FIREBASE_BUCKET']
+            })
+
         bucket = fb_storage.bucket()
-
-        # 3a. upload DB mise à jour
-        db_blob = bucket.blob("octobase/octobase_reference.db")
-        db_blob.upload_from_filename("database/octobase_reference.db",
-                                     content_type="application/octet-stream")
-
-        # 3b. upload JSON du jour
-        today  = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-        json_blob = bucket.blob(f"prices/daily/{today}.json")
-        json_blob.upload_from_filename("prices_daily.json",
-                                       content_type="application/json")
-        print("✅ Uploads terminés")
+        blob   = bucket.blob("octobase/octobase_reference.db")
+        blob.upload_from_filename("database/octobase_reference.db",
+                                  content_type="application/octet-stream")
+        print("✅ Upload daily DB terminé")
         PY

@@ -21,7 +21,7 @@ jobs:
       run: |
         python - <<'PY'
         import json, os, firebase_admin
-        from google.cloud import storage
+        from firebase_admin import storage as fb_storage
         cred = firebase_admin.credentials.Certificate(
             json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
         firebase_admin.initialize_app(cred, {
@@ -46,14 +46,14 @@ jobs:
       run: |
         python - <<'PY'
         import json, os, firebase_admin, datetime, pathlib
-        from google.cloud import storage
+        from firebase_admin import storage as fb_storage
 
         cred = firebase_admin.credentials.Certificate(
             json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
         firebase_admin.initialize_app(cred, {
             'storageBucket': os.environ['FIREBASE_BUCKET']
         })
-        bucket = storage.bucket()
+        bucket = fb_storage.bucket()
 
         # 3a. upload DB mise à jour
         db_blob = bucket.blob("octobase/octobase_reference.db")

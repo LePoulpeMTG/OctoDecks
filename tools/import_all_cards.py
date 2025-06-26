@@ -78,11 +78,11 @@ from tqdm import tqdm
 def latest_bulk_info():
     """Retourne (download_uri, updated_at, ext)"""
     url  = "https://api.scryfall.com/bulk-data"
-    data = requests.get(url, timeout=60).json()["data"]
+    data = requests.get("https://api.scryfall.com/bulk-data", timeout=60).json()["data"]
     rec  = next(d for d in data if d["type"] == "all_cards")
-    dl   = rec["download_uri"]
-    ext  = ".gz" if dl.endswith(".gz") else ".json"
-    return dl, rec["updated_at"], ext
+    url  = rec["download_uri"]
+    tag  = rec["updated_at"].split("T")[0]     # 2025-07-01
+    return url, tag  
 
 def download_bulk_if_needed():
     BULK_DIR.mkdir(parents=True, exist_ok=True)          # ← crée dossier

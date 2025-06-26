@@ -28,6 +28,9 @@ jobs:
       # 4) Exécute le script d'import
       - name: Create database folder
         run: mkdir -p database
+      - name: Supprimer ancienne base
+        run: rm -f database/octobase_reference.db 
+
       - name: Run importer script
         run: python tools/import_all_cards.py
 

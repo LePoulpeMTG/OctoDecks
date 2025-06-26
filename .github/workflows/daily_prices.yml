@@ -1,0 +1,69 @@
+name: Export daily prices
+
+on:
+  schedule:
+    - cron: '15 2 * * *'     # chaque jour 02:15 UTC (≃ 04:15 Paris)
+  workflow_dispatch:          # exécution manuelle
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - run: pip install --quiet firebase-admin google-cloud-storage
+
+    # --- 1) Récupère la DB la plus récente depuis le bucket --------------
+    - name: Download DB
+      env:
+        FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
+      run: |
+        python - <<'PY'
+        import json, os, firebase_admin
+        from google.cloud import storage
+        cred = firebase_admin.credentials.Certificate(
+            json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+        firebase_admin.initialize_app(cred, {
+            'storageBucket': os.environ['FIREBASE_BUCKET']
+        })
+        bucket = storage.bucket()
+        blob   = bucket.blob("octobase/octobase_reference.db")
+        blob.download_to_filename("database/octobase_reference.db")
+        print("DB téléchargée")
+        PY
+
+    # --- 2) Ajoute daily_set + export JSON ------------------------------
+    - name: Build & export prices_daily
+      run: |
+        python tools/export_daily_prices.py
+
+    # --- 3) Upload JSON + DB mise à jour --------------------------------
+    - name: Upload DB & JSON
+      env:
+        FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
+      run: |
+        python - <<'PY'
+        import json, os, firebase_admin, datetime, pathlib
+        from google.cloud import storage
+
+        cred = firebase_admin.credentials.Certificate(
+            json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+        firebase_admin.initialize_app(cred, {
+            'storageBucket': os.environ['FIREBASE_BUCKET']
+        })
+        bucket = storage.bucket()
+
+        # 3a. upload DB mise à jour
+        db_blob = bucket.blob("octobase/octobase_reference.db")
+        db_blob.upload_from_filename("database/octobase_reference.db",
+                                     content_type="application/octet-stream")
+
+        # 3b. upload JSON du jour
+        today  = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+        json_blob = bucket.blob(f"prices/daily/{today}.json")
+        json_blob.upload_from_filename("prices_daily.json",
+                                       content_type="application/json")
+        print("✅ Uploads terminés")
+        PY

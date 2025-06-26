@@ -56,6 +56,18 @@ def open_db():
 def stored_tag():
     return TAG_FILE.read_text().strip() if TAG_FILE.exists() else None
 
+def insert_daily_price(cur, card):
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    cur.execute("""
+        INSERT OR IGNORE INTO prices_daily_card
+        (scryfall_id, date, eur, eur_foil, usd, usd_foil, usd_etched)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    """, (
+        card["id"], today,
+        card["prices"]["eur"], card["prices"]["eur_foil"],
+        card["prices"]["usd"], card["prices"]["usd_foil"],
+        card["prices"]["usd_etched"]
+    ))
 
 # -------------------------------------------------------------------------
 #  TÉLÉCHARGEMENT BULK DATA (all_cards)
@@ -223,7 +235,7 @@ def main():
 
     bulk_path = download_bulk(url, tag)
     TAG_FILE.write_text(tag, encoding="utf-8")
-    
+
     bulk_file = download_bulk_if_needed()
     conn = open_db()
     cur  = conn.cursor()

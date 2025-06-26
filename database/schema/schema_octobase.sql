@@ -124,31 +124,6 @@ CREATE TABLE IF NOT EXISTS prices_weekly_set (
   FOREIGN KEY (set_code) REFERENCES sets (set_code)
 );
 
--- ------------------------------
--- prices_daily_set
--- ------------------------------
-CREATE TABLE prices_daily_set (
-  set_id      INTEGER,
-  date        TEXT,
-  avg_eur     REAL,
-  avg_usd     REAL,
-  total_cards INTEGER,
-  PRIMARY KEY (set_id, date),
-  FOREIGN KEY (set_id) REFERENCES sets (set_id)
-);
-
--- ------------------------------
--- prices_weekly_set
--- ------------------------------
-CREATE TABLE prices_weekly_set (
-  set_id      INTEGER,
-  week        TEXT,
-  avg_eur     REAL,
-  avg_usd     REAL,
-  total_cards INTEGER,
-  PRIMARY KEY (set_id, week),
-  FOREIGN KEY (set_id) REFERENCES sets (set_id)
-);
 
 -- ------------------------------
 -- card_localizations

@@ -78,13 +78,16 @@ from tqdm import tqdm
 def latest_bulk_info():
     """Retourne (download_uri, updated_at, ext)"""
     url  = "https://api.scryfall.com/bulk-data"
+    """Retourne (url, tag, ext)"""
     data = requests.get("https://api.scryfall.com/bulk-data", timeout=60).json()["data"]
     rec  = next(d for d in data if d["type"] == "all_cards")
     url  = rec["download_uri"]
     tag  = rec["updated_at"].split("T")[0]     # 2025-07-01
-    return url, tag  
+    ext  = ".gz" if url.endswith(".json.gz") else ""
+    return url, tag, ext
 
-def download_bulk_if_needed():
+
+def download_bulk_if_needed(dl_url, tag, ext):
     BULK_DIR.mkdir(parents=True, exist_ok=True)          # ← crée dossier
     dl_url, updated_at, ext = latest_bulk_info()
     tag    = updated_at.split("T")[0]                    # ex. 2025-06-25
@@ -231,14 +234,14 @@ def main():
     cur = conn.cursor()
 
     # ───────── 2) Vérifie si le bulk du jour a déjà été traité
-    url, tag = latest_bulk_info()           # p. ex. '2025-07-01'
+    url, tag, ext = latest_bulk_info()           # p. ex. '2025-07-01'
     if tag == stored_tag():
         print("ℹ️  Bulk déjà traité :", tag, "→ skip download/import")
         conn.close()
         return                               # Rien à faire
 
     # ───────── 3) Télécharge le nouveau bulk et mémorise le tag
-    bulk_path = download_bulk_if_needed(url, tag)      # télécharge .json(.gz)
+    bulk_path = download_bulk_if_needed(url, tag, ext)      # télécharge .json(.gz)
     TAG_FILE.write_text(tag, encoding="utf-8")
 
     # ───────── 4) Charge la map des layouts

@@ -39,7 +39,7 @@ jobs:
 
     # --- Calcul des prix journaliers ---
     - name: Build daily price tables
-      run: python tools/build_daily_prices.py
+      run: python tools/export_daily_prices.py
 
     # --- Re-upload de la base mise à jour ---
     - name: Upload DB back

@@ -224,73 +224,57 @@ def ensure_schema(conn):
 # MAIN
 # -------------------------------------------------------------------------
 def main():
+    # ───────── 1) Ouvre la DB et crée le schéma si besoin
     conn = open_db()
     ensure_schema(conn)
-    print("✅ Schéma vérifié / créé") 
+    print("✅ Schéma vérifié / créé")
     cur = conn.cursor()
-    url, tag = latest_bulk_info()          # ex. '2025-06-27'
+
+    # ───────── 2) Vérifie si le bulk du jour a déjà été traité
+    url, tag = latest_bulk_info()           # p. ex. '2025-07-01'
     if tag == stored_tag():
-        print("ℹ️  Bulk déjà traité :", tag, "→ skip download")
-        return  # on sort, pas d'import
-    bulk_file = download_bulk_if_needed()
-    bulk_path = download_bulk(url, tag)
+        print("ℹ️  Bulk déjà traité :", tag, "→ skip download/import")
+        conn.close()
+        return                               # Rien à faire
+
+    # ───────── 3) Télécharge le nouveau bulk et mémorise le tag
+    bulk_path = download_bulk(url, tag)      # télécharge .json(.gz)
     TAG_FILE.write_text(tag, encoding="utf-8")
 
-    
-    conn = open_db()
-    cur  = conn.cursor()
+    # ───────── 4) Charge la map des layouts
     layout_map = load_layout_map()
     new_layout_flag = False
 
-    bulk_file = download_bulk_if_needed()
-
-# ── Ouverture adaptée au suffixe (.json.gz ou .json)
-    if bulk_file.suffix == ".gz":
-        fh = gzip.open(bulk_file, "rb")
-    else:
-        fh = bulk_file.open("rb")
-# -----------------------------------------------------------------
-#  Ouverture du bulk : test des 2 octets magiques
-# -----------------------------------------------------------------
-    def smart_open(path: Path):
-        """Retourne un fichier en mode binaire, gzip ou brut selon le header."""
-        with path.open("rb") as probe:
-            magic = probe.read(2)
-        if magic == b"\x1f\x8b":              # 0x1f 0x8b ⇒ gzip
-            return gzip.open(path, "rb")
-        else:
-            return path.open("rb")
-
-    # Usage
-    fh = smart_open(bulk_file)
-
-    with fh:
+    # ───────── 5) Parse et importe
+    with smart_open(bulk_path) as fh:
         cards = ijson.items(fh, "item")
-
-        # UNE SEULE boucle for !
         for card in tqdm(cards, unit="cards"):
-            # 1) Skip si oracle_id manquant (tokens, helpers…)
             if "oracle_id" not in card:
                 continue
-            # 2) Ajout dynamique d’un layout inconnu
             if card["layout"] not in layout_map:
                 fc = face_count_from_card(card)
                 layout_map[card["layout"]] = fc
                 new_layout_flag = True
                 print(f"[WARN] nouveau layout {card['layout']} → {fc} face(s)")
 
-            # 3) Traitement normal
-            face_cnt = layout_map[card["layout"]]
-            front, back = extract_images(card, face_cnt)
+            face_cnt        = layout_map[card["layout"]]
+            front, back     = extract_images(card, face_cnt)
 
-            set_id = insert_core(cur, card)
+            set_id          = insert_core(cur, card)
             insert_print(cur, card, set_id, front, back)
             insert_localization(cur, card, front, back)
             insert_legalities(cur, card)
+            insert_daily_price(cur, card)         # si tu as cette fonction
 
-
+    # ───────── 6) Sauvegarde & fermeture
     conn.commit()
     conn.close()
+
+    if new_layout_flag:
+        save_layout_map(layout_map)
+        print("✔ layouts_by_face.json mis à jour.")
+
+    print("✅ Import terminé.")
 
     if new_layout_flag:
         save_layout_map(layout_map)

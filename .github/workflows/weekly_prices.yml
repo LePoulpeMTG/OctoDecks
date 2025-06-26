@@ -23,7 +23,7 @@ jobs:
       run: |
         python - <<'PY'
         import json, os, firebase_admin
-        from google.cloud import storage, exceptions
+        from firebase_admin import storage as fb_storage
 
         cred = firebase_admin.credentials.Certificate(
             json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
@@ -31,7 +31,7 @@ jobs:
             'storageBucket': os.environ['FIREBASE_BUCKET']
         })
 
-        bucket = storage.bucket()
+        bucket = fb_storage.bucket()
         blob   = bucket.blob("octobase/octobase_reference.db")
         blob.download_to_filename("database/octobase_reference.db")
         print("DB téléchargée")
@@ -57,7 +57,7 @@ jobs:
             'storageBucket': os.environ['FIREBASE_BUCKET']
         })
 
-        bucket = fb_storage.bucket()  
+        bucket = fb_storage.bucket()
         blob   = bucket.blob("octobase/octobase_reference.db")
         blob.upload_from_filename("database/octobase_reference.db",
                                   content_type="application/octet-stream")

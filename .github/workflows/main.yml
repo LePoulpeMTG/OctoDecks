@@ -24,7 +24,24 @@ jobs:
       # 3) Installe les dépendances nécessaires
       - name: Install Python dependencies
         run: pip install ijson tqdm requests firebase-admin
-
+      # 3.5) Purge la BD
+      - name: Purge DB dans Firebase
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
+        run: |
+          python - <<'PY'
+          import json, os, firebase_admin
+          from firebase_admin import credentials, storage
+          if not firebase_admin._apps:
+              cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+              firebase_admin.initialize_app(cred, { 'storageBucket': os.environ['FIREBASE_BUCKET'] })
+          blob = storage.bucket().blob("octobase/octobase_reference.db")
+          if blob.exists():
+              blob.delete(); print("✅ Ancienne DB supprimée du bucket")
+          else:
+              print("ℹ️  Aucune DB à supprimer")
+          PY
       # 4) Exécute le script d'import
       - name: Supprimer ancienne base
         run: rm -f database/octobase_reference.db 

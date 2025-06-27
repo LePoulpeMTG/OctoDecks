@@ -253,7 +253,7 @@ def main():
         return                              # Rien à faire
 
     if tag != stored_tag():
-        bulk_path = download_bulk_if_needed(dl_url, tag, ext)
+        bulk_path = download_bulk_if_needed(url, tag, ext)
         TAG_FILE.write_text(tag, encoding="utf-8")
     else:
         try:

@@ -6,12 +6,7 @@ DB = pathlib.Path("database/octobase_reference.db")
 conn = sqlite3.connect(DB)
 cur  = conn.cursor()
 
-# ─── Ajout des colonnes TOTAL si elles n’existent pas (ignore si déjà là) ──
-cur.executescript("""
-PRAGMA foreign_keys = ON;
-ALTER TABLE prices_weekly_set ADD COLUMN total_eur REAL;
-ALTER TABLE prices_weekly_set ADD COLUMN total_usd REAL;
-""")
+
 
 # ──────────────────────────────────────────────────────────────────────────
 # WEEKLY CARD  – 11 colonnes

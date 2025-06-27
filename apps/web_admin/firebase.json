@@ -8,7 +8,14 @@
     {
       "target": "admin",
       "public": "public",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+
+      "rewrites": [
+        {
+          "source": "/sets.json",
+          "destination": "/__/storage/o/exports%2Fsets.json?alt=media"
+        }
+      ]
     }
   ]
 }

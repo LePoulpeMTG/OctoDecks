@@ -68,7 +68,7 @@ CREATE TABLE card_legalities (
 -- ------------------------------
 -- prices_daily_card
 -- ------------------------------
-CREATE TABLE prices_daily_card (
+CREATE TABLE IF NOT EXISTS prices_daily_card (
   scryfall_id TEXT,
   date        TEXT,
   eur         REAL,
@@ -83,7 +83,7 @@ CREATE TABLE prices_daily_card (
 -- ------------------------------
 -- prices_weekly_card
 -- ------------------------------
-CREATE TABLE prices_weekly_card (
+CREATE TABLE IF NOT EXISTS prices_weekly_card (
   scryfall_id   TEXT,
   week          TEXT,
   eur_avg       REAL,

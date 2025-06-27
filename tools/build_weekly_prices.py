@@ -42,14 +42,15 @@ SELECT * FROM _tmp_weekly_card;
 # ──────────────────────────────────────────────────────────────────────────
 cur.executescript("""
 DROP TABLE IF EXISTS _tmp_weekly_set;
-CREATE TEMP TABLE _tmp_weekly_set AS
+REATE TEMP TABLE _tmp_weekly_set AS
 SELECT  s.set_code,
         strftime('%Y-%W', d.date) AS week,
-        AVG(d.eur)               AS avg_eur,
-        AVG(d.usd)               AS avg_usd,
-        SUM(COALESCE(d.eur,0))   AS total_eur,
-        SUM(COALESCE(d.usd,0))   AS total_usd,
-        COUNT(d.eur)    AS total_cards
+        AVG(d.eur)                AS avg_eur,
+        AVG(d.usd)                AS avg_usd,
+        SUM(COALESCE(d.eur,0))    AS total_eur,
+        SUM(COALESCE(d.usd,0))    AS total_usd,
+        COUNT(d.eur)              AS cards_priced_eur,
+        COUNT(d.usd)              AS cards_priced_usd
   FROM prices_daily_card AS d
   JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
   JOIN sets              AS s ON s.set_id      = p.set_id

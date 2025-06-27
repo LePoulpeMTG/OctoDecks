@@ -1,5 +1,6 @@
 PRAGMA foreign_keys = ON;
 
+
 -- ------------------------------
 -- sets
 -- ------------------------------
@@ -108,6 +109,8 @@ CREATE TABLE IF NOT EXISTS prices_daily_set (
   avg_usd     REAL,
   total_eur   REAL,      -- valeur totale €
   total_usd   REAL,      -- valeur totale $
+  cards_priced_eur INTEGER, -- nombre de cartes avec prix € (non NULL)
+  cards_priced_usd INTEGER, -- nombre de cartes avec prix $ (non NULL)
   total_cards INTEGER,
   PRIMARY KEY (set_code, date),
   FOREIGN KEY (set_code) REFERENCES sets (set_code)

@@ -68,6 +68,13 @@ INSERT OR REPLACE INTO prices_weekly_set (
 SELECT * FROM _tmp_weekly_set;
 """)
 
+# après les INSERT …
+cur.execute("SELECT COUNT(*) FROM prices_weekly_card")
+print("🛈 weekly_card lignes :", cur.fetchone()[0])
+
+cur.execute("SELECT COUNT(*) FROM prices_weekly_set")
+print("🛈 weekly_set  lignes :", cur.fetchone()[0])
+
 conn.commit()
 conn.close()
 print("✅ Recalcul hebdo terminé")

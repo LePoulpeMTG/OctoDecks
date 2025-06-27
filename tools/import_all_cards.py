@@ -104,7 +104,19 @@ def download_bulk_if_needed(dl_url, tag, ext):
     tag    = updated_at.split("T")[0]                    # ex. 2025-06-25
     fname  = f"all-cards-{tag}.json{ext}"
     fpath  = BULK_DIR / fname
+    # … logique sur stored_tag …
 
+    if tag != stored_tag():
+        bulk_path = download_bulk_if_needed(dl_url, tag, ext)
+        TAG_FILE.write_text(tag, encoding="utf-8")
+    else:
+        try:
+            bulk_path = next(Path(BULK_DIR).glob(f"all-cards-{tag}.json*"))
+            print("ℹ️  Re-parse du bulk existant :", bulk_path.name)
+        except StopIteration:
+            print("ℹ️  Bulk absent localement → téléchargement forcé")
+            bulk_path = download_bulk_if_needed(dl_url, tag, ext)
+            
     # ── Si le fichier existe mais est invalide, on le supprime
     if fpath.exists():
         try:

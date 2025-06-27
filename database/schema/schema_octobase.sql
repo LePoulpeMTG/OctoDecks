@@ -102,13 +102,12 @@ CREATE TABLE IF NOT EXISTS prices_weekly_card (
 -- prices_daily_set
 -- ------------------------------
 CREATE TABLE IF NOT EXISTS prices_daily_set (
-  set_code    TEXT NOT NULL,          -- FK vers sets.set_code
-  date        TEXT NOT NULL,          -- AAAA-MM-JJ
+  set_code    TEXT NOT NULL,          -- ← doit être set_code
+  date        TEXT NOT NULL,
   avg_eur     REAL,
   avg_usd     REAL,
   total_cards INTEGER,
-  PRIMARY KEY (set_code, date),
-  FOREIGN KEY (set_code) REFERENCES sets (set_code)
+  PRIMARY KEY (set_code, date)
 );
 
 -- ------------------------------

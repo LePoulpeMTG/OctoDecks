@@ -1,40 +1,48 @@
 #!/usr/bin/env python3
 """
-1. Ajoute les prix du jour dans prices_daily_card / prices_daily_set
-2. Exporte les deux tables du jour en un JSON compact
+Ajoute les prix du jour dans prices_daily_set
+puis exporte les tables du jour (cards + sets) dans un fichier JSON.
 """
 
-import sqlite3, datetime, json, pathlib, sys
-
-DB_PATH   = pathlib.Path("database/octobase_reference.db")
-OUT_FILE  = pathlib.Path("prices_daily.json")
+import json
+import sys
+import sqlite3
+from pathlib import Path
 from datetime import datetime, timezone
-TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+DB_PATH   = Path("database/octobase_reference.db")
+OUT_FILE  = Path("prices_daily.json")
+TODAY     = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
 
 
 def insert_daily_set(cur):
     """
-    Calcule le prix moyen par set pour la date TODAY
-    et l’insère dans prices_daily_set.
+    Calcule le prix moyen et total de chaque set pour la date du jour,
+    puis insère dans la table prices_daily_set.
     """
     cur.execute("""
-        INSERT OR REPLACE INTO prices_daily_set
-        (set_code, date,
-        avg_eur,  avg_usd,
-        total_eur, total_usd,
-        total_cards)
-        SELECT s.set_code,
-            ?,                              -- date
-            AVG(d.eur),      AVG(d.usd),    -- prix moyen
-            SUM(COALESCE(d.eur,0)),         -- valeur totale €
-            SUM(COALESCE(d.usd,0)),         -- valeur totale $
-            COUNT(*)                        -- impressions comptées
+        INSERT OR REPLACE INTO prices_daily_set (
+            set_code, date,
+            avg_eur, avg_usd,
+            total_eur, total_usd,
+            total_cards
+        )
+        SELECT 
+            s.set_code,
+            ?,  -- TODAY
+            AVG(d.eur), AVG(d.usd),
+            SUM(COALESCE(d.eur, 0)),
+            SUM(COALESCE(d.usd, 0)),
+            COUNT(*)  -- nombre d'impressions avec un prix
         FROM prices_daily_card AS d
-        JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
-        JOIN sets              AS s ON s.set_id      = p.set_id
+        JOIN prints AS p ON p.scryfall_id = d.scryfall_id
+        JOIN sets   AS s ON s.set_id      = p.set_id
         WHERE d.date = ?
-        GROUP BY s.set_code
+        GROUP BY s.set_code;
     """, (TODAY, TODAY))
+
 
 def export_json(conn):
     cur = conn.cursor()
@@ -42,12 +50,18 @@ def export_json(conn):
     cur.execute("SELECT * FROM prices_daily_card WHERE date = ?", (TODAY,))
     cards = [dict(row) for row in cur.fetchall()]
 
-    cur.execute("SELECT * FROM prices_daily_set  WHERE date = ?", (TODAY,))
-    sets  = [dict(row) for row in cur.fetchall()]
+    cur.execute("SELECT * FROM prices_daily_set WHERE date = ?", (TODAY,))
+    sets = [dict(row) for row in cur.fetchall()]
 
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUT_FILE.write_text(json.dumps({"date": TODAY, "cards": cards, "sets": sets},
-                                   separators=(",", ":")), encoding="utf-8")
+    OUT_FILE.write_text(json.dumps(
+        {"date": TODAY, "cards": cards, "sets": sets},
+        separators=(",", ":")
+    ), encoding="utf-8")
+
+    size_mb = OUT_FILE.stat().st_size / 1_048_576
+    print(f"✅ Export {OUT_FILE} généré ({size_mb:.1f} MiB)")
+
 
 def main():
     if not DB_PATH.exists():

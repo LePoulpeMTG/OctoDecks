@@ -24,95 +24,15 @@ jobs:
     - name: Import all cards + daily prices
       run: python tools/import_all_cards.py
 
-
     - name: Cartes du jour ?
       run: |
         sqlite3 database/octobase_reference.db \
           "SELECT date, COUNT(*) FROM prices_daily_card GROUP BY date ORDER BY date DESC LIMIT 3;"
 
-    # 2.5)  debug
-    - name: DEBUG – cartes du jour
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT date, COUNT(*) 
-          FROM prices_daily_card 
-          GROUP BY date 
-          ORDER BY date DESC 
-          LIMIT 3;
-        "
-
-    - name: DEBUG – cartes du jour AVEC prints
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT COUNT(*) 
-          FROM prices_daily_card AS d
-          JOIN prints           AS p ON p.scryfall_id = d.scryfall_id
-          WHERE d.date = date('now');
-        "
-
-    - name: DEBUG – set_code résolus
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT COUNT(DISTINCT s.set_code)
-          FROM prices_daily_card AS d
-          JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
-          JOIN sets              AS s ON s.set_id      = p.set_id
-          WHERE d.date = date('now');
-        "
-    - name: DEBUG 1 – lignes dans prices_daily_card (today)
-      run: |
-        sqlite3 database/octobase_reference.db \
-          "SELECT date, COUNT(*) 
-            FROM prices_daily_card 
-            GROUP BY date 
-            ORDER BY date DESC 
-            LIMIT 3;"
-
-    - name: DEBUG 2 – cartes du jour AVEC prints
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT COUNT(*) 
-          FROM prices_daily_card AS d
-          JOIN prints           AS p ON p.scryfall_id = d.scryfall_id
-          WHERE d.date = date('now');
-        "
-
-    - name: DEBUG 3 – sets résolus
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT COUNT(DISTINCT s.set_code)
-          FROM prices_daily_card AS d
-          JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
-          JOIN sets              AS s ON s.set_id      = p.set_id
-          WHERE d.date = date('now');
-        "
-
     # 3) EXPORT : calcule prices_daily_set et génère JSON
     - name: Export daily prices to JSON
       run: python tools/export_daily_prices.py
-
-    - name: DEBUG – sets du jour après export
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT date, COUNT(*) 
-          FROM prices_daily_set 
-          GROUP BY date 
-          ORDER BY date DESC 
-          LIMIT 3;
-        "
-    # 3.5) debug
-    - name: DEBUG – sets du jour après export
-      run: |
-        sqlite3 database/octobase_reference.db "
-          SELECT date, COUNT(*) AS nb_sets
-          FROM prices_daily_set
-          GROUP BY date
-          ORDER BY date DESC
-          LIMIT 3;
-        "
-
-
-
+      
     # 4) Upload DB + JSON
     - name: Upload DB + JSON vers Firebase
       env:

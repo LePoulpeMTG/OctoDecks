@@ -42,7 +42,7 @@ SELECT * FROM _tmp_weekly_card;
 # ──────────────────────────────────────────────────────────────────────────
 cur.executescript("""
 DROP TABLE IF EXISTS _tmp_weekly_set;
-REATE TEMP TABLE _tmp_weekly_set AS
+CREATE TEMP TABLE _tmp_weekly_set AS
 SELECT  s.set_code,
         strftime('%Y-%W', d.date) AS week,
         AVG(d.eur)                AS avg_eur,

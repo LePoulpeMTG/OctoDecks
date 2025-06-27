@@ -42,6 +42,11 @@ jobs:
           "PRAGMA table_info(prices_daily_set);" > dbg.txt
         cat dbg.txt
 
+    # --- Debug des prix journaliers ---    
+    - name: DEBUG schema prices_daily_set
+      run: |
+        sqlite3 database/octobase_reference.db \
+          "PRAGMA table_info(prices_daily_set);"
 
 
     # --- Calcul des prix journaliers ---

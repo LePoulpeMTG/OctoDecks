@@ -66,6 +66,39 @@ CREATE TABLE card_legalities (
 );
 
 -- ------------------------------
+-- prices_daily_card
+-- ------------------------------
+CREATE TABLE prices_daily_card (
+  scryfall_id TEXT,
+  date        TEXT,
+  eur         REAL,
+  eur_foil    REAL,
+  usd         REAL,
+  usd_foil    REAL,
+  usd_etched  REAL,
+  PRIMARY KEY (scryfall_id, date),
+  FOREIGN KEY (scryfall_id) REFERENCES prints (scryfall_id)
+);
+
+-- ------------------------------
+-- prices_weekly_card
+-- ------------------------------
+CREATE TABLE prices_weekly_card (
+  scryfall_id   TEXT,
+  week          TEXT,
+  eur_avg       REAL,
+  eur_min       REAL,
+  eur_max       REAL,
+  eur_foil_avg  REAL,
+  usd_avg       REAL,
+  usd_min       REAL,
+  usd_max       REAL,
+  usd_foil_avg  REAL,
+  usd_etched_avg REAL,
+  PRIMARY KEY (scryfall_id, week),
+  FOREIGN KEY (scryfall_id) REFERENCES prints (scryfall_id)
+);
+-- ------------------------------
 -- prices_daily_set
 -- ------------------------------
 CREATE TABLE IF NOT EXISTS prices_daily_set (

@@ -17,7 +17,10 @@ def smart_open(path: Path):
     opener = gzip.open if path.suffix == ".gz" else open
     with opener(path, "rb") as fh:
         yield fh
-
+def has_prices_for_today(cur) -> bool:
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    cur.execute("SELECT 1 FROM prices_daily_card WHERE date=? LIMIT 1", (today,))
+    return cur.fetchone() is not None
 # -------------------------------------------------------------------------
 # CONFIGURATION
 # -------------------------------------------------------------------------
@@ -243,10 +246,11 @@ def main():
 
     # ───────── 2) Vérifie si le bulk du jour a déjà été traité
     url, tag, ext = latest_bulk_info()           # p. ex. '2025-07-01'
-    if tag == stored_tag():
-        print("ℹ️  Bulk déjà traité :", tag, "→ skip download/import")
+
+    if tag == stored_tag() and has_prices_for_today(cur):
+        print("ℹ️  Bulk identique ET prix du jour déjà insérés → on sort")
         conn.close()
-        return                               # Rien à faire
+        return                              # Rien à faire
 
     # ───────── 3) Télécharge le nouveau bulk et mémorise le tag
     bulk_path = download_bulk_if_needed(url, tag, ext)      # télécharge .json(.gz)

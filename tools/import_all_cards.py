@@ -251,6 +251,14 @@ def main():
         print("ℹ️  Bulk identique ET prix du jour déjà insérés → on sort")
         conn.close()
         return                              # Rien à faire
+    if tag != stored_tag():
+        bulk_path = download_bulk_if_needed()  # nouveau bulk
+        TAG_FILE.write_text(tag, encoding="utf-8")
+    else:
+        # Même tag : on ré-utilise le fichier déjà sur disque
+        bulk_path = next(Path(BULK_DIR).glob(f"all-cards-{tag}.json*"))
+        print("ℹ️  Re-parse du bulk existant :", bulk_path.name)
+
 
     # ───────── 3) Télécharge le nouveau bulk et mémorise le tag
     bulk_path = download_bulk_if_needed(url, tag, ext)      # télécharge .json(.gz)

@@ -65,39 +65,37 @@ jobs:
       # 5) Charge la base SQLite dans Firebase Storage
 
       
-      - name: Upload DB to Firebase
+      - name: Upload DB + JSON vers Firebase
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           FIREBASE_BUCKET:          ${{ secrets.FIREBASE_BUCKET }}
         run: |
           python - <<'PY'
-            from datetime import datetime
-            import json, os, firebase_admin
-            from firebase_admin import credentials, storage as fb_storage
+          from datetime import datetime, timezone
+          import json, os, firebase_admin
+          from firebase_admin import credentials, storage as fb_storage
 
-            # --- Init Firebase ---
-            cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
-            firebase_admin.initialize_app(cred, {
-                'storageBucket': os.environ['FIREBASE_BUCKET']
-            })
+          # --- Init Firebase ---
+          cred_json = json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT'])
+          cred      = credentials.Certificate(cred_json)
+          firebase_admin.initialize_app(cred, {
+              'storageBucket': os.environ['FIREBASE_BUCKET']
+          })
 
-            bucket = fb_storage.bucket()
+          bucket = fb_storage.bucket()
 
-            # 1) Upload / écrase la base SQLite
-            bucket.blob("octobase/octobase_reference.db") \
-                  .upload_from_filename(
-                      "database/octobase_reference.db",
-                      content_type="application/octet-stream"
-                  )
+          # 1️⃣  Upload / écrase la base SQLite
+          bucket.blob("octobase/octobase_reference.db").upload_from_filename(
+              "database/octobase_reference.db",
+              content_type="application/octet-stream"
+          )
 
-            # 2) Upload / écrase le JSON quotidien
-            today = datetime.utcnow().strftime("%Y-%m-%d")
-            bucket.blob(f"prices/daily/{today}.json") \
-                  .upload_from_filename(
-                      "prices_daily.json",
-                      content_type="application/json"
-                  )
+          # 2️⃣  Upload / écrase le JSON quotidien
+          today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+          bucket.blob(f"prices/daily/{today}.json").upload_from_filename(
+              "prices_daily.json",
+              content_type="application/json"
+          )
 
-            print("✅ Upload DB + JSON terminé")
-
+          print("✅ Upload DB + JSON terminé")
           PY

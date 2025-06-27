@@ -64,7 +64,6 @@ CREATE TABLE card_legalities (
   PRIMARY KEY (oracle_id, format),
   FOREIGN KEY (oracle_id) REFERENCES cards (oracle_id)
 );
-
 -- ------------------------------
 -- prices_daily_card
 -- ------------------------------
@@ -84,32 +83,34 @@ CREATE TABLE IF NOT EXISTS prices_daily_card (
 -- prices_weekly_card
 -- ------------------------------
 CREATE TABLE IF NOT EXISTS prices_weekly_card (
-  scryfall_id   TEXT,
-  week          TEXT,
-  eur_avg       REAL,
-  eur_min       REAL,
-  eur_max       REAL,
-  eur_foil_avg  REAL,
-  usd_avg       REAL,
-  usd_min       REAL,
-  usd_max       REAL,
-  usd_foil_avg  REAL,
+  scryfall_id    TEXT,
+  week           TEXT,   -- ISO-8601 YYYY-WW
+  eur_avg        REAL,
+  eur_min        REAL,
+  eur_max        REAL,
+  eur_foil_avg   REAL,
+  usd_avg        REAL,
+  usd_min        REAL,
+  usd_max        REAL,
+  usd_foil_avg   REAL,
   usd_etched_avg REAL,
   PRIMARY KEY (scryfall_id, week),
   FOREIGN KEY (scryfall_id) REFERENCES prints (scryfall_id)
 );
+
 -- ------------------------------
 -- prices_daily_set
 -- ------------------------------
 CREATE TABLE IF NOT EXISTS prices_daily_set (
-  set_code    TEXT NOT NULL,          -- ← doit être set_code
+  set_code    TEXT NOT NULL,
   date        TEXT NOT NULL,
   avg_eur     REAL,
   avg_usd     REAL,
-  total_eur   REAL, 
-  total_usd   REAL,
+  total_eur   REAL,      -- valeur totale €
+  total_usd   REAL,      -- valeur totale $
   total_cards INTEGER,
-  PRIMARY KEY (set_code, date)
+  PRIMARY KEY (set_code, date),
+  FOREIGN KEY (set_code) REFERENCES sets (set_code)
 );
 
 -- ------------------------------
@@ -117,14 +118,15 @@ CREATE TABLE IF NOT EXISTS prices_daily_set (
 -- ------------------------------
 CREATE TABLE IF NOT EXISTS prices_weekly_set (
   set_code    TEXT NOT NULL,
-  week        TEXT NOT NULL,          -- ISO-8601 (ex. 2025-27)
+  week        TEXT NOT NULL,        -- ISO-8601 YYYY-WW
   avg_eur     REAL,
   avg_usd     REAL,
+  total_eur   REAL,                 -- somme des cartes €
+  total_usd   REAL,                 -- somme des cartes $
   total_cards INTEGER,
   PRIMARY KEY (set_code, week),
   FOREIGN KEY (set_code) REFERENCES sets (set_code)
 );
-
 
 -- ------------------------------
 -- card_localizations

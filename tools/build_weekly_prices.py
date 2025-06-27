@@ -1,54 +1,55 @@
 #!/usr/bin/env python3
 """
-Recalcule prices_weekly_card et prices_weekly_set sur la base
-des 7 derniers jours (inclus) de prices_daily_*.
+Calcule prices_weekly_card et prices_weekly_set
+à partir des données quotidiennes déjà présentes.
 """
 
-import sqlite3, datetime, pathlib
+import sqlite3, pathlib, sys, datetime, math
+DB = pathlib.Path("database/octobase_reference.db")
 
-DB_PATH = pathlib.Path("database/octobase_reference.db")
+conn = sqlite3.connect(DB)
+cur  = conn.cursor()
 
-def main():
-    conn = sqlite3.connect(DB_PATH)
-    cur  = conn.cursor()
+# ---------- prices_weekly_card (inchangé) ----------
+cur.executescript("""
+  DROP TABLE IF EXISTS _tmp_weekly_card;
+  CREATE TEMP TABLE _tmp_weekly_card AS
+  SELECT scryfall_id,
+        strftime('%Y-%W', date) AS week,
+        AVG(eur)        AS eur_avg,
+        MIN(eur)        AS eur_min,
+        MAX(eur)        AS eur_max,
+        AVG(eur_foil)   AS eur_foil_avg,
+        AVG(usd)        AS usd_avg,
+        MIN(usd)        AS usd_min,
+        MAX(usd)        AS usd_max,
+        AVG(usd_foil)   AS usd_foil_avg,
+        AVG(usd_etched) AS usd_etched_avg
+    FROM prices_daily_card
+  GROUP BY scryfall_id, week;
 
-    # -- 1) CARD weekly -------------------------------------------------------
-    cur.execute("DELETE FROM prices_weekly_card")  # on régénère tout
+  INSERT OR REPLACE INTO prices_weekly_card
+  SELECT * FROM _tmp_weekly_card;
+""")
 
-    cur.execute("""
-        INSERT INTO prices_weekly_card
-        SELECT
-          scryfall_id,
-          strftime('%G-%W', date) AS week,
-          AVG(eur)        AS avg_eur,
-          AVG(eur_foil)   AS avg_eur_foil,
-          AVG(usd)        AS avg_usd,
-          AVG(usd_foil)   AS avg_usd_foil,
-          AVG(usd_etched) AS avg_usd_etched
-        FROM prices_daily_card
-        WHERE date >= date('now', '-7 days')
-        GROUP BY scryfall_id, week
-    """)
+# ---------- prices_weekly_set (nouvelle requête) ----------
+cur.executescript("""
+  CREATE TEMP TABLE IF NOT EXISTS _tmp_weekly_set AS
+  SELECT s.set_code,
+        strftime('%Y-%W', d.date) AS week,
+        AVG(d.eur),  AVG(d.usd),
+        SUM(COALESCE(d.eur,0)),
+        SUM(COALESCE(d.usd,0)),
+        COUNT(*)
+    FROM prices_daily_card AS d
+    JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
+    JOIN sets              AS s ON s.set_id      = p.set_id
+  GROUP BY s.set_code, week;
 
-    # -- 2) SET weekly --------------------------------------------------------
-    cur.execute("DELETE FROM prices_weekly_set")
+  INSERT OR REPLACE INTO prices_weekly_set
+  SELECT * FROM _tmp_weekly_set;
+""")
 
-    cur.execute("""
-        INSERT INTO prices_weekly_set
-        SELECT
-          set_code,
-          strftime('%G-%W', date) AS week,
-          AVG(avg_eur) AS avg_eur,
-          AVG(avg_usd) AS avg_usd,
-          COUNT(DISTINCT scryfall_id) AS total_cards
-        FROM prices_daily_set
-        WHERE date >= date('now', '-7 days')
-        GROUP BY set_code, week
-    """)
-
-    conn.commit()
-    conn.close()
-    print("✅ Weekly prices updated")
-
-if __name__ == "__main__":
-    main()
+conn.commit()
+conn.close()
+print("✅ Recalcul hebdo terminé")

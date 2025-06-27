@@ -49,7 +49,7 @@ SELECT  s.set_code,
         AVG(d.usd)               AS avg_usd,
         SUM(COALESCE(d.eur,0))   AS total_eur,
         SUM(COALESCE(d.usd,0))   AS total_usd,
-        COUNT(*)                 AS total_cards
+        COUNT(d.eur)    AS total_cards
   FROM prices_daily_card AS d
   JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
   JOIN sets              AS s ON s.set_id      = p.set_id

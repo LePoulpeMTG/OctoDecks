@@ -42,6 +42,12 @@ jobs:
           else:
               print("ℹ️  Aucune DB à supprimer")
           PY
+          
+      - name: DEBUG prices_daily_set
+        run: |
+          sqlite3 database/octobase_reference.db \
+            "PRAGMA table_info(prices_daily_set);"
+
       # 4) Exécute le script d'import
       - name: Supprimer ancienne base
         run: rm -f database/octobase_reference.db 

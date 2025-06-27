@@ -63,6 +63,8 @@ jobs:
         run: python tools/import_all_cards.py
 
       # 5) Charge la base SQLite dans Firebase Storage
+
+      
       - name: Upload DB to Firebase
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}

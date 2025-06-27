@@ -23,6 +23,8 @@ jobs:
     # 2) IMPORT : recrée/maj la DB et insère prices_daily_card
     - name: Import all cards + daily prices
       run: python tools/import_all_cards.py
+
+
     - name: Cartes du jour ?
       run: |
         sqlite3 database/octobase_reference.db \
@@ -89,7 +91,15 @@ jobs:
     - name: Export daily prices to JSON
       run: python tools/export_daily_prices.py
 
-
+    - name: DEBUG – sets du jour après export
+      run: |
+        sqlite3 database/octobase_reference.db "
+          SELECT date, COUNT(*) 
+          FROM prices_daily_set 
+          GROUP BY date 
+          ORDER BY date DESC 
+          LIMIT 3;
+        "
     # 4) Upload DB + JSON
     - name: Upload DB + JSON vers Firebase
       env:

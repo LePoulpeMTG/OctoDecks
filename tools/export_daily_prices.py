@@ -11,6 +11,7 @@ OUT_FILE  = pathlib.Path("prices_daily.json")
 from datetime import datetime, timezone
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+
 def insert_daily_set(cur):
     """
     Calcule le prix moyen par set pour la date TODAY

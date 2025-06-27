@@ -117,18 +117,17 @@ CREATE TABLE IF NOT EXISTS prices_daily_set (
 -- ------------------------------
 -- prices_weekly_set
 -- ------------------------------
-CREATE TABLE IF NOT EXISTS prices_weekly_set (
-  set_code    TEXT NOT NULL,
-  week        TEXT NOT NULL,        -- ISO-8601 YYYY-WW
-  avg_eur     REAL,
-  avg_usd     REAL,
-  total_eur   REAL,                 -- somme des cartes €
-  total_usd   REAL,                 -- somme des cartes $
-  total_cards INTEGER,
-  cards_priced_eur INTEGER, -- nombre de cartes avec prix € (non NULL)
-  cards_priced_usd INTEGER, -- nombre de cartes avec prix $ (non NULL)
-  PRIMARY KEY (set_code, week),
-  FOREIGN KEY (set_code) REFERENCES sets (set_code)
+CREATE TABLE prices_weekly_set (
+  set_code          TEXT,
+  week              TEXT,
+  avg_eur           REAL,
+  avg_usd           REAL,
+  total_eur         REAL,
+  total_usd         REAL,
+  cards_priced_eur  INTEGER,
+  cards_priced_usd  INTEGER,
+  total_cards       INTEGER,
+  PRIMARY KEY (set_code, week)
 );
 
 -- ------------------------------

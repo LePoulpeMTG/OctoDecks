@@ -37,14 +37,22 @@ SELECT  s.set_code,
         AVG(d.usd)                AS avg_usd,
         SUM(COALESCE(d.eur,0))    AS total_eur,
         SUM(COALESCE(d.usd,0))    AS total_usd,
+        COUNT(d.eur)              AS cards_priced_eur,
+        COUNT(d.usd)              AS cards_priced_usd,
         COUNT(*)                  AS total_cards
-FROM prices_daily_card d
-JOIN prints p ON p.scryfall_id = d.scryfall_id
-JOIN sets   s ON s.set_id      = p.set_id
+FROM prices_daily_card AS d
+JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
+JOIN sets              AS s ON s.set_id      = p.set_id
 WHERE d.eur IS NOT NULL OR d.usd IS NOT NULL
 GROUP BY s.set_code, week;
 
-INSERT OR REPLACE INTO prices_weekly_set
+INSERT OR REPLACE INTO prices_weekly_set (
+  set_code, week,
+  avg_eur, avg_usd,
+  total_eur, total_usd,
+  cards_priced_eur, cards_priced_usd,
+  total_cards
+)
 SELECT * FROM _tmp_weekly_set;
 """)
 

@@ -260,9 +260,8 @@ def main():
             bulk_path = next(Path(BULK_DIR).glob(f"all-cards-{tag}.json*"))
             print("ℹ️  Re-parse du bulk existant :", bulk_path.name)
         except StopIteration:
-            # -> on télécharge quand même
-            print("ℹ️  Bulk absent localement, on le télécharge malgré le tag identique")
-            bulk_path = download_bulk_if_needed()      # récupère le fichier
+            print("ℹ️  Bulk absent localement → téléchargement forcé")
+            bulk_path = download_bulk_if_needed()   # récupère le fichier
 
 
 

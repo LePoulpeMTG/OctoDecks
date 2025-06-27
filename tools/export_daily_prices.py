@@ -19,15 +19,19 @@ def insert_daily_set(cur):
     """
     cur.execute("""
         INSERT OR REPLACE INTO prices_daily_set
-        (set_code, date, avg_eur, avg_usd, total_cards)
-        SELECT s.set_code,                 -- 🔹 via la table sets
-               ?            AS date,
-               AVG(d.eur)   AS avg_eur,
-               AVG(d.usd)   AS avg_usd,
-               COUNT(*)     AS total_cards
-        FROM prices_daily_card  AS d
-        JOIN prints             AS p ON p.scryfall_id = d.scryfall_id
-        JOIN sets               AS s ON s.set_id      = p.set_id
+        (set_code, date,
+        avg_eur,  avg_usd,
+        total_eur, total_usd,
+        total_cards)
+        SELECT s.set_code,
+            ?,                              -- date
+            AVG(d.eur),      AVG(d.usd),    -- prix moyen
+            SUM(COALESCE(d.eur,0)),         -- valeur totale €
+            SUM(COALESCE(d.usd,0)),         -- valeur totale $
+            COUNT(*)                        -- impressions comptées
+        FROM prices_daily_card AS d
+        JOIN prints            AS p ON p.scryfall_id = d.scryfall_id
+        JOIN sets              AS s ON s.set_id      = p.set_id
         WHERE d.date = ?
         GROUP BY s.set_code
     """, (TODAY, TODAY))

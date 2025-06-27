@@ -106,6 +106,8 @@ CREATE TABLE IF NOT EXISTS prices_daily_set (
   date        TEXT NOT NULL,
   avg_eur     REAL,
   avg_usd     REAL,
+  total_eur   REAL, 
+  total_usd   REAL,
   total_cards INTEGER,
   PRIMARY KEY (set_code, date)
 );

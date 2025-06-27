@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'screens/set_explore.dart';
 
-void main() => runApp(const OctoAdminApp());
 
+void main() {
+  print('🔷 App started');
+  runApp(const OctoAdminApp());
+}
 class OctoAdminApp extends StatelessWidget {
   const OctoAdminApp({super.key});
 

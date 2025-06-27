@@ -58,12 +58,6 @@ jobs:
             content_type="application/octet-stream"
         )
 
-        # 2️⃣  Upload / écrase le JSON quotidien
-        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        bucket.blob(f"prices/daily/{today}.json").upload_from_filename(
-            "prices_daily.json",
-            content_type="application/json"
-        )
 
         print("✅ Upload DB + JSON terminé")
         PY

@@ -261,7 +261,7 @@ def main():
             print("ℹ️  Re-parse du bulk existant :", bulk_path.name)
         except StopIteration:
             print("ℹ️  Bulk absent localement → téléchargement forcé")
-            bulk_path = download_bulk_if_needed(dl_url, tag, ext)
+            bulk_path = download_bulk_if_needed(url, tag, ext)
 
 
 

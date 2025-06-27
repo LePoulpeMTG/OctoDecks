@@ -58,9 +58,10 @@ SELECT  s.set_code,
 
 INSERT OR REPLACE INTO prices_weekly_set (
   set_code, week,
-  avg_eur,  avg_usd,
+  avg_eur, avg_usd,
   total_eur, total_usd,
-  total_cards)
+  cards_priced_eur, cards_priced_usd   -- 8 colonnes listées
+)
 SELECT * FROM _tmp_weekly_set;
 """)
 

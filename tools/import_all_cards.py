@@ -255,9 +255,15 @@ def main():
         bulk_path = download_bulk_if_needed()  # nouveau bulk
         TAG_FILE.write_text(tag, encoding="utf-8")
     else:
-        # Même tag : on ré-utilise le fichier déjà sur disque
-        bulk_path = next(Path(BULK_DIR).glob(f"all-cards-{tag}.json*"))
-        print("ℹ️  Re-parse du bulk existant :", bulk_path.name)
+        # Même tag, mais le fichier n’existe peut-être pas sur ce runner neuf
+        try:
+            bulk_path = next(Path(BULK_DIR).glob(f"all-cards-{tag}.json*"))
+            print("ℹ️  Re-parse du bulk existant :", bulk_path.name)
+        except StopIteration:
+            # -> on télécharge quand même
+            print("ℹ️  Bulk absent localement, on le télécharge malgré le tag identique")
+            bulk_path = download_bulk_if_needed()      # récupère le fichier
+
 
 
     # ───────── 3) Télécharge le nouveau bulk et mémorise le tag

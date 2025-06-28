@@ -2,3 +2,4 @@
 /tools/data/bulk
 /database/*.db
 /.venv
+TREE.txt

@@ -1,0 +1,28 @@
+name: Generate Tree Structure
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  generate-tree:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Generate tree structure (excluding assets and irrelevant folders)
+      run: |
+        sudo apt-get update
+        sudo apt-get install tree -y
+        tree -a -I "assets|.git|node_modules|.dart_tool|.idea|.vscode|build|coverage|.firebase" > TREE.txt
+
+    - name: Commit and push TREE.txt
+      run: |
+        git config --global user.name "OctoDeckBot"
+        git config --global user.email "bot@octodeck.org"
+        git add TREE.txt
+        git diff --cached --quiet || git commit -m "🔁 Mise à jour automatique de TREE.txt"
+        git push

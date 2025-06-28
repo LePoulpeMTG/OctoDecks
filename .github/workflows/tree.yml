@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write  # <--- DONNE LE DROIT D'ÉCRIRE
+
 jobs:
   generate-tree:
     runs-on: ubuntu-latest

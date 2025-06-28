@@ -1,0 +1,95 @@
+.
+├── .github
+│   └── workflows
+│       ├── daily_prices.yml
+│       ├── main.yml
+│       ├── tree.yml
+│       └── weekly_prices.yml
+├── .gitignore
+├── README.md
+├── TREE.txt
+├── apps
+│   ├── README.md
+│   ├── viewer_desktop
+│   │   └── README.md
+│   ├── viewer_mobile
+│   │   └── README.md
+│   ├── web_admin
+│   │   ├── .firebaserc
+│   │   ├── .gitignore
+│   │   ├── .metadata
+│   │   ├── README.md
+│   │   ├── README_deploy.md
+│   │   ├── analysis_options.yaml
+│   │   ├── firebase.json
+│   │   ├── lib
+│   │   │   ├── main.dart
+│   │   │   ├── models
+│   │   │   │   └── mtg_set.dart
+│   │   │   ├── pages
+│   │   │   │   └── set_explore_page.dart
+│   │   │   ├── screens
+│   │   │   │   └── set_explore.dart
+│   │   │   └── services
+│   │   │       └── set_service.dart
+│   │   ├── public
+│   │   │   ├── 404.html
+│   │   │   └── index.html
+│   │   ├── pubspec.lock
+│   │   ├── pubspec.yaml
+│   │   └── web
+│   │       ├── favicon.png
+│   │       ├── icons
+│   │       │   ├── Icon-192.png
+│   │       │   ├── Icon-512.png
+│   │       │   ├── Icon-maskable-192.png
+│   │       │   └── Icon-maskable-512.png
+│   │       ├── index.html
+│   │       └── manifest.json
+│   └── web_user
+│       └── README.md
+├── core
+│   ├── auth
+│   │   └── README.md
+│   ├── models
+│   │   └── README.md
+│   └── services
+│       └── README.md
+├── data
+│   ├── .github
+│   │   └── workflows
+│   │       └── update-octobase.yml
+│   ├── README.md
+│   ├── basesqlite
+│   │   └── README.md
+│   ├── cache
+│   │   └── README.md
+│   └── snapshots
+│       └── README.md
+├── database
+│   └── schema
+│       └── schema_octobase.sql
+├── docs
+│   ├── README.md
+│   └── roadmap_scryfall.md
+├── octodecks-firebase-adminsdk-fbsvc-592977335f.json
+├── prices_daily.json
+├── requirements.txt
+├── scripts
+│   └── README.md
+├── shared
+│   └── data
+│       ├── layout_octobase_reference.md
+│       ├── octobase_reference.md
+│       └── roadmap_scryfall_db.md
+└── tools
+    ├── README.md
+    ├── build_weekly_prices.py
+    ├── data
+    │   ├── last_bulk_tag.txt
+    │   └── layouts_by_face.json
+    ├── export_daily_prices.py
+    ├── export_sets.py
+    └── import_all_cards.py
+
+34 directories, 59 files

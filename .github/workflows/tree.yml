@@ -18,3 +18,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install tree -y
         tree -a -I "assets|.git|node_modules|.dart_tool|.idea|.vscode|build|coverage|.firebase" > TREE.txt
+        
+    - name: Upload TREE.txt as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: tree-structure
+        path: TREE.txt

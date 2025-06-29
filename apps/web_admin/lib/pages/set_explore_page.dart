@@ -10,7 +10,7 @@ class SetExplorePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Sets MTG')),
       body: FutureBuilder<List<MtgSet>>(
-        future: SetService.fetchSets(),
+        future: OctoApiService.fetchSets(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());

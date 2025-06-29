@@ -1,6 +1,7 @@
+
 # 🚀 Déploiement Firebase – Web Admin OctoDecks
 
-Ce fichier documente les étapes pour compiler et déployer le module web admin (`adminoctodecks.web.app`) de ton projet OctoDecks.
+Ce fichier documente les étapes pour compiler et déployer le module `web_admin` du projet OctoDecks.
 
 ---
 
@@ -8,36 +9,60 @@ Ce fichier documente les étapes pour compiler et déployer le module web admin 
 
 - Flutter installé
 - Firebase CLI installée (`npm install -g firebase-tools`)
-- Être connecté avec `firebase login`
-- Projet Firebase configuré (`firebase init` déjà fait)
+- Connexion via `firebase login`
+- Projet Firebase initialisé avec `firebase init`
 
 ---
 
-## 🔨 Compilation de l'app Flutter Web
+## 🔨 Compilation Flutter Web
 
 Dans le dossier `apps/web_admin/`, exécuter :
 
 ```bash
-flutter build web //Cela génère les fichiers HTML/JS/CSS dans le dossier build/web/.
+flutter pub get
+flutter build web
+```
 
-🚀 Déploiement sur le site admin
-firebase deploy --only hosting:admin //Le site adminoctodecks.web.app est lié à la cible admin.
+---
 
-🌐 URL du site en production
+## 🌍 Déploiement Firebase Hosting
+
+```bash
+firebase deploy --only hosting:admin
+```
+
+Le site est accessible à l’adresse :
+```
 https://adminoctodecks.web.app
+```
 
-🧠 Gestion des alias de sites
-	🧹 En cas de conflit : firebase target:clear hosting admin
-	🔁 Pour relier l’alias admin au bon site : firebase deploy --only hosting:public
-	
-🛠️ firebase.json attendu
+---
+
+## 📁 Dépendance au module `core`
+
+Ce module utilise du code partagé situé dans `../../core`.  
+Assurez-vous que le fichier suivant existe :
+
+```text
+core/pubspec.yaml
+core/lib/models/mtg_set.dart
+```
+
+Et que le `pubspec.yaml` de `web_admin` contient bien :
+
+```yaml
+dependencies:
+  core:
+    path: ../../core
+```
+
+---
+
+## 🛠️ Exemple de fichier `firebase.json`
+
+```json
 {
   "hosting": [
-    {
-      "target": "public",
-      "public": "build/web",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-    },
     {
       "target": "admin",
       "public": "build/web",
@@ -45,3 +70,6 @@ https://adminoctodecks.web.app
     }
   ]
 }
+```
+
+---

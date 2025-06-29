@@ -1,3 +1,5 @@
+<!-- 📁 chemin relatif : [à compléter automatiquement] -->
+
 # 📁 NOM_DU_MODULE
 
 ## 🎯 Rôle du module

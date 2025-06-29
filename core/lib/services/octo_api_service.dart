@@ -10,7 +10,8 @@ class OctoApiService {
     final uri = Uri.parse('\${_baseUrl}sets.json');
 
     final response = await http.get(uri);
-
+    print('🟡 URI: $uri');
+    print('🟡 Response status: ${response.statusCode}');
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
 
@@ -29,7 +30,8 @@ class OctoApiService {
     final uri = Uri.parse('\${_baseUrl}\$fileName');
 
     final response = await http.get(uri);
-
+    print('🟡 URI: $uri');
+    print('🟡 Response status: ${response.statusCode}');
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {

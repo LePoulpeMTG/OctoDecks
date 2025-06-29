@@ -7,7 +7,7 @@ class OctoApiService {
 
   /// 🔁 Lit le fichier sets.json et retourne une liste de MtgSet
   static Future<List<MtgSet>> fetchSets() async {
-    final uri = Uri.parse('\${_baseUrl}sets.json');
+    final uri = Uri.parse('$_baseUrl' + 'sets.json');
 
     print('🟡 [DEBUG] URL utilisée pour fetch sets: \$uri');
 
@@ -30,7 +30,7 @@ class OctoApiService {
 
   /// 🔁 Fonction générique pour charger n’importe quel fichier JSON depuis GitHub Pages
   static Future<dynamic> fetchJsonFile(String fileName) async {
-    final uri = Uri.parse('\${_baseUrl}\$fileName');
+    final uri = Uri.parse('$_baseUrl' + 'sets.json');
 
     final response = await http.get(uri);
 

@@ -24,14 +24,10 @@
 │   │   ├── firebase.json
 │   │   ├── lib
 │   │   │   ├── main.dart
-│   │   │   ├── models
-│   │   │   │   └── mtg_set.dart
 │   │   │   ├── pages
 │   │   │   │   └── set_explore_page.dart
-│   │   │   ├── screens
-│   │   │   │   └── set_explore.dart
-│   │   │   └── services
-│   │   │       └── set_service.dart
+│   │   │   └── screens
+│   │   │       └── set_explore.dart
 │   │   ├── public
 │   │   │   ├── 404.html
 │   │   │   └── index.html
@@ -49,10 +45,16 @@
 │   └── web_user
 │       └── README.md
 ├── core
-│   ├── auth
-│   │   └── README.md
-│   ├── models
-│   │   └── README.md
+│   ├── README.md
+│   ├── lib
+│   │   ├── README.md
+│   │   ├── models
+│   │   │   ├── README.md
+│   │   │   └── mtg_set.dart
+│   │   └── services
+│   │       └── octo_api_service.dart
+│   ├── pubspec.lock
+│   ├── pubspec.yaml
 │   └── services
 │       └── README.md
 ├── data
@@ -92,4 +94,4 @@
     ├── export_sets.py
     └── import_all_cards.py
 
-34 directories, 59 files
+33 directories, 62 files

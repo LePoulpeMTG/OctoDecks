@@ -1,106 +1,68 @@
-Backoffice web pour l'administration des données Scryfall et des comptes.
+README_deploy
 # 🛠️ OctoDeck - Interface Web Admin
 
-**OctoDeck Admin** est une interface web séparée, dédiée à la gestion technique et fonctionnelle de la plateforme OctoDeck.  
-Elle permet de centraliser les mises à jour de la base de cartes depuis Scryfall, de superviser l'activité des utilisateurs et de maintenir les données critiques.
+**OctoDeck Admin** est une interface web Flutter dédiée à la gestion technique et fonctionnelle de la plateforme OctoDeck.
 
 ---
 
 ## 🎯 Objectif
 
-- Centraliser les interactions avec Scryfall pour éviter que chaque utilisateur interroge l’API.
-- Générer et valider une base unique (`SQLite` ou `JSON`) propre à distribuer.
-- Gérer les historiques de prix, les utilisateurs, et les événements critiques.
-- Superviser les scripts périodiques (MAJ, synchro, nettoyage).
-- Maintenir la cohérence du système et détecter toute anomalie (layouts, formats…).
+- Centraliser les mises à jour Scryfall pour éviter que chaque client n’interroge l’API.
+- Gérer la base de référence (cartes, sets, prix, layouts) depuis un point unique.
+- Superviser les scripts périodiques et manuels.
+- Suivre l’activité des utilisateurs.
+- Offrir une interface d’administration simple et fiable.
 
 ---
 
 ## ⚙️ Fonctionnalités attendues
 
-### 🔄 Mise à jour Scryfall (centralisée)
-
-- [ ] Lancer une mise à jour manuelle du bulk JSON Scryfall
-- [ ] Afficher la date de dernière mise à jour
-- [ ] Voir un changelog synthétique : nouvelles cartes, nouveaux sets, nouveaux layouts
-- [ ] Maintenir une **liste locale de layouts connus**, séparés :
-  - `layouts_one_face.txt` pour les layouts 1 face
-  - `layouts_two_faces.txt` pour les layouts 2 faces
-- [ ] Lors de l’analyse des cartes :
-  - Si le `layout` est **inconnu**, déterminer automatiquement s’il s’agit d’un layout 1 ou 2 faces (via présence de `card_faces`)
-  - Ajouter dynamiquement ce `layout` dans le fichier approprié
-  - Logguer l’événement dans un tableau ou une alerte visuelle
-- [ ] Forcer la mise à jour des noms localisés (toutes langues ou ciblées)
-- [ ] Prévisualiser les nouvelles cartes/sets/layouts avant import définitif
-- [ ] Stocker la base nettoyée en `.sqlite` ou `.json` prête à être distribuée aux clients
+Voir la roadmap fonctionnelle complète dans le fichier source.
 
 ---
 
-### 📦 Gestion des données
+## 📦 Dépendances
 
-- [ ] Statut de la base actuelle (taille, cartes, sets, langues…)
-- [ ] Import manuel ou restauration depuis un dump
-- [ ] Suppression ciblée de snapshots obsolètes
-- [ ] Téléchargement direct de la base
-- [ ] Gestion des migrations (`ALTER TABLE`, évolutions structurelles)
+L’application dépend du module partagé `core/` du projet :
 
----
+```yaml
+dependencies:
+  core:
+    path: ../../core
+```
 
-### 📈 Historique des prix (cartes & sets)
+Ce module contient :
 
-- [ ] Stockage quotidien (**daily**) du prix de chaque carte (`card_id`) pendant 60 jours
-- [ ] Calcul et stockage de la moyenne **weekly**
-- [ ] Même système pour le prix moyen par **set**
-- [ ] Visualisation graphique de l’évolution (carte ou set)
-- [ ] Export CSV des historiques
+- Les modèles partagés (`MtgSet`, `User`, etc.)
+- Les services d’accès à Firebase Storage (via `OctoApiService`)
 
-> ℹ️ Les **alertes personnalisées (écarts brutaux de prix)** sont gérées **localement** côté client, selon les préférences utilisateur.
+### Exemple d’utilisation
 
----
+```dart
+import 'package:core/services/octo_api_service.dart';
 
-### 👥 Suivi des utilisateurs
-
-- [ ] Liste des utilisateurs actifs récemment
-- [ ] Détails individuels : doublons, cartes suivies, fréquence d’usage
-- [ ] Statistiques globales : sets populaires, volume de scans, usage moyen
-- [ ] Gestion des comptes utilisateurs (via Firebase)
+final sets = await OctoApiService.fetchSets();
+```
 
 ---
 
-### 🧰 Scripts & exécution manuelle
+## 📁 Organisation Flutter
 
-- [ ] Bouton “Lancer script MAJ Scryfall”
-- [ ] Bouton “Lancer script prix MKM”
-- [ ] Historique des exécutions + logs
-- [ ] Affichage de la prochaine exécution automatique planifiée
-
----
-
-### 🔐 Authentification
-
-- Connexion admin par **mot de passe** statique (phase 1)
-- Intégration prévue avec **Firebase Auth** (phase 2) :
-  - Connexion avec Google
-  - Connexion avec Facebook
-  - Inscription classique (email + mot de passe)
-- Gestion simple de rôles (`admin`, `user`) côté base ou Firestore
+| Dossier | Contenu |
+|--------|---------|
+| `lib/screens/` | Pages avec affichage dynamique |
+| `lib/pages/` | Déclarations de routes ou wrappers |
+| `lib/models/` | (à migrer) → désormais dans `core/models/` |
+| `lib/services/` | (à migrer) → désormais dans `core/services/` |
 
 ---
 
-## 🛠️ Stack technique
+## 🔌 Source JSON attendue
 
-| Élément            | Techno                        |
-|--------------------|-------------------------------|
-| Frontend           | Flutter Web                   |
-| Authentification   | Firebase Auth                 |
-| Stockage           | SQLite (pour la base Scryfall)|
-| Hébergement        | Vercel ou Firebase Hosting    |
+Les données utilisées (cartes, sets, stats...) sont hébergées dans Firebase Storage via les URLs publiques (`alt=media`). Elles sont accessibles via des fichiers comme :
+
+- `sets.json`
+- `stats.json`
+- `users.json`
 
 ---
-
-## 🚀 Déploiement (Firebase Hosting)
-
-- Build Flutter Web : `flutter build web`
-- Initialiser Firebase (une fois) : `firebase init hosting`
-- Déploiement : `firebase deploy`
-- L'app sera accessible sur : `https://octodeck-admin.web.app` (ou autre)

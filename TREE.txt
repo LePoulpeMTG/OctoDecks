@@ -71,6 +71,7 @@
 │       └── schema_octobase.sql
 ├── docs
 │   ├── README.md
+│   ├── README_TEMPLATE.md
 │   └── roadmap_scryfall.md
 ├── octodecks-firebase-adminsdk-fbsvc-592977335f.json
 ├── prices_daily.json
@@ -79,7 +80,6 @@
 │   └── README.md
 ├── shared
 │   └── data
-│       ├── layout_octobase_reference.md
 │       ├── octobase_reference.md
 │       └── roadmap_scryfall_db.md
 └── tools

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:web_admin/models/mtg_set.dart';
+import 'package:core/models/mtg_set.dart';
 
 const _url = 
    'https://firebasestorage.googleapis.com/v0/b/'

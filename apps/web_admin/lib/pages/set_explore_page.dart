@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_admin/models/mtg_set.dart';
+import 'package:core/models/mtg_set.dart';
 import 'package:web_admin/services/set_service.dart';
 
 class SetExplorePage extends StatelessWidget {

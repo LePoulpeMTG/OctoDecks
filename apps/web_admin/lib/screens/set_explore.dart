@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../models/mtg_set.dart';
+import 'package:core/models/mtg_set.dart';
 import '../services/set_service.dart';
 
 class SetExploreScreen extends StatelessWidget {

@@ -5,8 +5,7 @@
   "targets": {
     "octodecks": {
       "hosting": {
-        "public": ["octodecks"],
-        "admin": ["adminoctodecks"]
+        "adminoctodecks": ["adminoctodecks"]
       }
     }
   }

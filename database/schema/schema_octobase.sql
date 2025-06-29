@@ -14,6 +14,35 @@ CREATE TABLE sets (
   is_digital   BOOLEAN DEFAULT 0,
   icon_svg_uri TEXT
 );
+-- ------------------------------
+-- set_statistics
+-- ------------------------------
+CREATE TABLE IF NOT EXISTS set_statistics (
+  set_code            TEXT PRIMARY KEY,
+  num_prints          INTEGER,
+  num_oracle_ids      INTEGER,
+  has_promo_cards     BOOLEAN,
+  has_double_faced    BOOLEAN,
+  available_layouts   TEXT, -- ex: "normal,adventure,transform"
+  available_languages TEXT, -- ex: "en,fr,de"
+  value_card_max_eur  REAL,
+  foil_percentage     REAL,
+  rarity_common_pct   REAL,
+  rarity_uncommon_pct REAL,
+  rarity_rare_pct     REAL,
+  rarity_mythic_pct   REAL,
+  FOREIGN KEY (set_code) REFERENCES sets (set_code)
+);
+
+-- ------------------------------
+-- set_languages
+-- ------------------------------
+CREATE TABLE IF NOT EXISTS set_languages (
+  set_code TEXT NOT NULL,
+  lang     TEXT NOT NULL,
+  PRIMARY KEY (set_code, lang),
+  FOREIGN KEY (set_code) REFERENCES sets (set_code)
+);
 
 -- ------------------------------
 -- cards

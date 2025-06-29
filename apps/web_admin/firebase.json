@@ -2,14 +2,13 @@
   "hosting": [
     {
       "target": "public",
-      "public": "build/web",
+      "public": "apps/web_user/build/web",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },
     {
       "target": "admin",
-      "public": "public",
+      "public": "build/web",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-
       "rewrites": [
         {
           "source": "/sets.json",

@@ -1,6 +1,7 @@
 .
 ├── .github
 │   └── workflows
+│       ├── README.md
 │       ├── daily_prices.yml
 │       ├── main.yml
 │       ├── tree.yml
@@ -46,6 +47,8 @@
 │       └── README.md
 ├── core
 │   ├── README.md
+│   ├── auth
+│   │   └── README.md
 │   ├── lib
 │   │   ├── README.md
 │   │   ├── models
@@ -69,6 +72,7 @@
 │       └── README.md
 ├── database
 │   └── schema
+│       ├── README.md
 │       └── schema_octobase.sql
 ├── docs
 │   ├── README.md
@@ -89,8 +93,10 @@
     ├── data
     │   ├── last_bulk_tag.txt
     │   └── layouts_by_face.json
+    ├── dev
+    │   └── add_readme_path_header.py
     ├── export_daily_prices.py
     ├── export_sets.py
     └── import_all_cards.py
 
-32 directories, 62 files
+34 directories, 66 files

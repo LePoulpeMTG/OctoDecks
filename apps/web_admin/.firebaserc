@@ -5,11 +5,9 @@
   "targets": {
     "octodecks": {
       "hosting": {
-        "admin": [
-          "adminoctodecks"
-        ]
+        "public": ["octodecks"],
+        "admin": ["adminoctodecks"]
       }
     }
-  },
-  "etags": {}
+  }
 }

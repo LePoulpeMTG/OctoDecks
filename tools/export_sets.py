@@ -1,39 +1,51 @@
-#!/usr/bin/env python3
-"""
-Exporte la liste des éditions + leur valeur €/$ du jour
-dans exports/sets.json.
-"""
+import sqlite3
+import json
+import os
+import subprocess
+import shutil
+from pathlib import Path
 
-import sqlite3, json, pathlib
+# Connexion à la base
+conn = sqlite3.connect("database/octobase_reference.db")
+cursor = conn.cursor()
 
-DB = pathlib.Path("database/octobase_reference.db")
-OUT = pathlib.Path("exports/sets.json")
-OUT.parent.mkdir(exist_ok=True)
+# Récupération des sets
+cursor.execute("""
+    SELECT
+        code AS set_code,
+        name,
+        release_date,
+        icon_svg_uri,
+        total_cards
+    FROM sets
+    ORDER BY release_date DESC
+""")
+sets = [dict(zip([column[0] for column in cursor.description], row)) for row in cursor.fetchall()]
 
-conn = sqlite3.connect(DB)
-conn.row_factory = sqlite3.Row
-cur  = conn.cursor()
+# Création du dossier exports si nécessaire
+os.makedirs("exports", exist_ok=True)
 
-# dernière date daily dispo
-cur.execute("SELECT MAX(date) FROM prices_daily_set")
-today, = cur.fetchone()
+# Écriture du fichier JSON
+with open("exports/sets.json", "w", encoding="utf-8") as f:
+    json.dump(sets, f, ensure_ascii=False, indent=2)
 
-cur.execute("""
-SELECT s.set_code,
-       s.name,
-       s.release_date,
-       s.set_type,
-       s.total_cards,
-       s.icon_svg_uri,
-       d.total_eur,
-       d.total_usd
-FROM sets s
-LEFT JOIN prices_daily_set d USING(set_code)
-WHERE d.date = ?
-ORDER BY s.release_date DESC
-""", (today,))
+print(f"✅ exports/sets.json généré ({len(sets)} entrées)")
 
-sets = [dict(r) for r in cur.fetchall()]
-OUT.write_text(json.dumps(sets, separators=(",",":")), encoding="utf-8")
+# --- Publication GitHub Pages ---
 
-print(f"✅ {OUT} généré ({OUT.stat().st_size/1024:.1f} kB)")
+# Copie vers le dossier data/
+dst = Path("data/sets.json")
+os.makedirs("data", exist_ok=True)
+shutil.copyfile("exports/sets.json", dst)
+print("📤 sets.json copié vers data/sets.json pour publication via GitHub Pages")
+
+# Git commit auto (si contexte GitHub Actions ou local)
+try:
+    subprocess.run(["git", "config", "--global", "user.name", "OctoBot"], check=True)
+    subprocess.run(["git", "config", "--global", "user.email", "bot@octodecks.dev"], check=True)
+    subprocess.run(["git", "add", "data/sets.json"], check=True)
+    subprocess.run(["git", "commit", "-m", "🔄 sets.json auto-publié pour GitHub Pages"], check=True)
+    subprocess.run(["git", "push"], check=True)
+    print("✅ Fichier sets.json publié via GitHub Pages")
+except subprocess.CalledProcessError as e:
+    print("⚠️ Git auto-push échoué :", e)

@@ -45,7 +45,14 @@ try:
     subprocess.run(["git", "config", "--global", "user.email", "bot@octodecks.dev"], check=True)
     subprocess.run(["git", "add", "data/sets.json"], check=True)
     subprocess.run(["git", "commit", "-m", "🔄 sets.json auto-publié pour GitHub Pages"], check=True)
-    subprocess.run(["git", "push"], check=True)
+
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        remote_url = "https://x-access-token:{}@github.com/LePoulpeMTG/OctoDecks.git".format(token)
+        subprocess.run(["git", "push", remote_url], check=True)
+    else:
+        subprocess.run(["git", "push"], check=True)
+
     print("✅ Fichier sets.json publié via GitHub Pages")
 except subprocess.CalledProcessError as e:
     print("⚠️ Git auto-push échoué :", e)

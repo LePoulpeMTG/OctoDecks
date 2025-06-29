@@ -12,7 +12,7 @@ cursor = conn.cursor()
 # Récupération des sets
 cursor.execute("""
     SELECT
-        code AS set_code,
+        set_code,
         name,
         release_date,
         icon_svg_uri,

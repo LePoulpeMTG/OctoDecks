@@ -3,3 +3,4 @@
 /database/*.db
 /.venv
 TREE.txt
+/data/sets.json !tools/export_sets.py

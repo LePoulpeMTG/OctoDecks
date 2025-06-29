@@ -58,8 +58,8 @@ for raw in sets_raw:
     stats = stats_by_code.get(code, {})
 
     total = base.get("total_eur", 0) or 0
-    total_7d = base.get("value_total_eur_7d_ago", total)
-    delta = round(total - total_7d, 2)
+    total_7d = base.get("value_total_eur_7d_ago")
+    delta = round(total - total_7d, 2) if total_7d is not None else 0.0
 
     entry = {
         "set_code": code,
@@ -87,7 +87,7 @@ for raw in sets_raw:
         "rarity_ratio_uncommon": stats.get("rarity_uncommon_pct", 0),
         "rarity_ratio_rare": stats.get("rarity_rare_pct", 0),
         "rarity_ratio_mythic": stats.get("rarity_mythic_pct", 0),
-        "digital_only": False  # ce champ est présent dans `sets` si tu veux le réutiliser
+        "digital_only": False
     }
     sets.append(entry)
 

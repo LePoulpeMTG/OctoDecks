@@ -1,5 +1,5 @@
 name: core
-description: Code partagé entre toutes les apps OctoDecks
+description: Code partagé pour OctoDecks
 version: 0.0.1
 publish_to: "none"
 
@@ -9,3 +9,4 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^1.2.1

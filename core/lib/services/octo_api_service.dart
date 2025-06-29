@@ -20,7 +20,7 @@ class OctoApiService {
         throw Exception('sets.json ne contient pas une liste valide');
       }
     } else {
-      throw Exception('Erreur de chargement sets.json (\${response.statusCode})');
+      throw Exception('Erreur de chargement sets.json (${response.statusCode})');
     }
   }
 
@@ -33,7 +33,7 @@ class OctoApiService {
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
-      throw Exception('Erreur de chargement \$fileName (\${response.statusCode})');
+      throw Exception('Erreur de chargement sets.json (${response.statusCode})');
     }
   }
 }

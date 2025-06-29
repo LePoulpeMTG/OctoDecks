@@ -1,0 +1,6813 @@
+[
+  {
+    "set_code": "tla",
+    "name": "Avatar: The Last Airbender",
+    "release_date": "2025-11-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "spe",
+    "name": "Marvel's Spider-Man Eternal",
+    "release_date": "2025-09-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pspl",
+    "name": "Spotlight Series",
+    "release_date": "2025-08-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "slp",
+    "name": "Secret Lair Showdown",
+    "release_date": "2025-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "eoe",
+    "name": "Edge of Eternities",
+    "release_date": "2025-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "eos",
+    "name": "Edge of Eternities: Stellar Sights",
+    "release_date": "2025-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "eoc",
+    "name": "Edge of Eternities Commander",
+    "release_date": "2025-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plg25",
+    "name": "Love Your LGS 2025",
+    "release_date": "2025-06-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fin",
+    "name": "Final Fantasy",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tfic",
+    "name": "Final Fantasy Commander Tokens",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tfin",
+    "name": "Final Fantasy Tokens",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pfin",
+    "name": "Final Fantasy Promos",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "afin",
+    "name": "Final Fantasy Art Series",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fic",
+    "name": "Final Fantasy Commander",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pss5",
+    "name": "FIN Standard Showdown",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fca",
+    "name": "Final Fantasy: Through the Ages",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rfin",
+    "name": "Final Fantasy Regional Promos",
+    "release_date": "2025-06-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pa1",
+    "name": "Pioneer Anthology 1",
+    "release_date": "2025-05-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ytdm",
+    "name": "Alchemy: Tarkir",
+    "release_date": "2025-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdc",
+    "name": "Tarkir: Dragonstorm Commander",
+    "release_date": "2025-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdm",
+    "name": "Tarkir: Dragonstorm",
+    "release_date": "2025-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptdm",
+    "name": "Tarkir: Dragonstorm Promos",
+    "release_date": "2025-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ttdc",
+    "name": "Tarkir: Dragonstorm Commander Tokens",
+    "release_date": "2025-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "atdm",
+    "name": "Tarkir: Dragonstorm Art Series",
+    "release_date": "2025-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ttdm",
+    "name": "Tarkir: Dragonstorm Tokens",
+    "release_date": "2025-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sch",
+    "name": "Store Championships",
+    "release_date": "2025-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ydft",
+    "name": "Alchemy: Aetherdrift",
+    "release_date": "2025-03-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pssc",
+    "name": "Secret Lair Showcase Planes",
+    "release_date": "2025-02-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdft",
+    "name": "Aetherdrift Promos",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dft",
+    "name": "Aetherdrift",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "drc",
+    "name": "Aetherdrift Commander",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "adft",
+    "name": "Aetherdrift Art Series",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdrc",
+    "name": "Aetherdrift Commander Tokens",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pl25",
+    "name": "Year of the Snake 2025",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdft",
+    "name": "Aetherdrift Tokens",
+    "release_date": "2025-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pjsc",
+    "name": "Japan Standard Cup",
+    "release_date": "2025-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pf25",
+    "name": "MagicFest 2025",
+    "release_date": "2025-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "inr",
+    "name": "Innistrad Remastered",
+    "release_date": "2025-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ainr",
+    "name": "Innistrad Remastered Art Series",
+    "release_date": "2025-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tinr",
+    "name": "Innistrad Remastered Tokens",
+    "release_date": "2025-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw25",
+    "name": "Wizards Play Network 2025",
+    "release_date": "2025-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pio",
+    "name": "Pioneer Masters",
+    "release_date": "2024-12-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fdn",
+    "name": "Foundations",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j25",
+    "name": "Foundations Jumpstart",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pfdn",
+    "name": "Foundations Promos",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tfdn",
+    "name": "Foundations Tokens",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "afdn",
+    "name": "Foundations Art Series",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fj25",
+    "name": "Foundations Jumpstart Front Cards",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fdc",
+    "name": "Foundations Commander",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ffdn",
+    "name": "Foundations Front Cards",
+    "release_date": "2024-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pltc",
+    "name": "Tales of Middle-earth Deluxe Commander Kit",
+    "release_date": "2024-10-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ydsk",
+    "name": "Alchemy: Duskmourn",
+    "release_date": "2024-10-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pewk",
+    "name": "Eternal Weekend",
+    "release_date": "2024-10-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dsk",
+    "name": "Duskmourn: House of Horror",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dsc",
+    "name": "Duskmourn: House of Horror Commander",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "adsk",
+    "name": "Duskmourn: House of Horror Art Series",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdsk",
+    "name": "Duskmourn: House of Horror Tokens",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdsk",
+    "name": "Duskmourn: House of Horror Promos",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdsc",
+    "name": "Duskmourn Commander Tokens",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcbb",
+    "name": "Cowboy Bebop",
+    "release_date": "2024-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "yblb",
+    "name": "Alchemy: Bloomburrow",
+    "release_date": "2024-08-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "unk",
+    "name": "Unknown Event",
+    "release_date": "2024-08-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "blb",
+    "name": "Bloomburrow",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "blc",
+    "name": "Bloomburrow Commander",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pblb",
+    "name": "Bloomburrow Promos",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mb2",
+    "name": "Mystery Booster 2",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "spg",
+    "name": "Special Guests",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tblb",
+    "name": "Bloomburrow Tokens",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ablb",
+    "name": "Bloomburrow Art Series",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tblc",
+    "name": "Bloomburrow Commander Tokens",
+    "release_date": "2024-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "acr",
+    "name": "Assassin's Creed",
+    "release_date": "2024-07-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tacr",
+    "name": "Assassin's Creed Tokens",
+    "release_date": "2024-07-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aacr",
+    "name": "Assassin's Creed Art Series",
+    "release_date": "2024-07-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "macr",
+    "name": "Assassin's Creed Minigames",
+    "release_date": "2024-07-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mh3",
+    "name": "Modern Horizons 3",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m3c",
+    "name": "Modern Horizons 3 Commander",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmh3",
+    "name": "Modern Horizons 3 Promos",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "amh3",
+    "name": "Modern Horizons 3 Art Series",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmh3",
+    "name": "Modern Horizons 3 Tokens",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm3c",
+    "name": "Modern Horizons 3 Commander Tokens",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "smh3",
+    "name": "Modern Horizons 3 Substitute Cards",
+    "release_date": "2024-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "h2r",
+    "name": "Modern Horizons 2 Timeshifts",
+    "release_date": "2024-06-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "yotj",
+    "name": "Alchemy: Outlaws of Thunder Junction",
+    "release_date": "2024-05-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "totj",
+    "name": "Outlaws of Thunder Junction Tokens",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "otj",
+    "name": "Outlaws of Thunder Junction",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "otc",
+    "name": "Outlaws of Thunder Junction Commander",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "otp",
+    "name": "Breaking News",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "big",
+    "name": "The Big Score",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "potj",
+    "name": "Outlaws of Thunder Junction Promos",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbig",
+    "name": "The Big Score Tokens",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aotj",
+    "name": "Outlaws of Thunder Junction Art Series",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "totc",
+    "name": "Outlaws of Thunder Junction Commander Tokens",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plg24",
+    "name": "Love Your LGS 2024",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "totp",
+    "name": "Breaking News Tokens",
+    "release_date": "2024-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pip",
+    "name": "Fallout",
+    "release_date": "2024-03-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tpip",
+    "name": "Fallout Tokens",
+    "release_date": "2024-03-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ymkm",
+    "name": "Alchemy: Murders at Karlov Manor ",
+    "release_date": "2024-03-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "clu",
+    "name": "Ravnica: Clue Edition",
+    "release_date": "2024-02-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fclu",
+    "name": "Ravnica: Clue Edition Front Cards",
+    "release_date": "2024-02-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pf24",
+    "name": "MagicFest 2024",
+    "release_date": "2024-02-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pss4",
+    "name": "MKM Standard Showdown",
+    "release_date": "2024-02-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mkm",
+    "name": "Murders at Karlov Manor",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mkc",
+    "name": "Murders at Karlov Manor Commander",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wmkm",
+    "name": "MKM Japanese Promo Tokens",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmkc",
+    "name": "Murders at Karlov Manor Commander Tokens",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmkm",
+    "name": "Murders at Karlov Manor Promos",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmkm",
+    "name": "Murders at Karlov Manor Tokens",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "amkm",
+    "name": "Murders at Karlov Manor Art Series",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmat",
+    "name": "March of the Machine: The Aftermath Promos",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptsr",
+    "name": "Time Spiral Remastered Promos",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcmr",
+    "name": "Commander Legends Promos",
+    "release_date": "2024-02-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pl24",
+    "name": "Year of the Dragon 2024",
+    "release_date": "2024-02-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rvr",
+    "name": "Ravnica Remastered",
+    "release_date": "2024-01-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "trvr",
+    "name": "Ravnica Remastered Tokens",
+    "release_date": "2024-01-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw24",
+    "name": "Wizards Play Network 2024",
+    "release_date": "2024-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ylci",
+    "name": "Alchemy: Ixalan",
+    "release_date": "2023-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plci",
+    "name": "The Lost Caverns of Ixalan Promos",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "lcc",
+    "name": "The Lost Caverns of Ixalan Commander",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "lci",
+    "name": "The Lost Caverns of Ixalan",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tlci",
+    "name": "The Lost Caverns of Ixalan Tokens",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rex",
+    "name": "Jurassic World Collection",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "alci",
+    "name": "The Lost Caverns of Ixalan Art Series",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tlcc",
+    "name": "The Lost Caverns of Ixalan Commander Tokens",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "trex",
+    "name": "Jurassic World Collection Tokens",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "slci",
+    "name": "The Lost Caverns of Ixalan Substitute Cards",
+    "release_date": "2023-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "altc",
+    "name": "Tales of Middle-earth Scene Box",
+    "release_date": "2023-11-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "who",
+    "name": "Doctor Who",
+    "release_date": "2023-10-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "twho",
+    "name": "Doctor Who Tokens",
+    "release_date": "2023-10-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ywoe",
+    "name": "Alchemy: Wilds of Eldraine",
+    "release_date": "2023-10-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmda",
+    "name": "Magic × Duel Masters Promos",
+    "release_date": "2023-09-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "woe",
+    "name": "Wilds of Eldraine",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "woc",
+    "name": "Wilds of Eldraine Commander",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wot",
+    "name": "Wilds of Eldraine: Enchanting Tales",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "awoe",
+    "name": "Wilds of Eldraine Art Series",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pwoe",
+    "name": "Wilds of Eldraine Promos",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "twoe",
+    "name": "Wilds of Eldraine Tokens",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw23",
+    "name": "Wizards Play Network 2023",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "twoc",
+    "name": "Wilds of Eldraine Commander Tokens",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wwoe",
+    "name": "WOE Japanese Promo Tokens",
+    "release_date": "2023-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p30t",
+    "name": "30th Anniversary Celebration Tokyo",
+    "release_date": "2023-09-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cmm",
+    "name": "Commander Masters",
+    "release_date": "2023-08-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "acmm",
+    "name": "Commander Masters Art Series",
+    "release_date": "2023-08-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcmm",
+    "name": "Commander Masters Tokens",
+    "release_date": "2023-08-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ph22",
+    "name": "2022 Heroes of the Realm",
+    "release_date": "2023-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ea3",
+    "name": "Explorer Anthology 3",
+    "release_date": "2023-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha7",
+    "name": "Historic Anthology 7",
+    "release_date": "2023-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pf23",
+    "name": "MagicFest 2023",
+    "release_date": "2023-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ltc",
+    "name": "Tales of Middle-earth Commander",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ltr",
+    "name": "The Lord of the Rings: Tales of Middle-earth",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fltr",
+    "name": "Tales of Middle-earth Front Cards",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "altr",
+    "name": "Tales of Middle-earth Art Series",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tltc",
+    "name": "Tales of Middle-earth Commander Tokens",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pltr",
+    "name": "Tales of Middle-earth Promos",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tltr",
+    "name": "Tales of Middle-earth Tokens",
+    "release_date": "2023-06-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p30m",
+    "name": "30th Anniversary Misc Promos",
+    "release_date": "2023-06-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mat",
+    "name": "March of the Machine: The Aftermath",
+    "release_date": "2023-05-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mom",
+    "name": "March of the Machine",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "moc",
+    "name": "March of the Machine Commander",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mul",
+    "name": "Multiverse Legends",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmoc",
+    "name": "March of the Machine Commander Tokens",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmom",
+    "name": "March of the Machine Tokens",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmom",
+    "name": "March of the Machine Promos",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "amom",
+    "name": "March of the Machine Art Series",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fmom",
+    "name": "March of the Machine Jumpstart Front Cards",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wmom",
+    "name": "MOM Japanese Promo Tokens",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmul",
+    "name": "Multiverse Legends Tokens",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "smom",
+    "name": "March of the Machine Substitute Cards",
+    "release_date": "2023-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pwcs",
+    "name": "Planeswalker Championship Promos",
+    "release_date": "2023-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sir",
+    "name": "Shadows over Innistrad Remastered",
+    "release_date": "2023-03-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sis",
+    "name": "Shadows of the Past",
+    "release_date": "2023-03-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p30h",
+    "name": "30th Anniversary History Promos",
+    "release_date": "2023-03-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "yone",
+    "name": "Alchemy: Phyrexia",
+    "release_date": "2023-02-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prcq",
+    "name": "Regional Championship Qualifiers 2022",
+    "release_date": "2023-02-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pl23",
+    "name": "Year of the Rabbit 2023",
+    "release_date": "2023-02-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "slx",
+    "name": "Universes Within",
+    "release_date": "2023-02-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "one",
+    "name": "Phyrexia: All Will Be One",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pone",
+    "name": "Phyrexia: All Will Be One Promos",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "onc",
+    "name": "Phyrexia: All Will Be One Commander",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aone",
+    "name": "Phyrexia: All Will Be One Art Series",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tonc",
+    "name": "Phyrexia: All Will Be One Commander Tokens",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tone",
+    "name": "Phyrexia: All Will Be One Tokens",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fone",
+    "name": "Phyrexia: All Will Be One Jumpstart Front Cards",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mone",
+    "name": "Phyrexia: All Will Be One Minigames",
+    "release_date": "2023-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wone",
+    "name": "ONE Japanese Promo Tokens",
+    "release_date": "2023-01-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dmr",
+    "name": "Dominaria Remastered",
+    "release_date": "2023-01-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdmr",
+    "name": "Dominaria Remastered Tokens",
+    "release_date": "2023-01-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pr23",
+    "name": "Regional Championship Qualifiers 2023",
+    "release_date": "2023-01-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p23",
+    "name": "Judge Gift Cards 2023",
+    "release_date": "2023-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ybro",
+    "name": "Alchemy: The Brothers' War",
+    "release_date": "2022-12-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ea2",
+    "name": "Explorer Anthology 2",
+    "release_date": "2022-12-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j22",
+    "name": "Jumpstart 2022",
+    "release_date": "2022-12-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "scd",
+    "name": "Starter Commander Decks",
+    "release_date": "2022-12-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tscd",
+    "name": "Starter Commander Deck Tokens",
+    "release_date": "2022-12-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fj22",
+    "name": "Jumpstart 2022 Front Cards",
+    "release_date": "2022-12-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "30a",
+    "name": "30th Anniversary Edition",
+    "release_date": "2022-11-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "t30a",
+    "name": "30th Anniversary Tokens",
+    "release_date": "2022-11-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "brr",
+    "name": "The Brothers' War Retro Artifacts",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "brc",
+    "name": "The Brothers' War Commander",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bro",
+    "name": "The Brothers' War",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pbro",
+    "name": "The Brothers' War Promos",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "abro",
+    "name": "The Brothers' War Art Series",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbro",
+    "name": "The Brothers' War Tokens",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fbro",
+    "name": "The Brothers' War Jumpstart Front Cards",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bot",
+    "name": "Transformers",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbrc",
+    "name": "The Brothers' War Commander Tokens",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptbro",
+    "name": "The Brothers' War Southeast Asia Tokens",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbot",
+    "name": "Transformers Tokens",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mbro",
+    "name": "The Brothers' War Minigames",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sbro",
+    "name": "The Brothers' War Substitute Cards",
+    "release_date": "2022-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "slc",
+    "name": "Secret Lair 30th Anniversary Countdown Kit",
+    "release_date": "2022-11-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gn3",
+    "name": "Game Night: Free-for-All",
+    "release_date": "2022-10-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgn3",
+    "name": "Game Night: Free-for-All Tokens",
+    "release_date": "2022-10-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "40k",
+    "name": "Warhammer 40,000 Commander",
+    "release_date": "2022-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "unf",
+    "name": "Unfinity",
+    "release_date": "2022-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tunf",
+    "name": "Unfinity Tokens",
+    "release_date": "2022-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sunf",
+    "name": "Unfinity Sticker Sheets",
+    "release_date": "2022-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "t40k",
+    "name": "Warhammer 40,000 Tokens",
+    "release_date": "2022-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ulst",
+    "name": "The List (Unfinity Foil Edition)",
+    "release_date": "2022-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ydmu",
+    "name": "Alchemy: Dominaria",
+    "release_date": "2022-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dmu",
+    "name": "Dominaria United",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dmc",
+    "name": "Dominaria United Commander",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "admu",
+    "name": "Dominaria United Art Series",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fdmu",
+    "name": "Dominaria United Jumpstart Front Cards",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdmu",
+    "name": "Dominaria United Promos",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wdmu",
+    "name": "DMU Japanese Promo Tokens",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdmu",
+    "name": "Dominaria United Tokens",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdmc",
+    "name": "Dominaria United Commander Tokens",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptdmu",
+    "name": "Dominaria United Southeast Asia Tokens",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mdmu",
+    "name": "Dominaria United Minigames",
+    "release_date": "2022-09-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p30a",
+    "name": "30th Anniversary Play Promos",
+    "release_date": "2022-09-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcel",
+    "name": "Celebration Cards",
+    "release_date": "2022-08-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psvc",
+    "name": "Summer Vacation Promos 2022",
+    "release_date": "2022-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha6",
+    "name": "Historic Anthology 6",
+    "release_date": "2022-07-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ea1",
+    "name": "Explorer Anthology 1",
+    "release_date": "2022-07-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p22",
+    "name": "Judge Gift Cards 2022",
+    "release_date": "2022-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "2x2",
+    "name": "Double Masters 2022",
+    "release_date": "2022-07-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "t2x2",
+    "name": "Double Masters 2022 Tokens",
+    "release_date": "2022-07-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "hbg",
+    "name": "Alchemy Horizons: Baldur's Gate",
+    "release_date": "2022-07-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plg22",
+    "name": "Love Your LGS 2022",
+    "release_date": "2022-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "clb",
+    "name": "Commander Legends: Battle for Baldur's Gate",
+    "release_date": "2022-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pclb",
+    "name": "Battle for Baldur's Gate Promos",
+    "release_date": "2022-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tclb",
+    "name": "Battle for Baldur's Gate Tokens",
+    "release_date": "2022-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aclb",
+    "name": "Battle for Baldur's Gate Art Series",
+    "release_date": "2022-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mclb",
+    "name": "Commander Legends: Battle for Baldur's Gate Minigames",
+    "release_date": "2022-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ysnc",
+    "name": "Alchemy: New Capenna",
+    "release_date": "2022-06-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptsnc",
+    "name": "Streets of New Capenna Southeast Asia Tokens",
+    "release_date": "2022-04-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "snc",
+    "name": "Streets of New Capenna",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plst",
+    "name": "The List",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ncc",
+    "name": "New Capenna Commander",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psnc",
+    "name": "Streets of New Capenna Promos",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw22",
+    "name": "Wizards Play Network 2022",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tncc",
+    "name": "New Capenna Commander Tokens",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "asnc",
+    "name": "New Capenna Art Series",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tsnc",
+    "name": "Streets of New Capenna Tokens",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pncc",
+    "name": "New Capenna Commander Promos",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "msnc",
+    "name": "Streets of New Capenna Minigames",
+    "release_date": "2022-04-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gdy",
+    "name": "Game Day Promos",
+    "release_date": "2022-04-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "q07",
+    "name": "Challenger Decks 2022",
+    "release_date": "2022-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "yneo",
+    "name": "Alchemy: Kamigawa",
+    "release_date": "2022-03-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pl22",
+    "name": "Year of the Tiger 2022",
+    "release_date": "2022-02-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "nec",
+    "name": "Neon Dynasty Commander",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "neo",
+    "name": "Kamigawa: Neon Dynasty",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pneo",
+    "name": "Kamigawa: Neon Dynasty Promos",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tneo",
+    "name": "Kamigawa: Neon Dynasty Tokens",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aneo",
+    "name": "Neon Dynasty Art Series",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mneo",
+    "name": "Kamigawa: Neon Dynasty Minigames",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tnec",
+    "name": "Neon Dynasty Commander Tokens",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sneo",
+    "name": "Kamigawa: Neon Dynasty Substitute Cards",
+    "release_date": "2022-02-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prm",
+    "name": "Magic Online Promos",
+    "release_date": "2022-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dbl",
+    "name": "Innistrad: Double Feature",
+    "release_date": "2022-01-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cc2",
+    "name": "Commander Collection: Black",
+    "release_date": "2022-01-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ph21",
+    "name": "2021 Heroes of the Realm",
+    "release_date": "2021-12-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plg21",
+    "name": "Love Your LGS 2021",
+    "release_date": "2021-12-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ymid",
+    "name": "Alchemy: Innistrad",
+    "release_date": "2021-12-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "vow",
+    "name": "Innistrad: Crimson Vow",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tvow",
+    "name": "Innistrad: Crimson Vow Tokens",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "voc",
+    "name": "Crimson Vow Commander",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "avow",
+    "name": "Crimson Vow Art Series",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pvow",
+    "name": "Innistrad: Crimson Vow Promos",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "svow",
+    "name": "Innistrad: Crimson Vow Substitute Cards",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tvoc",
+    "name": "Crimson Vow Commander Tokens",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mvow",
+    "name": "Innistrad: Crimson Vow Minigames",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ovoc",
+    "name": "Crimson Vow Commander Display Commanders",
+    "release_date": "2021-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "q06",
+    "name": "Pioneer Challenger Decks 2021",
+    "release_date": "2021-10-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mic",
+    "name": "Midnight Hunt Commander",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mid",
+    "name": "Innistrad: Midnight Hunt",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmid",
+    "name": "Innistrad: Midnight Hunt Promos",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "amid",
+    "name": "Midnight Hunt Art Series",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "smid",
+    "name": "Innistrad: Midnight Hunt Substitute Cards",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmic",
+    "name": "Midnight Hunt Commander Tokens",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmid",
+    "name": "Innistrad: Midnight Hunt Tokens",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mmid",
+    "name": "Innistrad: Midnight Hunt Minigames",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "omic",
+    "name": "Midnight Hunt Commander Display Commanders",
+    "release_date": "2021-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j21",
+    "name": "Jumpstart: Historic Horizons",
+    "release_date": "2021-08-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmh1",
+    "name": "Modern Horizons Promos",
+    "release_date": "2021-08-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cmb2",
+    "name": "Mystery Booster Playtest Cards 2021",
+    "release_date": "2021-08-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ph20",
+    "name": "2020 Heroes of the Realm",
+    "release_date": "2021-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "afr",
+    "name": "Adventures in the Forgotten Realms",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "afc",
+    "name": "Forgotten Realms Commander",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pafr",
+    "name": "Adventures in the Forgotten Realms Promos",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aafr",
+    "name": "Adventures in the Forgotten Realms Art Series",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tafr",
+    "name": "Adventures in the Forgotten Realms Tokens",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tafc",
+    "name": "Forgotten Realms Commander Tokens",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mafr",
+    "name": "Adventures in the Forgotten Realms Minigames",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oafc",
+    "name": "Forgotten Realms Commander Display Commanders",
+    "release_date": "2021-07-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sld",
+    "name": "Secret Lair Drop",
+    "release_date": "2021-06-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mh2",
+    "name": "Modern Horizons 2",
+    "release_date": "2021-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "amh2",
+    "name": "Modern Horizons 2 Art Series",
+    "release_date": "2021-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmh2",
+    "name": "Modern Horizons 2 Tokens",
+    "release_date": "2021-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "h1r",
+    "name": "Modern Horizons 1 Timeshifts",
+    "release_date": "2021-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw21",
+    "name": "Wizards Play Network 2021",
+    "release_date": "2021-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mmh2",
+    "name": "Modern Horizons 2 Minigames",
+    "release_date": "2021-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha5",
+    "name": "Historic Anthology 5",
+    "release_date": "2021-05-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmh2",
+    "name": "Modern Horizons 2 Promos",
+    "release_date": "2021-05-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "stx",
+    "name": "Strixhaven: School of Mages",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c21",
+    "name": "Commander 2021",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pstx",
+    "name": "Strixhaven: School of Mages Promos",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sta",
+    "name": "Strixhaven Mystical Archive",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc21",
+    "name": "Commander 2021 Tokens",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "astx",
+    "name": "Strixhaven Art Series",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mstx",
+    "name": "Strixhaven: School of Mages Minigames",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sstx",
+    "name": "Strixhaven: School of Mages Substitute Cards",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tstx",
+    "name": "Strixhaven: School of Mages Tokens",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc21",
+    "name": "Commander 2021 Display Commanders",
+    "release_date": "2021-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tsr",
+    "name": "Time Spiral Remastered",
+    "release_date": "2021-03-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ttsr",
+    "name": "Time Spiral Remastered Tokens",
+    "release_date": "2021-03-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha4",
+    "name": "Historic Anthology 4",
+    "release_date": "2021-03-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "slu",
+    "name": "Secret Lair: Ultimate Edition",
+    "release_date": "2021-03-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "khm",
+    "name": "Kaldheim",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "khc",
+    "name": "Kaldheim Commander",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pkhm",
+    "name": "Kaldheim Promos",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tkhc",
+    "name": "Kaldheim Commander Tokens",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tkhm",
+    "name": "Kaldheim Tokens",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "skhm",
+    "name": "Kaldheim Substitute Cards",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "akhm",
+    "name": "Kaldheim Art Series",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mkhm",
+    "name": "Kaldheim Minigames",
+    "release_date": "2021-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pl21",
+    "name": "Year of the Ox 2021",
+    "release_date": "2021-01-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pj21",
+    "name": "Judge Gift Cards 2021",
+    "release_date": "2021-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cc1",
+    "name": "Commander Collection: Green",
+    "release_date": "2020-12-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cmr",
+    "name": "Commander Legends",
+    "release_date": "2020-11-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcmr",
+    "name": "Commander Legends Tokens",
+    "release_date": "2020-11-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "klr",
+    "name": "Kaladesh Remastered",
+    "release_date": "2020-11-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "znc",
+    "name": "Zendikar Rising Commander",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "zne",
+    "name": "Zendikar Rising Expeditions",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aznr",
+    "name": "Zendikar Rising Art Series",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "znr",
+    "name": "Zendikar Rising",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pznr",
+    "name": "Zendikar Rising Promos",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tznc",
+    "name": "Zendikar Rising Commander Tokens",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tznr",
+    "name": "Zendikar Rising Tokens",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mznr",
+    "name": "Zendikar Rising Minigames",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sznr",
+    "name": "Zendikar Rising Substitute Cards",
+    "release_date": "2020-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "anb",
+    "name": "Arena Beginner Set",
+    "release_date": "2020-08-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "akr",
+    "name": "Amonkhet Remastered",
+    "release_date": "2020-08-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "2xm",
+    "name": "Double Masters",
+    "release_date": "2020-08-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "t2xm",
+    "name": "Double Masters Tokens",
+    "release_date": "2020-08-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ph19",
+    "name": "2019 Heroes of the Realm",
+    "release_date": "2020-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "jmp",
+    "name": "Jumpstart",
+    "release_date": "2020-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pana",
+    "name": "MTG Arena Promos",
+    "release_date": "2020-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ajmp",
+    "name": "Jumpstart Arena Exclusives",
+    "release_date": "2020-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m21",
+    "name": "Core Set 2021",
+    "release_date": "2020-07-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm21",
+    "name": "Core Set 2021 Promos",
+    "release_date": "2020-07-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm21",
+    "name": "Core Set 2021 Tokens",
+    "release_date": "2020-07-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ss3",
+    "name": "Signature Spellbook: Chandra",
+    "release_date": "2020-06-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fjmp",
+    "name": "Jumpstart Front Cards",
+    "release_date": "2020-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha3",
+    "name": "Historic Anthology 3",
+    "release_date": "2020-05-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plg20",
+    "name": "Love Your LGS 2020",
+    "release_date": "2020-05-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "iko",
+    "name": "Ikoria: Lair of Behemoths",
+    "release_date": "2020-04-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "piko",
+    "name": "Ikoria: Lair of Behemoths Promos",
+    "release_date": "2020-04-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tiko",
+    "name": "Ikoria: Lair of Behemoths Tokens",
+    "release_date": "2020-04-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c20",
+    "name": "Commander 2020",
+    "release_date": "2020-04-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc20",
+    "name": "Commander 2020 Oversized",
+    "release_date": "2020-04-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc20",
+    "name": "Commander 2020 Tokens",
+    "release_date": "2020-04-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmei",
+    "name": "Media and Collaboration Promos",
+    "release_date": "2020-03-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha2",
+    "name": "Historic Anthology 2",
+    "release_date": "2020-03-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "und",
+    "name": "Unsanctioned",
+    "release_date": "2020-02-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tund",
+    "name": "Unsanctioned Tokens",
+    "release_date": "2020-02-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pwor",
+    "name": "World Championship Promos",
+    "release_date": "2020-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "thb",
+    "name": "Theros Beyond Death",
+    "release_date": "2020-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pthb",
+    "name": "Theros Beyond Death Promos",
+    "release_date": "2020-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tthb",
+    "name": "Theros Beyond Death Tokens",
+    "release_date": "2020-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j20",
+    "name": "Judge Gift Cards 2020",
+    "release_date": "2020-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pf20",
+    "name": "MagicFest 2020",
+    "release_date": "2020-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ha1",
+    "name": "Historic Anthology 1",
+    "release_date": "2019-11-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gn2",
+    "name": "Game Night 2019",
+    "release_date": "2019-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgn2",
+    "name": "Game Night 2019 Tokens",
+    "release_date": "2019-11-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cmb1",
+    "name": "Mystery Booster Playtest Cards 2019",
+    "release_date": "2019-11-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptg",
+    "name": "Ponies: The Galloping",
+    "release_date": "2019-10-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "eld",
+    "name": "Throne of Eldraine",
+    "release_date": "2019-10-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "peld",
+    "name": "Throne of Eldraine Promos",
+    "release_date": "2019-10-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "teld",
+    "name": "Throne of Eldraine Tokens",
+    "release_date": "2019-10-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc19",
+    "name": "Commander 2019 Oversized",
+    "release_date": "2019-08-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c19",
+    "name": "Commander 2019",
+    "release_date": "2019-08-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc19",
+    "name": "Commander 2019 Tokens",
+    "release_date": "2019-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ph18",
+    "name": "2018 Heroes of the Realm",
+    "release_date": "2019-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps19",
+    "name": "San Diego Comic-Con 2019",
+    "release_date": "2019-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m20",
+    "name": "Core Set 2020",
+    "release_date": "2019-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm20",
+    "name": "Core Set 2020 Promos",
+    "release_date": "2019-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm20",
+    "name": "Core Set 2020 Tokens",
+    "release_date": "2019-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ppp1",
+    "name": "M20 Promo Packs",
+    "release_date": "2019-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ss2",
+    "name": "Signature Spellbook: Gideon",
+    "release_date": "2019-06-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mh1",
+    "name": "Modern Horizons",
+    "release_date": "2019-06-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "amh1",
+    "name": "Modern Horizons Art Series",
+    "release_date": "2019-06-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmh1",
+    "name": "Modern Horizons Tokens",
+    "release_date": "2019-05-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "war",
+    "name": "War of the Spark",
+    "release_date": "2019-05-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pwar",
+    "name": "War of the Spark Promos",
+    "release_date": "2019-05-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "med",
+    "name": "Mythic Edition",
+    "release_date": "2019-05-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "twar",
+    "name": "War of the Spark Tokens",
+    "release_date": "2019-05-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j19",
+    "name": "Judge Gift Cards 2019",
+    "release_date": "2019-04-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prw2",
+    "name": "RNA Ravnica Weekend",
+    "release_date": "2019-02-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gk2",
+    "name": "RNA Guild Kit",
+    "release_date": "2019-02-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgk2",
+    "name": "RNA Guild Kit Tokens",
+    "release_date": "2019-02-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rna",
+    "name": "Ravnica Allegiance",
+    "release_date": "2019-01-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "trna",
+    "name": "Ravnica Allegiance Tokens",
+    "release_date": "2019-01-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prna",
+    "name": "Ravnica Allegiance Promos",
+    "release_date": "2019-01-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pf19",
+    "name": "MagicFest 2019",
+    "release_date": "2019-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "opca",
+    "name": "Planechase Anthology Planes",
+    "release_date": "2018-12-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "uma",
+    "name": "Ultimate Masters",
+    "release_date": "2018-12-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tuma",
+    "name": "Ultimate Masters Tokens",
+    "release_date": "2018-12-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "puma",
+    "name": "Ultimate Box Topper",
+    "release_date": "2018-12-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pz2",
+    "name": "Treasure Chest",
+    "release_date": "2018-12-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gnt",
+    "name": "Game Night",
+    "release_date": "2018-11-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g18",
+    "name": "M19 Gift Pack",
+    "release_date": "2018-11-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prwk",
+    "name": "GRN Ravnica Weekend",
+    "release_date": "2018-11-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gk1",
+    "name": "GRN Guild Kit",
+    "release_date": "2018-11-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgk1",
+    "name": "GRN Guild Kit Tokens",
+    "release_date": "2018-11-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "grn",
+    "name": "Guilds of Ravnica",
+    "release_date": "2018-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pgrn",
+    "name": "Guilds of Ravnica Promos",
+    "release_date": "2018-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgrn",
+    "name": "Guilds of Ravnica Tokens",
+    "release_date": "2018-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmed",
+    "name": "Mythic Edition Tokens",
+    "release_date": "2018-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "olgc",
+    "name": "Legacy Championship",
+    "release_date": "2018-08-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c18",
+    "name": "Commander 2018",
+    "release_date": "2018-08-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc18",
+    "name": "Commander 2018 Tokens",
+    "release_date": "2018-08-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc18",
+    "name": "Commander 2018 Oversized",
+    "release_date": "2018-08-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ph17",
+    "name": "2017 Heroes of the Realm",
+    "release_date": "2018-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps18",
+    "name": "San Diego Comic-Con 2018",
+    "release_date": "2018-07-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ana",
+    "name": "Arena New Player Experience",
+    "release_date": "2018-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oana",
+    "name": "Arena New Player Experience Cards",
+    "release_date": "2018-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "xana",
+    "name": "Arena New Player Experience Extras",
+    "release_date": "2018-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m19",
+    "name": "Core Set 2019",
+    "release_date": "2018-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm19",
+    "name": "Core Set 2019 Promos",
+    "release_date": "2018-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pss3",
+    "name": "M19 Standard Showdown",
+    "release_date": "2018-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm19",
+    "name": "Core Set 2019 Tokens",
+    "release_date": "2018-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gs1",
+    "name": "Global Series Jiang Yanggu & Mu Yanling",
+    "release_date": "2018-06-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ss1",
+    "name": "Signature Spellbook: Jace",
+    "release_date": "2018-06-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bbd",
+    "name": "Battlebond",
+    "release_date": "2018-06-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cm2",
+    "name": "Commander Anthology Volume II",
+    "release_date": "2018-06-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pbbd",
+    "name": "Battlebond Promos",
+    "release_date": "2018-06-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcm2",
+    "name": "Commander Anthology Volume II Tokens",
+    "release_date": "2018-06-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbbd",
+    "name": "Battlebond Tokens",
+    "release_date": "2018-06-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dom",
+    "name": "Dominaria",
+    "release_date": "2018-04-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdom",
+    "name": "Dominaria Promos",
+    "release_date": "2018-04-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdom",
+    "name": "Dominaria Tokens",
+    "release_date": "2018-04-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddu",
+    "name": "Duel Decks: Elves vs. Inventors",
+    "release_date": "2018-04-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddu",
+    "name": "Duel Decks: Elves vs. Inventors Tokens",
+    "release_date": "2018-04-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "a25",
+    "name": "Masters 25",
+    "release_date": "2018-03-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ta25",
+    "name": "Masters 25 Tokens",
+    "release_date": "2018-03-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plny",
+    "name": "Lunar New Year 2018",
+    "release_date": "2018-02-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pnat",
+    "name": "Nationals Promos",
+    "release_date": "2018-01-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rix",
+    "name": "Rivals of Ixalan",
+    "release_date": "2018-01-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prix",
+    "name": "Rivals of Ixalan Promos",
+    "release_date": "2018-01-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "trix",
+    "name": "Rivals of Ixalan Tokens",
+    "release_date": "2018-01-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j18",
+    "name": "Judge Gift Cards 2018",
+    "release_date": "2018-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f18",
+    "name": "Friday Night Magic 2018",
+    "release_date": "2017-12-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ust",
+    "name": "Unstable",
+    "release_date": "2017-12-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tust",
+    "name": "Unstable Tokens",
+    "release_date": "2017-12-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pust",
+    "name": "Unstable Promos",
+    "release_date": "2017-12-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tima",
+    "name": "Iconic Masters Tokens",
+    "release_date": "2017-11-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "e02",
+    "name": "Explorers of Ixalan",
+    "release_date": "2017-11-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pxtc",
+    "name": "XLN Treasure Chest",
+    "release_date": "2017-11-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v17",
+    "name": "From the Vault: Transform",
+    "release_date": "2017-11-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ima",
+    "name": "Iconic Masters",
+    "release_date": "2017-11-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddt",
+    "name": "Duel Decks: Merfolk vs. Goblins",
+    "release_date": "2017-10-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddt",
+    "name": "Duel Decks: Merfolk vs. Goblins Tokens",
+    "release_date": "2017-10-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g17",
+    "name": "2017 Gift Pack",
+    "release_date": "2017-10-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "xln",
+    "name": "Ixalan",
+    "release_date": "2017-09-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pxln",
+    "name": "Ixalan Promos",
+    "release_date": "2017-09-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "txln",
+    "name": "Ixalan Tokens",
+    "release_date": "2017-09-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pss2",
+    "name": "XLN Standard Showdown",
+    "release_date": "2017-09-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "h17",
+    "name": "HasCon 2017",
+    "release_date": "2017-09-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "phtr",
+    "name": "2016 Heroes of the Realm",
+    "release_date": "2017-09-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "te01",
+    "name": "Archenemy: Nicol Bolas Tokens",
+    "release_date": "2017-09-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c17",
+    "name": "Commander 2017",
+    "release_date": "2017-08-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc17",
+    "name": "Commander 2017 Tokens",
+    "release_date": "2017-08-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc17",
+    "name": "Commander 2017 Oversized",
+    "release_date": "2017-08-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps17",
+    "name": "San Diego Comic-Con 2017",
+    "release_date": "2017-07-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "hou",
+    "name": "Hour of Devastation",
+    "release_date": "2017-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "phou",
+    "name": "Hour of Devastation Promos",
+    "release_date": "2017-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "thou",
+    "name": "Hour of Devastation Tokens",
+    "release_date": "2017-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "e01",
+    "name": "Archenemy: Nicol Bolas",
+    "release_date": "2017-06-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oe01",
+    "name": "Archenemy: Nicol Bolas Schemes",
+    "release_date": "2017-06-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cma",
+    "name": "Commander Anthology",
+    "release_date": "2017-06-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcma",
+    "name": "Commander Anthology Tokens",
+    "release_date": "2017-06-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "akh",
+    "name": "Amonkhet",
+    "release_date": "2017-04-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mp2",
+    "name": "Amonkhet Invocations",
+    "release_date": "2017-04-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pakh",
+    "name": "Amonkhet Promos",
+    "release_date": "2017-04-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "takh",
+    "name": "Amonkhet Tokens",
+    "release_date": "2017-04-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "w17",
+    "name": "Welcome Deck 2017",
+    "release_date": "2017-04-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dds",
+    "name": "Duel Decks: Mind vs. Might",
+    "release_date": "2017-03-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdds",
+    "name": "Duel Decks: Mind vs. Might Tokens",
+    "release_date": "2017-03-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mm3",
+    "name": "Modern Masters 2017",
+    "release_date": "2017-03-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmm3",
+    "name": "Modern Masters 2017 Tokens",
+    "release_date": "2017-03-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "aer",
+    "name": "Aether Revolt",
+    "release_date": "2017-01-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "paer",
+    "name": "Aether Revolt Promos",
+    "release_date": "2017-01-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "taer",
+    "name": "Aether Revolt Tokens",
+    "release_date": "2017-01-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f17",
+    "name": "Friday Night Magic 2017",
+    "release_date": "2017-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j17",
+    "name": "Judge Gift Cards 2017",
+    "release_date": "2017-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "l17",
+    "name": "League Tokens 2017",
+    "release_date": "2017-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tpca",
+    "name": "Planechase Anthology Tokens",
+    "release_date": "2016-11-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pca",
+    "name": "Planechase Anthology",
+    "release_date": "2016-11-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c16",
+    "name": "Commander 2016",
+    "release_date": "2016-11-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc16",
+    "name": "Commander 2016 Tokens",
+    "release_date": "2016-11-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc16",
+    "name": "Commander 2016 Oversized",
+    "release_date": "2016-11-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps16",
+    "name": "San Diego Comic-Con 2016",
+    "release_date": "2016-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "kld",
+    "name": "Kaladesh",
+    "release_date": "2016-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pkld",
+    "name": "Kaladesh Promos",
+    "release_date": "2016-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mps",
+    "name": "Kaladesh Inventions",
+    "release_date": "2016-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tkld",
+    "name": "Kaladesh Tokens",
+    "release_date": "2016-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddr",
+    "name": "Duel Decks: Nissa vs. Ob Nixilis",
+    "release_date": "2016-09-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cn2",
+    "name": "Conspiracy: Take the Crown",
+    "release_date": "2016-08-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcn2",
+    "name": "Conspiracy: Take the Crown Tokens",
+    "release_date": "2016-08-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v16",
+    "name": "From the Vault: Lore",
+    "release_date": "2016-08-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "emn",
+    "name": "Eldritch Moon",
+    "release_date": "2016-07-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pemn",
+    "name": "Eldritch Moon Promos",
+    "release_date": "2016-07-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "temn",
+    "name": "Eldritch Moon Tokens",
+    "release_date": "2016-07-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wmc",
+    "name": "World Magic Cup Qualifiers",
+    "release_date": "2016-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ema",
+    "name": "Eternal Masters",
+    "release_date": "2016-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tema",
+    "name": "Eternal Masters Tokens",
+    "release_date": "2016-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f16",
+    "name": "Friday Night Magic 2016",
+    "release_date": "2016-04-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "soi",
+    "name": "Shadows over Innistrad",
+    "release_date": "2016-04-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "w16",
+    "name": "Welcome Deck 2016",
+    "release_date": "2016-04-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tsoi",
+    "name": "Shadows over Innistrad Tokens",
+    "release_date": "2016-04-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psoi",
+    "name": "Shadows over Innistrad Promos",
+    "release_date": "2016-04-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddq",
+    "name": "Duel Decks: Blessed vs. Cursed",
+    "release_date": "2016-02-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ogw",
+    "name": "Oath of the Gatewatch",
+    "release_date": "2016-01-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pogw",
+    "name": "Oath of the Gatewatch Promos",
+    "release_date": "2016-01-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "togw",
+    "name": "Oath of the Gatewatch Tokens",
+    "release_date": "2016-01-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j16",
+    "name": "Judge Gift Cards 2016",
+    "release_date": "2016-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "l16",
+    "name": "League Tokens 2016",
+    "release_date": "2016-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pz1",
+    "name": "Legendary Cube Prize Pack",
+    "release_date": "2015-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c15",
+    "name": "Commander 2015",
+    "release_date": "2015-11-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc15",
+    "name": "Commander 2015 Tokens",
+    "release_date": "2015-11-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc15",
+    "name": "Commander 2015 Oversized",
+    "release_date": "2015-11-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bfz",
+    "name": "Battle for Zendikar",
+    "release_date": "2015-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "exp",
+    "name": "Zendikar Expeditions",
+    "release_date": "2015-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pbfz",
+    "name": "Battle for Zendikar Promos",
+    "release_date": "2015-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbfz",
+    "name": "Battle for Zendikar Tokens",
+    "release_date": "2015-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pss1",
+    "name": "BFZ Standard Series",
+    "release_date": "2015-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddp",
+    "name": "Duel Decks: Zendikar vs. Eldrazi",
+    "release_date": "2015-08-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v15",
+    "name": "From the Vault: Angels",
+    "release_date": "2015-08-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ori",
+    "name": "Magic Origins",
+    "release_date": "2015-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pori",
+    "name": "Magic Origins Promos",
+    "release_date": "2015-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cp3",
+    "name": "Magic Origins Clash Pack",
+    "release_date": "2015-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tori",
+    "name": "Magic Origins Tokens",
+    "release_date": "2015-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps15",
+    "name": "San Diego Comic-Con 2015",
+    "release_date": "2015-07-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmm2",
+    "name": "Modern Masters 2015 Tokens",
+    "release_date": "2015-05-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mm2",
+    "name": "Modern Masters 2015",
+    "release_date": "2015-05-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tpr",
+    "name": "Tempest Remastered",
+    "release_date": "2015-05-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptkdf",
+    "name": "Tarkir Dragonfury",
+    "release_date": "2015-04-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dtk",
+    "name": "Dragons of Tarkir",
+    "release_date": "2015-03-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdtk",
+    "name": "Dragons of Tarkir Promos",
+    "release_date": "2015-03-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdtk",
+    "name": "Dragons of Tarkir Tokens",
+    "release_date": "2015-03-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddo",
+    "name": "Duel Decks: Elspeth vs. Kiora",
+    "release_date": "2015-02-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "frf",
+    "name": "Fate Reforged",
+    "release_date": "2015-01-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pfrf",
+    "name": "Fate Reforged Promos",
+    "release_date": "2015-01-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tfrf",
+    "name": "Fate Reforged Tokens",
+    "release_date": "2015-01-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cp2",
+    "name": "Fate Reforged Clash Pack",
+    "release_date": "2015-01-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ugin",
+    "name": "Ugin's Fate",
+    "release_date": "2015-01-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pgpx",
+    "name": "Grand Prix Promos",
+    "release_date": "2015-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "l15",
+    "name": "League Tokens 2015",
+    "release_date": "2015-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f15",
+    "name": "Friday Night Magic 2015",
+    "release_date": "2015-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j15",
+    "name": "Judge Gift Cards 2015",
+    "release_date": "2015-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gvl",
+    "name": "Duel Decks Anthology: Garruk vs. Liliana",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dvd",
+    "name": "Duel Decks Anthology: Divine vs. Demonic",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "jvc",
+    "name": "Duel Decks Anthology: Jace vs. Chandra",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "evg",
+    "name": "Duel Decks Anthology: Elves vs. Goblins",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgvl",
+    "name": "Duel Decks Anthology: Garruk vs. Liliana Tokens",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tevg",
+    "name": "Duel Decks Anthology: Elves vs. Goblins Tokens",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdvd",
+    "name": "Duel Decks Anthology: Divine vs. Demonic Tokens",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tjvc",
+    "name": "Duel Decks Anthology: Jace vs. Chandra Tokens",
+    "release_date": "2014-12-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c14",
+    "name": "Commander 2014",
+    "release_date": "2014-11-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tc14",
+    "name": "Commander 2014 Tokens",
+    "release_date": "2014-11-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc14",
+    "name": "Commander 2014 Oversized",
+    "release_date": "2014-11-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ktk",
+    "name": "Khans of Tarkir",
+    "release_date": "2014-09-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tktk",
+    "name": "Khans of Tarkir Tokens",
+    "release_date": "2014-09-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pktk",
+    "name": "Khans of Tarkir Promos",
+    "release_date": "2014-09-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddn",
+    "name": "Duel Decks: Speed vs. Cunning",
+    "release_date": "2014-09-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v14",
+    "name": "From the Vault: Annihilation",
+    "release_date": "2014-08-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m15",
+    "name": "Magic 2015",
+    "release_date": "2014-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cp1",
+    "name": "Magic 2015 Clash Pack",
+    "release_date": "2014-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm15",
+    "name": "Magic 2015 Tokens",
+    "release_date": "2014-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm15",
+    "name": "Magic 2015 Promos",
+    "release_date": "2014-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ppc1",
+    "name": "M15 Prerelease Challenge",
+    "release_date": "2014-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdp15",
+    "name": "Duels of the Planeswalkers 2015 Promos",
+    "release_date": "2014-07-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps14",
+    "name": "San Diego Comic-Con 2014",
+    "release_date": "2014-07-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "vma",
+    "name": "Vintage Masters",
+    "release_date": "2014-06-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cns",
+    "name": "Conspiracy",
+    "release_date": "2014-06-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcns",
+    "name": "Conspiracy Tokens",
+    "release_date": "2014-06-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcns",
+    "name": "Conspiracy Promos",
+    "release_date": "2014-06-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "md1",
+    "name": "Modern Event Deck 2014",
+    "release_date": "2014-05-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmd1",
+    "name": "Modern Event Deck 2014 Tokens",
+    "release_date": "2014-05-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdag",
+    "name": "Defeat a God",
+    "release_date": "2014-05-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "jou",
+    "name": "Journey into Nyx",
+    "release_date": "2014-05-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "thp3",
+    "name": "Journey into Nyx Hero's Path",
+    "release_date": "2014-05-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tjou",
+    "name": "Journey into Nyx Tokens",
+    "release_date": "2014-05-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pjou",
+    "name": "Journey into Nyx Promos",
+    "release_date": "2014-04-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddm",
+    "name": "Duel Decks: Jace vs. Vraska",
+    "release_date": "2014-03-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddm",
+    "name": "Duel Decks: Jace vs. Vraska Tokens",
+    "release_date": "2014-03-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbth",
+    "name": "Battle the Horde",
+    "release_date": "2014-03-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bng",
+    "name": "Born of the Gods",
+    "release_date": "2014-02-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "thp2",
+    "name": "Born of the Gods Hero's Path",
+    "release_date": "2014-02-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tbng",
+    "name": "Born of the Gods Tokens",
+    "release_date": "2014-02-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pbng",
+    "name": "Born of the Gods Promos",
+    "release_date": "2014-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j14",
+    "name": "Judge Gift Cards 2014",
+    "release_date": "2014-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "l14",
+    "name": "League Tokens 2014",
+    "release_date": "2014-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f14",
+    "name": "Friday Night Magic 2014",
+    "release_date": "2014-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "c13",
+    "name": "Commander 2013",
+    "release_date": "2013-11-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oc13",
+    "name": "Commander 2013 Oversized",
+    "release_date": "2013-11-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tfth",
+    "name": "Face the Hydra",
+    "release_date": "2013-10-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ths",
+    "name": "Theros",
+    "release_date": "2013-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tths",
+    "name": "Theros Tokens",
+    "release_date": "2013-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "thp1",
+    "name": "Theros Hero's Path",
+    "release_date": "2013-09-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pths",
+    "name": "Theros Promos",
+    "release_date": "2013-09-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddl",
+    "name": "Duel Decks: Heroes vs. Monsters",
+    "release_date": "2013-09-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddl",
+    "name": "Duel Decks: Heroes vs. Monsters Tokens",
+    "release_date": "2013-09-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v13",
+    "name": "From the Vault: Twenty",
+    "release_date": "2013-08-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm13",
+    "name": "Magic 2013 Promos",
+    "release_date": "2013-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m14",
+    "name": "Magic 2014",
+    "release_date": "2013-07-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm14",
+    "name": "Magic 2014 Tokens",
+    "release_date": "2013-07-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm14",
+    "name": "Magic 2014 Promos",
+    "release_date": "2013-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psdc",
+    "name": "San Diego Comic-Con 2013",
+    "release_date": "2013-07-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mma",
+    "name": "Modern Masters",
+    "release_date": "2013-06-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmma",
+    "name": "Modern Masters Tokens",
+    "release_date": "2013-06-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dgm",
+    "name": "Dragon's Maze",
+    "release_date": "2013-05-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdgm",
+    "name": "Dragon's Maze Tokens",
+    "release_date": "2013-05-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdgm",
+    "name": "Dragon's Maze Promos",
+    "release_date": "2013-04-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddk",
+    "name": "Duel Decks: Sorin vs. Tibalt",
+    "release_date": "2013-03-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddk",
+    "name": "Duel Decks: Sorin vs. Tibalt Tokens",
+    "release_date": "2013-03-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gtc",
+    "name": "Gatecrash",
+    "release_date": "2013-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pavr",
+    "name": "Avacyn Restored Promos",
+    "release_date": "2013-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tgtc",
+    "name": "Gatecrash Tokens",
+    "release_date": "2013-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pgtc",
+    "name": "Gatecrash Promos",
+    "release_date": "2013-01-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f13",
+    "name": "Friday Night Magic 2013",
+    "release_date": "2013-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j13",
+    "name": "Judge Gift Cards 2013",
+    "release_date": "2013-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdp14",
+    "name": "Duels of the Planeswalkers 2014 Promos",
+    "release_date": "2013-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "l13",
+    "name": "League Tokens 2013",
+    "release_date": "2013-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cm1",
+    "name": "Commander's Arsenal",
+    "release_date": "2012-11-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ocm1",
+    "name": "Commander's Arsenal Oversized",
+    "release_date": "2012-11-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rtr",
+    "name": "Return to Ravnica",
+    "release_date": "2012-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "trtr",
+    "name": "Return to Ravnica Tokens",
+    "release_date": "2012-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prtr",
+    "name": "Return to Ravnica Promos",
+    "release_date": "2012-10-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddj",
+    "name": "Duel Decks: Izzet vs. Golgari Tokens",
+    "release_date": "2012-09-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddj",
+    "name": "Duel Decks: Izzet vs. Golgari",
+    "release_date": "2012-09-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v12",
+    "name": "From the Vault: Realms",
+    "release_date": "2012-08-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m13",
+    "name": "Magic 2013",
+    "release_date": "2012-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm13",
+    "name": "Magic 2013 Tokens",
+    "release_date": "2012-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pc2",
+    "name": "Planechase 2012",
+    "release_date": "2012-06-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "opc2",
+    "name": "Planechase 2012 Planes",
+    "release_date": "2012-06-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "phop",
+    "name": "Planechase Promos",
+    "release_date": "2012-06-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "avr",
+    "name": "Avacyn Restored",
+    "release_date": "2012-05-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tavr",
+    "name": "Avacyn Restored Tokens",
+    "release_date": "2012-05-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "phel",
+    "name": "Open the Helvault",
+    "release_date": "2012-04-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddi",
+    "name": "Duel Decks: Venser vs. Koth",
+    "release_date": "2012-03-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddi",
+    "name": "Duel Decks: Venser vs. Koth Tokens",
+    "release_date": "2012-03-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pidw",
+    "name": "IDW Comics Inserts",
+    "release_date": "2012-02-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dka",
+    "name": "Dark Ascension",
+    "release_date": "2012-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdka",
+    "name": "Dark Ascension Tokens",
+    "release_date": "2012-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdka",
+    "name": "Dark Ascension Promos",
+    "release_date": "2012-01-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "j12",
+    "name": "Judge Gift Cards 2012",
+    "release_date": "2012-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "l12",
+    "name": "League Tokens 2012",
+    "release_date": "2012-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f12",
+    "name": "Friday Night Magic 2012",
+    "release_date": "2012-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw12",
+    "name": "Wizards Play Network 2012",
+    "release_date": "2012-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdp13",
+    "name": "Duels of the Planeswalkers 2013 Promos",
+    "release_date": "2012-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "hho",
+    "name": "Happy Holidays",
+    "release_date": "2011-12-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pd3",
+    "name": "Premium Deck Series: Graveborn",
+    "release_date": "2011-11-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "isd",
+    "name": "Innistrad",
+    "release_date": "2011-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tisd",
+    "name": "Innistrad Tokens",
+    "release_date": "2011-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pw11",
+    "name": "Wizards Play Network 2011",
+    "release_date": "2011-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pisd",
+    "name": "Innistrad Promos",
+    "release_date": "2011-09-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddh",
+    "name": "Duel Decks: Ajani vs. Nicol Bolas",
+    "release_date": "2011-09-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddh",
+    "name": "Duel Decks: Ajani vs. Nicol Bolas Tokens",
+    "release_date": "2011-09-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v11",
+    "name": "From the Vault: Legends",
+    "release_date": "2011-08-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m12",
+    "name": "Magic 2012",
+    "release_date": "2011-07-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm12",
+    "name": "Magic 2012 Tokens",
+    "release_date": "2011-07-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm12",
+    "name": "Magic 2012 Promos",
+    "release_date": "2011-07-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cmd",
+    "name": "Commander 2011",
+    "release_date": "2011-06-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ocmd",
+    "name": "Commander 2011 Oversized",
+    "release_date": "2011-06-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcmd",
+    "name": "Commander 2011 Launch Party",
+    "release_date": "2011-06-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "td2",
+    "name": "Duel Decks: Mirrodin Pure vs. New Phyrexia",
+    "release_date": "2011-05-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "nph",
+    "name": "New Phyrexia",
+    "release_date": "2011-05-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tnph",
+    "name": "New Phyrexia Tokens",
+    "release_date": "2011-05-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pnph",
+    "name": "New Phyrexia Promos",
+    "release_date": "2011-05-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddg",
+    "name": "Duel Decks: Knights vs. Dragons",
+    "release_date": "2011-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddg",
+    "name": "Duel Decks: Knights vs. Dragons Tokens",
+    "release_date": "2011-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mbs",
+    "name": "Mirrodin Besieged",
+    "release_date": "2011-02-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p11",
+    "name": "Magic Player Rewards 2011",
+    "release_date": "2011-02-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmbs",
+    "name": "Mirrodin Besieged Tokens",
+    "release_date": "2011-02-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmbs",
+    "name": "Mirrodin Besieged Promos",
+    "release_date": "2011-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "me4",
+    "name": "Masters Edition IV",
+    "release_date": "2011-01-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ps11",
+    "name": "Salvat 2011",
+    "release_date": "2011-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdp12",
+    "name": "Duels of the Planeswalkers 2012 Promos",
+    "release_date": "2011-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f11",
+    "name": "Friday Night Magic 2011",
+    "release_date": "2011-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g11",
+    "name": "Judge Gift Cards 2011",
+    "release_date": "2011-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps11",
+    "name": "Magic Premiere Shop 2011",
+    "release_date": "2011-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pd2",
+    "name": "Premium Deck Series: Fire and Lightning",
+    "release_date": "2010-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "td0",
+    "name": "Magic Online Theme Decks",
+    "release_date": "2010-11-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "som",
+    "name": "Scars of Mirrodin",
+    "release_date": "2010-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tsom",
+    "name": "Scars of Mirrodin Tokens",
+    "release_date": "2010-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psom",
+    "name": "Scars of Mirrodin Promos",
+    "release_date": "2010-09-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddf",
+    "name": "Duel Decks: Elspeth vs. Tezzeret",
+    "release_date": "2010-09-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddf",
+    "name": "Duel Decks: Elspeth vs. Tezzeret Tokens",
+    "release_date": "2010-09-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v10",
+    "name": "From the Vault: Relics",
+    "release_date": "2010-08-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m11",
+    "name": "Magic 2011",
+    "release_date": "2010-07-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm11",
+    "name": "Magic 2011 Tokens",
+    "release_date": "2010-07-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm11",
+    "name": "Magic 2011 Promos",
+    "release_date": "2010-07-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "oarc",
+    "name": "Archenemy Schemes",
+    "release_date": "2010-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "arc",
+    "name": "Archenemy",
+    "release_date": "2010-06-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dpa",
+    "name": "Duels of the Planeswalkers",
+    "release_date": "2010-06-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "roe",
+    "name": "Rise of the Eldrazi",
+    "release_date": "2010-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "troe",
+    "name": "Rise of the Eldrazi Tokens",
+    "release_date": "2010-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "proe",
+    "name": "Rise of the Eldrazi Promos",
+    "release_date": "2010-04-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dde",
+    "name": "Duel Decks: Phyrexia vs. the Coalition",
+    "release_date": "2010-03-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdde",
+    "name": "Duel Decks: Phyrexia vs. the Coalition Tokens",
+    "release_date": "2010-03-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wwk",
+    "name": "Worldwake",
+    "release_date": "2010-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "twwk",
+    "name": "Worldwake Tokens",
+    "release_date": "2010-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pwwk",
+    "name": "Worldwake Promos",
+    "release_date": "2010-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f10",
+    "name": "Friday Night Magic 2010",
+    "release_date": "2010-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g10",
+    "name": "Judge Gift Cards 2010",
+    "release_date": "2010-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p10",
+    "name": "Magic Player Rewards 2010",
+    "release_date": "2010-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps10",
+    "name": "Magic Premiere Shop 2010",
+    "release_date": "2010-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdp10",
+    "name": "Duels of the Planeswalkers 2010 Promos",
+    "release_date": "2010-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "h09",
+    "name": "Premium Deck Series: Slivers",
+    "release_date": "2009-11-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dci",
+    "name": "DCI Promos",
+    "release_date": "2009-10-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddd",
+    "name": "Duel Decks: Garruk vs. Liliana",
+    "release_date": "2009-10-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddd",
+    "name": "Duel Decks: Garruk vs. Liliana Tokens",
+    "release_date": "2009-10-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "zen",
+    "name": "Zendikar",
+    "release_date": "2009-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tzen",
+    "name": "Zendikar Tokens",
+    "release_date": "2009-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pzen",
+    "name": "Zendikar Promos",
+    "release_date": "2009-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "me3",
+    "name": "Masters Edition III",
+    "release_date": "2009-09-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ohop",
+    "name": "Planechase Planes",
+    "release_date": "2009-09-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "hop",
+    "name": "Planechase",
+    "release_date": "2009-09-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "v09",
+    "name": "From the Vault: Exiled",
+    "release_date": "2009-08-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ovnt",
+    "name": "Vintage Championship",
+    "release_date": "2009-08-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "m10",
+    "name": "Magic 2010",
+    "release_date": "2009-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tm10",
+    "name": "Magic 2010 Tokens",
+    "release_date": "2009-07-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pm10",
+    "name": "Magic 2010 Promos",
+    "release_date": "2009-07-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "arb",
+    "name": "Alara Reborn",
+    "release_date": "2009-04-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tarb",
+    "name": "Alara Reborn Tokens",
+    "release_date": "2009-04-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p09",
+    "name": "Magic Player Rewards 2009",
+    "release_date": "2009-04-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "parb",
+    "name": "Alara Reborn Promos",
+    "release_date": "2009-04-30",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ddc",
+    "name": "Duel Decks: Divine vs. Demonic",
+    "release_date": "2009-04-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tddc",
+    "name": "Duel Decks: Divine vs. Demonic Tokens",
+    "release_date": "2009-04-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "con",
+    "name": "Conflux",
+    "release_date": "2009-02-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tcon",
+    "name": "Conflux Tokens",
+    "release_date": "2009-02-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcon",
+    "name": "Conflux Promos",
+    "release_date": "2009-01-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g09",
+    "name": "Judge Gift Cards 2009",
+    "release_date": "2009-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f09",
+    "name": "Friday Night Magic 2009",
+    "release_date": "2009-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "purl",
+    "name": "URL/Convention Promos",
+    "release_date": "2009-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps09",
+    "name": "Magic Premiere Shop 2009",
+    "release_date": "2009-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdtp",
+    "name": "Duels of the Planeswalkers 2009 Promos",
+    "release_date": "2009-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dd2",
+    "name": "Duel Decks: Jace vs. Chandra",
+    "release_date": "2008-11-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdd2",
+    "name": "Duel Decks: Jace vs. Chandra Tokens",
+    "release_date": "2008-11-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ala",
+    "name": "Shards of Alara",
+    "release_date": "2008-10-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tala",
+    "name": "Shards of Alara Tokens",
+    "release_date": "2008-10-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pala",
+    "name": "Shards of Alara Promos",
+    "release_date": "2008-10-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "me2",
+    "name": "Masters Edition II",
+    "release_date": "2008-09-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "drb",
+    "name": "From the Vault: Dragons",
+    "release_date": "2008-08-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "eve",
+    "name": "Eventide",
+    "release_date": "2008-07-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "teve",
+    "name": "Eventide Tokens",
+    "release_date": "2008-07-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "peve",
+    "name": "Eventide Promos",
+    "release_date": "2008-07-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "shm",
+    "name": "Shadowmoor",
+    "release_date": "2008-05-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tshm",
+    "name": "Shadowmoor Tokens",
+    "release_date": "2008-05-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pshm",
+    "name": "Shadowmoor Promos",
+    "release_date": "2008-04-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p15a",
+    "name": "15th Anniversary Cards",
+    "release_date": "2008-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mor",
+    "name": "Morningtide",
+    "release_date": "2008-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmor",
+    "name": "Morningtide Tokens",
+    "release_date": "2008-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmor",
+    "name": "Morningtide Promos",
+    "release_date": "2008-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f08",
+    "name": "Friday Night Magic 2008",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pjjt",
+    "name": "Japan Junior Tournament",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ppro",
+    "name": "Pro Tour Promos",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps08",
+    "name": "Magic Premiere Shop 2008",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p08",
+    "name": "Magic Player Rewards 2008",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pjse",
+    "name": "Junior Series Europe",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g08",
+    "name": "Judge Gift Cards 2008",
+    "release_date": "2008-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tdd1",
+    "name": "Duel Decks: Elves vs. Goblins Tokens",
+    "release_date": "2007-11-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dd1",
+    "name": "Duel Decks: Elves vs. Goblins",
+    "release_date": "2007-11-16",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "lrw",
+    "name": "Lorwyn",
+    "release_date": "2007-10-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tlrw",
+    "name": "Lorwyn Tokens",
+    "release_date": "2007-10-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plrw",
+    "name": "Lorwyn Promos",
+    "release_date": "2007-10-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "me1",
+    "name": "Masters Edition",
+    "release_date": "2007-09-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "10e",
+    "name": "Tenth Edition",
+    "release_date": "2007-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p10e",
+    "name": "Tenth Edition Promos",
+    "release_date": "2007-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "t10e",
+    "name": "Tenth Edition Tokens",
+    "release_date": "2007-07-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fut",
+    "name": "Future Sight",
+    "release_date": "2007-05-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pfut",
+    "name": "Future Sight Promos",
+    "release_date": "2007-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plc",
+    "name": "Planar Chaos",
+    "release_date": "2007-02-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pplc",
+    "name": "Planar Chaos Promos",
+    "release_date": "2007-02-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f07",
+    "name": "Friday Night Magic 2007",
+    "release_date": "2007-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p07",
+    "name": "Magic Player Rewards 2007",
+    "release_date": "2007-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g07",
+    "name": "Judge Gift Cards 2007",
+    "release_date": "2007-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps07",
+    "name": "Magic Premiere Shop 2007",
+    "release_date": "2007-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tsp",
+    "name": "Time Spiral",
+    "release_date": "2006-10-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tsb",
+    "name": "Time Spiral Timeshifted",
+    "release_date": "2006-10-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptsp",
+    "name": "Time Spiral Promos",
+    "release_date": "2006-09-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "csp",
+    "name": "Coldsnap",
+    "release_date": "2006-07-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cst",
+    "name": "Coldsnap Theme Decks",
+    "release_date": "2006-07-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcsp",
+    "name": "Coldsnap Promos",
+    "release_date": "2006-07-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dis",
+    "name": "Dissension",
+    "release_date": "2006-05-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdis",
+    "name": "Dissension Promos",
+    "release_date": "2006-04-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcmp",
+    "name": "Champs and States",
+    "release_date": "2006-03-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "gpt",
+    "name": "Guildpact",
+    "release_date": "2006-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pgpt",
+    "name": "Guildpact Promos",
+    "release_date": "2006-01-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "phuk",
+    "name": "Hachette UK",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g06",
+    "name": "Judge Gift Cards 2006",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f06",
+    "name": "Friday Night Magic 2006",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal06",
+    "name": "Arena League 2006",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pjas",
+    "name": "Junior APAC Series",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p06",
+    "name": "Magic Player Rewards 2006",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps06",
+    "name": "Magic Premiere Shop 2006",
+    "release_date": "2006-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p2hg",
+    "name": "Two-Headed Giant Tournament",
+    "release_date": "2005-12-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rav",
+    "name": "Ravnica: City of Guilds",
+    "release_date": "2005-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmps",
+    "name": "Magic Premiere Shop 2005",
+    "release_date": "2005-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "prav",
+    "name": "Ravnica: City of Guilds Promos",
+    "release_date": "2005-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psal",
+    "name": "Salvat 2005",
+    "release_date": "2005-08-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "9ed",
+    "name": "Ninth Edition",
+    "release_date": "2005-07-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p9ed",
+    "name": "Ninth Edition Promos",
+    "release_date": "2005-07-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sok",
+    "name": "Saviors of Kamigawa",
+    "release_date": "2005-06-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psok",
+    "name": "Saviors of Kamigawa Promos",
+    "release_date": "2005-06-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bok",
+    "name": "Betrayers of Kamigawa",
+    "release_date": "2005-02-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pbok",
+    "name": "Betrayers of Kamigawa Promos",
+    "release_date": "2005-02-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f05",
+    "name": "Friday Night Magic 2005",
+    "release_date": "2005-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g05",
+    "name": "Judge Gift Cards 2005",
+    "release_date": "2005-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal05",
+    "name": "Arena League 2005",
+    "release_date": "2005-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p05",
+    "name": "Magic Player Rewards 2005",
+    "release_date": "2005-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "punh",
+    "name": "Unhinged Promos",
+    "release_date": "2004-11-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "unh",
+    "name": "Unhinged",
+    "release_date": "2004-11-19",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "chk",
+    "name": "Champions of Kamigawa",
+    "release_date": "2004-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pchk",
+    "name": "Champions of Kamigawa Promos",
+    "release_date": "2004-09-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc04",
+    "name": "World Championship Decks 2004",
+    "release_date": "2004-09-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "5dn",
+    "name": "Fifth Dawn",
+    "release_date": "2004-06-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p5dn",
+    "name": "Fifth Dawn Promos",
+    "release_date": "2004-05-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dst",
+    "name": "Darksteel",
+    "release_date": "2004-02-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdst",
+    "name": "Darksteel Promos",
+    "release_date": "2004-01-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal04",
+    "name": "Arena League 2004",
+    "release_date": "2004-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f04",
+    "name": "Friday Night Magic 2004",
+    "release_date": "2004-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p04",
+    "name": "Magic Player Rewards 2004",
+    "release_date": "2004-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g04",
+    "name": "Judge Gift Cards 2004",
+    "release_date": "2004-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mrd",
+    "name": "Mirrodin",
+    "release_date": "2003-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmrd",
+    "name": "Mirrodin Promos",
+    "release_date": "2003-09-20",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc03",
+    "name": "World Championship Decks 2003",
+    "release_date": "2003-08-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "8ed",
+    "name": "Eighth Edition",
+    "release_date": "2003-07-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p8ed",
+    "name": "Eighth Edition Promos",
+    "release_date": "2003-07-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "scg",
+    "name": "Scourge",
+    "release_date": "2003-05-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pscg",
+    "name": "Scourge Promos",
+    "release_date": "2003-05-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "lgn",
+    "name": "Legions",
+    "release_date": "2003-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plgn",
+    "name": "Legions Promos",
+    "release_date": "2003-01-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal03",
+    "name": "Arena League 2003",
+    "release_date": "2003-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmoa",
+    "name": "Magic Online Avatars",
+    "release_date": "2003-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p03",
+    "name": "Magic Player Rewards 2003",
+    "release_date": "2003-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f03",
+    "name": "Friday Night Magic 2003",
+    "release_date": "2003-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g03",
+    "name": "Judge Gift Cards 2003",
+    "release_date": "2003-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ons",
+    "name": "Onslaught",
+    "release_date": "2002-10-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pons",
+    "name": "Onslaught Promos",
+    "release_date": "2002-09-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc02",
+    "name": "World Championship Decks 2002",
+    "release_date": "2002-08-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "jp1",
+    "name": "Hobby Japan Promos",
+    "release_date": "2002-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "jud",
+    "name": "Judgment",
+    "release_date": "2002-05-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pjud",
+    "name": "Judgment Promos",
+    "release_date": "2002-05-18",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tor",
+    "name": "Torment",
+    "release_date": "2002-02-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptor",
+    "name": "Torment Promos",
+    "release_date": "2002-01-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f02",
+    "name": "Friday Night Magic 2002",
+    "release_date": "2002-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pr2",
+    "name": "Magic Player Rewards 2002",
+    "release_date": "2002-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g02",
+    "name": "Judge Gift Cards 2002",
+    "release_date": "2002-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal02",
+    "name": "Arena League 2002",
+    "release_date": "2002-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "dkm",
+    "name": "Deckmasters",
+    "release_date": "2001-12-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ody",
+    "name": "Odyssey",
+    "release_date": "2001-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pody",
+    "name": "Odyssey Promos",
+    "release_date": "2001-09-22",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc01",
+    "name": "World Championship Decks 2001",
+    "release_date": "2001-08-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psdg",
+    "name": "Sega Dreamcast Cards",
+    "release_date": "2001-06-28",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "apc",
+    "name": "Apocalypse",
+    "release_date": "2001-06-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "papc",
+    "name": "Apocalypse Promos",
+    "release_date": "2001-05-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "7ed",
+    "name": "Seventh Edition",
+    "release_date": "2001-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pls",
+    "name": "Planeshift",
+    "release_date": "2001-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ppls",
+    "name": "Planeshift Promos",
+    "release_date": "2001-01-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mpr",
+    "name": "Magic Player Rewards 2001",
+    "release_date": "2001-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal01",
+    "name": "Arena League 2001",
+    "release_date": "2001-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "f01",
+    "name": "Friday Night Magic 2001",
+    "release_date": "2001-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g01",
+    "name": "Judge Gift Cards 2001",
+    "release_date": "2001-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "inv",
+    "name": "Invasion",
+    "release_date": "2000-10-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "btd",
+    "name": "Beatdown Box Set",
+    "release_date": "2000-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pinv",
+    "name": "Invasion Promos",
+    "release_date": "2000-09-23",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc00",
+    "name": "World Championship Decks 2000",
+    "release_date": "2000-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pcy",
+    "name": "Prophecy",
+    "release_date": "2000-06-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ppcy",
+    "name": "Prophecy Promos",
+    "release_date": "2000-05-27",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "s00",
+    "name": "Starter 2000",
+    "release_date": "2000-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "nem",
+    "name": "Nemesis",
+    "release_date": "2000-02-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pelp",
+    "name": "European Land Program",
+    "release_date": "2000-02-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pnem",
+    "name": "Nemesis Promos",
+    "release_date": "2000-01-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal00",
+    "name": "Arena League 2000",
+    "release_date": "2000-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fnm",
+    "name": "Friday Night Magic 2000",
+    "release_date": "2000-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g00",
+    "name": "Judge Gift Cards 2000",
+    "release_date": "2000-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "brb",
+    "name": "Battle Royale Box Set",
+    "release_date": "1999-11-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mmq",
+    "name": "Mercadian Masques",
+    "release_date": "1999-10-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmmq",
+    "name": "Mercadian Masques Promos",
+    "release_date": "1999-09-25",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pwos",
+    "name": "Wizards of the Coast Online Store",
+    "release_date": "1999-09-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc99",
+    "name": "World Championship Decks 1999",
+    "release_date": "1999-08-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pgru",
+    "name": "Guru",
+    "release_date": "1999-07-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pptk",
+    "name": "Portal: Three Kingdoms Promos",
+    "release_date": "1999-07-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "s99",
+    "name": "Starter 1999",
+    "release_date": "1999-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "uds",
+    "name": "Urza's Destiny",
+    "release_date": "1999-06-07",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "puds",
+    "name": "Urza's Destiny Promos",
+    "release_date": "1999-05-29",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptk",
+    "name": "Portal Three Kingdoms",
+    "release_date": "1999-05-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "6ed",
+    "name": "Classic Sixth Edition",
+    "release_date": "1999-04-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ulg",
+    "name": "Urza's Legacy",
+    "release_date": "1999-02-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pulg",
+    "name": "Urza's Legacy Promos",
+    "release_date": "1999-02-06",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pal99",
+    "name": "Arena League 1999",
+    "release_date": "1999-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psus",
+    "name": "Junior Super Series",
+    "release_date": "1999-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "g99",
+    "name": "Judge Gift Cards 1999",
+    "release_date": "1999-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ath",
+    "name": "Anthologies",
+    "release_date": "1998-11-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "usg",
+    "name": "Urza's Saga",
+    "release_date": "1998-10-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pusg",
+    "name": "Urza's Saga Promos",
+    "release_date": "1998-09-26",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "palp",
+    "name": "Asia Pacific Land Program",
+    "release_date": "1998-09-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc98",
+    "name": "World Championship Decks 1998",
+    "release_date": "1998-08-12",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ugl",
+    "name": "Unglued",
+    "release_date": "1998-08-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tugl",
+    "name": "Unglued Tokens",
+    "release_date": "1998-08-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "p02",
+    "name": "Portal Second Age",
+    "release_date": "1998-06-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "exo",
+    "name": "Exodus",
+    "release_date": "1998-06-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pexo",
+    "name": "Exodus Promos",
+    "release_date": "1998-06-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "olep",
+    "name": "Oversized League Prizes",
+    "release_date": "1998-04-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sth",
+    "name": "Stronghold",
+    "release_date": "1998-03-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "psth",
+    "name": "Stronghold Promos",
+    "release_date": "1998-02-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "o90p",
+    "name": "Oversized 90's Promos",
+    "release_date": "1998-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "jgp",
+    "name": "Judge Gift Cards 1998",
+    "release_date": "1998-01-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "tmp",
+    "name": "Tempest",
+    "release_date": "1997-10-14",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptmp",
+    "name": "Tempest Promos",
+    "release_date": "1997-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wc97",
+    "name": "World Championship Decks 1997",
+    "release_date": "1997-08-13",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "wth",
+    "name": "Weatherlight",
+    "release_date": "1997-06-09",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "por",
+    "name": "Portal",
+    "release_date": "1997-05-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pvan",
+    "name": "Vanguard Series",
+    "release_date": "1997-05-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "past",
+    "name": "Astral Cards",
+    "release_date": "1997-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pmic",
+    "name": "MicroProse Promos",
+    "release_date": "1997-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "5ed",
+    "name": "Fifth Edition",
+    "release_date": "1997-03-24",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "vis",
+    "name": "Visions",
+    "release_date": "1997-02-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "itp",
+    "name": "Introductory Two-Player Set",
+    "release_date": "1996-12-31",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mgb",
+    "name": "Multiverse Gift Box",
+    "release_date": "1996-11-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "mir",
+    "name": "Mirage",
+    "release_date": "1996-10-08",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pred",
+    "name": "Redemption Program",
+    "release_date": "1996-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "parl",
+    "name": "Arena League 1996",
+    "release_date": "1996-08-02",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rqs",
+    "name": "Rivals Quick Start Set",
+    "release_date": "1996-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "plgm",
+    "name": "DCI Legend Membership",
+    "release_date": "1996-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "all",
+    "name": "Alliances",
+    "release_date": "1996-06-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ptc",
+    "name": "Pro Tour Collector Set",
+    "release_date": "1996-05-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "phpr",
+    "name": "HarperPrism Book Promos",
+    "release_date": "1996-05-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "hml",
+    "name": "Homelands",
+    "release_date": "1995-10-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "rin",
+    "name": "Rinascimento",
+    "release_date": "1995-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ren",
+    "name": "Renaissance",
+    "release_date": "1995-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "bchr",
+    "name": "Chronicles Foreign Black Border",
+    "release_date": "1995-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "chr",
+    "name": "Chronicles",
+    "release_date": "1995-07-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ice",
+    "name": "Ice Age",
+    "release_date": "1995-06-03",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "4bb",
+    "name": "Fourth Edition Foreign Black Border",
+    "release_date": "1995-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "4ed",
+    "name": "Fourth Edition",
+    "release_date": "1995-04-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fem",
+    "name": "Fallen Empires",
+    "release_date": "1994-11-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "drk",
+    "name": "The Dark",
+    "release_date": "1994-08-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "pdrc",
+    "name": "Dragon Con",
+    "release_date": "1994-07-15",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "sum",
+    "name": "Summer Magic / Edgar",
+    "release_date": "1994-06-21",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "leg",
+    "name": "Legends",
+    "release_date": "1994-06-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "3ed",
+    "name": "Revised Edition",
+    "release_date": "1994-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "fbb",
+    "name": "Foreign Black Border",
+    "release_date": "1994-04-11",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "atq",
+    "name": "Antiquities",
+    "release_date": "1994-03-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "arn",
+    "name": "Arabian Nights",
+    "release_date": "1993-12-17",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "ced",
+    "name": "Collectors' Edition",
+    "release_date": "1993-12-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "cei",
+    "name": "Intl. Collectors' Edition",
+    "release_date": "1993-12-10",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "2ed",
+    "name": "Unlimited Edition",
+    "release_date": "1993-12-01",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "leb",
+    "name": "Limited Edition Beta",
+    "release_date": "1993-10-04",
+    "icon_svg_uri": null,
+    "total_cards": null
+  },
+  {
+    "set_code": "lea",
+    "name": "Limited Edition Alpha",
+    "release_date": "1993-08-05",
+    "icon_svg_uri": null,
+    "total_cards": null
+  }
+]

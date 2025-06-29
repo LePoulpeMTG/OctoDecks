@@ -106,7 +106,7 @@ print(f"📤 sets.json copié vers {PUBLIC_PATH}")
 # ─── Git auto-commit/push (facultatif) ───────────────────────
 try:
     subprocess.run(["git", "config", "--global", "user.name", "OctoBot"], check=True)
-    subprocess.run(["git", "config", "--global", "user.email", "bot@octodecks.dev"], check=True)
+    subprocess.run(["git", "config", "--global", "user.email", "217338279+LePoulpeAsperger@users.noreply.github.com"], check=True)
     subprocess.run(["git", "add", str(PUBLIC_PATH)], check=True)
     subprocess.run(["git", "commit", "-m", "🔄 sets.json enrichi auto-publié"], check=True)
 

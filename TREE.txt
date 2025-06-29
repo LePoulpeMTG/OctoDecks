@@ -52,11 +52,10 @@
 │   │   │   ├── README.md
 │   │   │   └── mtg_set.dart
 │   │   └── services
+│   │       ├── README.md
 │   │       └── octo_api_service.dart
 │   ├── pubspec.lock
-│   ├── pubspec.yaml
-│   └── services
-│       └── README.md
+│   └── pubspec.yaml
 ├── data
 │   ├── .github
 │   │   └── workflows
@@ -94,4 +93,4 @@
     ├── export_sets.py
     └── import_all_cards.py
 
-33 directories, 62 files
+32 directories, 62 files

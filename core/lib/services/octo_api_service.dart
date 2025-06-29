@@ -9,9 +9,12 @@ class OctoApiService {
   static Future<List<MtgSet>> fetchSets() async {
     final uri = Uri.parse('\${_baseUrl}sets.json');
 
+    print('🟡 [DEBUG] URL utilisée pour fetch sets: \$uri');
+
     final response = await http.get(uri);
-    print('🟡 URI: $uri');
-    print('🟡 Response status: ${response.statusCode}');
+
+    print('🟡 [DEBUG] Status code reçu: \${response.statusCode}');
+
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
 
@@ -21,7 +24,7 @@ class OctoApiService {
         throw Exception('sets.json ne contient pas une liste valide');
       }
     } else {
-      throw Exception('Erreur de chargement sets.json (${response.statusCode})');
+      throw Exception('Erreur de chargement sets.json (\${response.statusCode})');
     }
   }
 
@@ -30,12 +33,11 @@ class OctoApiService {
     final uri = Uri.parse('\${_baseUrl}\$fileName');
 
     final response = await http.get(uri);
-    print('🟡 URI: $uri');
-    print('🟡 Response status: ${response.statusCode}');
+
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
-      throw Exception('Erreur de chargement sets.json (${response.statusCode})');
+      throw Exception('Erreur de chargement \$fileName (\${response.statusCode})');
     }
   }
 }

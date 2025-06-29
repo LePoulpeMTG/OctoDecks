@@ -43,7 +43,7 @@ print("📤 sets.json copié vers data/sets.json pour publication via GitHub Pag
 try:
     subprocess.run(["git", "config", "--global", "user.name", "OctoBot"], check=True)
     subprocess.run(["git", "config", "--global", "user.email", "bot@octodecks.dev"], check=True)
-    subprocess.run(["git", "add", "data/sets.json"], check=True)
+    subprocess.run(["git", "add", "-f", "data/sets.json"], check=True)
     subprocess.run(["git", "commit", "-m", "🔄 sets.json auto-publié pour GitHub Pages"], check=True)
 
     token = os.environ.get("GITHUB_TOKEN")

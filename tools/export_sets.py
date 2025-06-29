@@ -3,6 +3,7 @@ import json
 import os
 import subprocess
 import shutil
+import filecmp
 from pathlib import Path
 
 # Connexion à la base
@@ -33,26 +34,29 @@ print(f"✅ exports/sets.json généré ({len(sets)} entrées)")
 
 # --- Publication GitHub Pages ---
 
-# Copie vers le dossier data/
 dst = Path("data/sets.json")
 os.makedirs("data", exist_ok=True)
-shutil.copyfile("exports/sets.json", dst)
-print("📤 sets.json copié vers data/sets.json pour publication via GitHub Pages")
 
-# Git commit auto (si contexte GitHub Actions ou local)
-try:
-    subprocess.run(["git", "config", "--global", "user.name", "OctoBot"], check=True)
-    subprocess.run(["git", "config", "--global", "user.email", "bot@octodecks.dev"], check=True)
-    subprocess.run(["git", "add", "-f", "data/sets.json"], check=True)
-    subprocess.run(["git", "commit", "-m", "🔄 sets.json auto-publié pour GitHub Pages"], check=True)
+# Comparaison et copie si modifié
+if not dst.exists() or not filecmp.cmp("exports/sets.json", dst, shallow=False):
+    shutil.copyfile("exports/sets.json", dst)
+    print("📤 sets.json copié vers data/sets.json pour publication via GitHub Pages")
 
-    token = os.environ.get("GITHUB_TOKEN")
-    if token:
-        remote_url = "https://x-access-token:{}@github.com/LePoulpeMTG/OctoDecks.git".format(token)
-        subprocess.run(["git", "push", remote_url], check=True)
-    else:
-        subprocess.run(["git", "push"], check=True)
+    try:
+        subprocess.run(["git", "config", "--global", "user.name", "OctoBot"], check=True)
+        subprocess.run(["git", "config", "--global", "user.email", "bot@octodecks.dev"], check=True)
+        subprocess.run(["git", "add", "data/sets.json"], check=True)
+        subprocess.run(["git", "commit", "-m", "🔄 sets.json auto-publié pour GitHub Pages"], check=True)
 
-    print("✅ Fichier sets.json publié via GitHub Pages")
-except subprocess.CalledProcessError as e:
-    print("⚠️ Git auto-push échoué :", e)
+        token = os.environ.get("GITHUB_TOKEN")
+        if token:
+            remote_url = f"https://x-access-token:{token}@github.com/LePoulpeMTG/OctoDecks.git"
+            subprocess.run(["git", "push", remote_url], check=True)
+        else:
+            subprocess.run(["git", "push"], check=True)
+
+        print("✅ Fichier sets.json publié via GitHub Pages")
+    except subprocess.CalledProcessError as e:
+        print("⚠️ Git auto-push échoué :", e)
+else:
+    print("ℹ️ Aucun changement détecté dans sets.json, aucun commit nécessaire")

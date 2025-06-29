@@ -1,13 +1,11 @@
 {
   "hosting": [
     {
-      "target": "public",
       "site": "octodecks",
       "public": "apps/web_user/build/web",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },
     {
-      "target": "admin",
       "site": "adminoctodecks",
       "public": "build/web",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],

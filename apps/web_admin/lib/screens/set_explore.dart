@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:core/models/mtg_set.dart';
-import '../services/set_service.dart';
+import 'package:core/services/octo_api_service.dart';
 
 class SetExploreScreen extends StatelessWidget {
   const SetExploreScreen({super.key});
@@ -15,7 +15,7 @@ class SetExploreScreen extends StatelessWidget {
         title: const Text('MTG – Toutes les éditions'),
       ),
       body: FutureBuilder<List<MtgSet>>(
-        future: SetService.fetchSets(),
+        future: OctoApiService.fetchSets(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());

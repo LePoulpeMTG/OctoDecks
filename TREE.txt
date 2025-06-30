@@ -77,14 +77,12 @@
 │       └── schema_octobase.sql
 ├── docs
 │   ├── README.md
-│   ├── README_TEMPLATE.md
-│   └── roadmap_scryfall.md
+│   └── README_TEMPLATE.md
 ├── exports
 │   └── sets.json
 ├── github-recovery-codes (1).txt
 ├── octodecks-firebase-adminsdk-fbsvc-d9a9de1b14.json
 ├── pglite-debug.log
-├── prices_daily.json
 ├── requirements.txt
 ├── scripts
 │   └── README.md
@@ -103,4 +101,4 @@
     │   └── extract_set_from_bulk.py
     └── import_all_cards.py
 
-35 directories, 69 files
+35 directories, 67 files

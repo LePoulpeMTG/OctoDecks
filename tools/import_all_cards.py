@@ -319,7 +319,6 @@ def main() -> None:
 
             # Insert card une seule fois
             if card["oracle_id"] not in seen_oracle_ids:
-                insert_card(cur, card)
                 insert_legalities(cur, card)
                 seen_oracle_ids.add(card["oracle_id"])
 

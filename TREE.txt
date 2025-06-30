@@ -3,6 +3,7 @@
 │   └── workflows
 │       ├── README.md
 │       ├── daily_prices.yml
+│       ├── daily_scry_update.yml
 │       ├── main.yml
 │       ├── tree.yml
 │       └── weekly_prices.yml
@@ -83,6 +84,7 @@
 ├── github-recovery-codes (1).txt
 ├── octodecks-firebase-adminsdk-fbsvc-d9a9de1b14.json
 ├── pglite-debug.log
+├── prices_daily.json
 ├── requirements.txt
 ├── scripts
 │   └── README.md
@@ -99,6 +101,11 @@
     ├── dev
     │   ├── add_readme_path_header.py
     │   └── extract_set_from_bulk.py
-    └── import_all_cards.py
+    ├── export_daily_prices.py
+    ├── import_all_cards.py
+    ├── prices_card_daily_add.py
+    ├── prices_card_weekly_add.py
+    ├── prices_set_daily_add.py
+    └── prices_set_weekly_add.py
 
-35 directories, 67 files
+35 directories, 74 files

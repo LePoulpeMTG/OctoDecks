@@ -1,0 +1,75 @@
+name: Daily Scryfall Update
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # Toutes les heures
+  workflow_dispatch:
+
+jobs:
+  scryfall_update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python deps
+        run: pip install -q ijson tqdm requests firebase-admin google-cloud-storage
+
+      - name: Run conditional update logic
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_BUCKET: ${{ secrets.FIREBASE_BUCKET }}
+        run: |
+          set -e
+          python - <<'PY'
+          import json, os, requests, firebase_admin, sqlite3
+          from datetime import datetime
+          from firebase_admin import credentials, storage
+          from pathlib import Path
+
+          DB_PATH = Path("database/octobase_reference.db")
+          TAG_FILE = Path("tools/data/last_bulk_tag.txt")
+
+          # ───── Récupère le tag du bulk actuel ─────
+          resp = requests.get("https://api.scryfall.com/bulk-data", timeout=30).json()
+          rec  = next(d for d in resp["data"] if d["type"] == "all_cards")
+          current_tag = rec["updated_at"].split("T")[0]
+
+          last_tag = TAG_FILE.read_text().strip() if TAG_FILE.exists() else ""
+
+          if current_tag == last_tag:
+              print(f"⏩ Pas de mise à jour Scryfall ({current_tag})")
+              exit(0)
+
+          print(f"⬇️  Nouveau bulk détecté ({current_tag} ≠ {last_tag}) → mise à jour")
+
+          # ───── Étape 1 : mise à jour bulk & DB ─────
+          os.system("python tools/import_all_cards.py")
+
+          # ───── Étape 2 : ajout des prix quotidiens ─────
+          os.system("python tools/prices_card_daily_add.py")
+          os.system("python tools/prices_set_daily_add.py")
+
+          # ───── Étape 3 : ajout hebdo si dimanche ─────
+          if datetime.utcnow().weekday() == 6:
+              os.system("python tools/prices_card_weekly_add.py")
+              os.system("python tools/prices_set_weekly_add.py")
+
+          # ───── Étape 4 : compression BDD ─────
+          os.system("gzip -c database/octobase_reference.db > octobase_reference.db.gz")
+
+          # ───── Étape 5 : Upload vers Firebase ─────
+          cred = credentials.Certificate(json.loads(os.environ['FIREBASE_SERVICE_ACCOUNT']))
+          firebase_admin.initialize_app(cred, {'storageBucket': os.environ['FIREBASE_BUCKET']})
+          bucket = storage.bucket()
+
+          def upload(local, remote, ctype):
+              blob = bucket.blob(remote)
+              blob.upload_from_filename(local, content_type=ctype)
+              print(f"↑ {remote}")
+
+          upload("octobase_reference.db.gz", "octobase/octobase_reference.db.gz", "application/gzip")
+
+          today = datetime.utcnow().strftime("%Y-%m-%d")
+          upload("prices_daily.json", f"prices/daily/{today}.json", "application/json")
+
+          PY

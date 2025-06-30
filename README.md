@@ -97,18 +97,20 @@ PYTHON
     PHASE 1 — Initialisation de la BDD Scryfall (Base de Référence)
     - [x] Définir le schéma cible
     - [x] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
-    - [ ] Créer un script d’import JSON Scryfall: import_all_cards.py
-      - [ ] Téléchargement de l’énorme all-cards.json. (date differente de last_bulk_tag.txt)
-      - [ ] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
-      - [ ] Remplissage initial de la BDD
+    - [X] Créer un script d’import JSON Scryfall: import_all_cards.py
+      - [X] Téléchargement de l’énorme all-cards.json. (date differente de last_bulk_tag.txt)
+      - [X] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
+      - [X] Remplissage initial de la BDD
  
     PHASE 2 — Suivi des cotes
-    - [ ] Créer un script d'ajout des données daily aux tables prices_daily_card,prices_daily_set:prices_daily_add.py
+    - [ ] Créer un script (prices_card_daily_add.py) d'ajout des données quotidienne a la table prices_daily_card
         - [ ]Historique quotidient des cartes sur 90jours
+    - [ ] Créer un script (prices_set_daily_add.py) d'ajout des données quotidienne a la table prices_daily_set
         - [ ]Historique quotidient des sets sur 90jours
-   - [ ] Créer un script d'ajout des données weekly aux tables prices_weekly_card,
-        prices_weekly_set:prices_weekly_add.py
+
+   - [ ] Créer un script (prices_card_weekly_add.py) d'ajout des données weekly a la table prices_weekly_card,
         - [ ]Historique weekly des cartes (pas de limites)
+   - [ ] Créer un script (prices_set_weekly_add.py) d'ajout des données weekly a la table prices_weekly_set,
         - [ ]Historique weekly des sets (pas de limites)
     - [ ] Agrégation des prix (moyenne, min, max )
 YML

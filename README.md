@@ -95,10 +95,10 @@ Le CORE gère la maj depuis le bulk scryfall, met a dispo les données et agrege
 - [ ] Le core met a jour une bdd en ligne(firebase)
 PYTHON
     PHASE 1 — Initialisation de la BDD Scryfall (Base de Référence)
-    - [ ] Définir le schéma cible
-    - [ ] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
+    - [x] Définir le schéma cible
+    - [x] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
     - [ ] Créer un script d’import JSON Scryfall: import_all_cards.py
-      - [ ] Téléchargement de l’énorme all-cards.json. (si si flag_maj_bulk_scry=1)
+      - [ ] Téléchargement de l’énorme all-cards.json. (date differente de last_bulk_tag.txt)
       - [ ] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
       - [ ] Remplissage initial de la BDD
  

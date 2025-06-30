@@ -11,18 +11,12 @@ OctoDeck est conçu pour être **multiplateforme**, **offline-first**, **open-so
 
 ---
 
-## 🧱 Structure du projet
-
-
 ## 🧱 Structure du monorepo
 
 L’arborescence complète du projet est générée automatiquement ici :  
 📁 [Voir TREE.txt à jour](./TREE.txt)
 
 Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jour.
-
-
----
 
 ---
 
@@ -68,7 +62,7 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 |-------------------------------|----------|
 | `build_weekly_prices.py`      | Génère les moyennes hebdomadaires |
 | `layouts_by_face.json`        | Typologie des layouts (1 face, 2 faces…) |
-| `export_sets.py`              | Export des sets Scryfall         |
+      |
 
 ### `data/` – Données du projet
 | Dossier        | Contenu |
@@ -81,9 +75,10 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 
 ## 🚧 Roadmap fonctionnelle
 
-- [x] Structure Flutter + scripts Python de base
 - [x] Schéma SQLite de référence (`schema_octobase.sql`)
 - [x] Synchronisation des données Scryfall
+- [x] BDD hébergée sur firebase
+- [ ] Creation API REST
 - [ ] UI filtres type *Magic Arena*
 - [ ] Scan de cartes (Manabox → OctoDeck)
 - [ ] Historique complet de prix par carte

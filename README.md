@@ -93,24 +93,34 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 Le CORE gère la maj depuis le bulk scryfall, met a dispo les données et agrege les datas pour l'API REST.
 #### ✨ CORE BASE-Fonctionnement attendu
 - [ ] Le core met a jour une bdd en ligne(firebase)
+PYTHON
     PHASE 1 — Initialisation de la BDD Scryfall (Base de Référence)
     - [ ] Définir le schéma cible
     - [ ] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
-    - [ ] Créer un script d’import JSON Scryfall
-    - [ ] Téléchargement de l’énorme all-cards.json.
-    - [ ] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
-    - [ ] Filtrage des champs utiles et normalisation.
-    - [ ] Remplissage initial de la BDD
+    - [ ] Créer un script d’import JSON Scryfall: import_all_cards.py
+      - [ ] Téléchargement de l’énorme all-cards.json. (si si flag_maj_bulk_scry=1)
+      - [ ] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
+      - [ ] Remplissage initial de la BDD
+ 
     PHASE 2 — Suivi des cotes
-    - [ ] Création d’une table prices_daily_card,prices_daily_set,prices_weekly_card,prices_weekly_set
+    - [ ] Créer un script d'ajout des données daily aux tables prices_daily_card,prices_daily_set:prices_daily_add.py
         - [ ]Historique quotidient des cartes sur 90jours
         - [ ]Historique quotidient des sets sur 90jours
+   - [ ] Créer un script d'ajout des données weekly aux tables prices_weekly_card,
+        prices_weekly_set:prices_weekly_add.py
         - [ ]Historique weekly des cartes (pas de limites)
         - [ ]Historique weekly des sets (pas de limites)
     - [ ] Agrégation des prix (moyenne, min, max )
-    - [ ] Script CRON journalier sur bulk scryfall.Json ( voir comment faire des appels toutes les heures pour ne pas se prendre un decalage trop important)
+YML
+   - [ ]  Crée un yml:daily_scry_update.yml
+      - [ ] toute les heures, tests si maj du bulk scryfall
+      Si maj du bulk
+        - [ ] Script CRON journalier sur bulk scryfall.Json ( voir comment faire des appels toutes les heures pour ne pas se prendre un decalage trop important)
         - [ ] déclenchement de l'Insertion dans prices_daily_card,prices_daily_set
-        - [ ] si dimanche: déclenchement de l'Insertion dans prices_weekly_card,prices_weekly_set
+        - [ ] si dimanche: déclenchement de l'Insertion dans prices_weekly_card,
+        prices_weekly_set
+        - [ ] Upload sur firebase
+
 #### ✨ CORE USER-Fonctionnement attendu
     - [ ] Connection en local
     - [ ] Connection en ligne (si posible ajouter connection avec Google / Facebook)

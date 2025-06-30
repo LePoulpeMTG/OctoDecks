@@ -87,41 +87,36 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 - [ ] Publication publique (démo utilisable en ligne)
 
 ------------------------------------------------------------------------------------
-## 📈 Gestion projet 
+## 📈 Gestion projet    [ ]-Non fait 🟧-Créé mais non testé ✅-Validé
 ------------------------------------------------------------------------------------
-### ✨ CORE
-Le CORE gère la maj depuis le bulk scryfall, met a dispo les données et agrege les datas pour l'API REST.
-#### ✨ CORE BASE-Fonctionnement attendu
-- [ ] Le core met a jour une bdd en ligne(firebase)
-PYTHON
-    PHASE 1 — Initialisation de la BDD Scryfall (Base de Référence)
-    - [x] Définir le schéma cible
-    - [x] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
-    - [X] Créer un script d’import JSON Scryfall: import_all_cards.py
-      - [X] Téléchargement de l’énorme all-cards.json. (date differente de last_bulk_tag.txt)
-      - [X] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
-      - [X] Remplissage initial de la BDD
- 
-    PHASE 2 — Suivi des cotes
-    - [ ] Créer un script (prices_card_daily_add.py) d'ajout des données quotidienne a la table prices_daily_card
-        - [ ]Historique quotidient des cartes sur 90jours
-    - [ ] Créer un script (prices_set_daily_add.py) d'ajout des données quotidienne a la table prices_daily_set
-        - [ ]Historique quotidient des sets sur 90jours
+**PHASE 1 — Initialisation de la BDD Scryfall (Base de Référence)**
+- [🟧] Définir le schéma cible
+- [🟧] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
+- [🟧] Créer un script d’import JSON Scryfall : `import_all_cards.py`
+  - [🟧] Téléchargement de l’énorme `all-cards.json` (date différente de `last_bulk_tag.txt`)
+  - [🟧] Traitement des layouts 1 face / 2 faces proprement (y compris en cas de nouveau format)
+  - [🟧] Remplissage initial de la BDD
 
-   - [ ] Créer un script (prices_card_weekly_add.py) d'ajout des données weekly a la table prices_weekly_card,
-        - [ ]Historique weekly des cartes (pas de limites)
-   - [ ] Créer un script (prices_set_weekly_add.py) d'ajout des données weekly a la table prices_weekly_set,
-        - [ ]Historique weekly des sets (pas de limites)
-    - [ ] Agrégation des prix (moyenne, min, max )
-YML
-   - [ ]  Crée un yml:daily_scry_update.yml
-      - [ ] toute les heures, tests si maj du bulk scryfall
-      Si maj du bulk
-        - [ ] Script CRON journalier sur bulk scryfall.Json ( voir comment faire des appels toutes les heures pour ne pas se prendre un decalage trop important)
-        - [ ] déclenchement de l'Insertion dans prices_daily_card,prices_daily_set
-        - [ ] si dimanche: déclenchement de l'Insertion dans prices_weekly_card,
-        prices_weekly_set
-        - [ ] Upload sur firebase
+**PHASE 2 — Suivi des cotes**
+- [🟧] Créer un script (`prices_card_daily_add.py`) d'ajout des données quotidiennes à la table `prices_daily_card`
+  - [🟧] Historique quotidien des cartes sur 90 jours
+- [🟧] Créer un script (`prices_set_daily_add.py`) d'ajout des données quotidiennes à la table `prices_daily_set`
+  - [🟧] Historique quotidien des sets sur 90 jours
+- [🟧] Créer un script (`prices_card_weekly_add.py`) d'ajout des données hebdo à la table `prices_weekly_card`
+  - [🟧] Historique weekly des cartes (pas de limite)
+- [🟧] Créer un script (`prices_set_weekly_add.py`) d'ajout des données hebdo à la table `prices_weekly_set`
+  - [🟧] Historique weekly des sets (pas de limite)
+- [🟧] Agrégation des prix (moyenne, min, max)
+- [🟧] Créer un script (`purge_old_daily_prices.py`) qui supprime les daily < 90 j
+
+**YML**
+- [🟧] Créer un YML : `daily_scry_update.yml`
+  - [🟧] Toutes les heures, test si maj du bulk Scryfall
+    - [🟧] Script CRON journalier sur bulk `scryfall.json` (voir comment faire des appels toutes les heures pour ne pas se prendre un décalage trop important)
+    - [🟧] Déclenchement de l'insertion dans `prices_daily_card`, `prices_daily_set`
+    - [🟧] Si dimanche : déclenchement de l'insertion dans `prices_weekly_card`, `prices_weekly_set`
+    - [🟧] Purge des daily (`purge_old_daily_prices.py`)
+    - [🟧] Upload sur Firebase
 
 #### ✨ CORE USER-Fonctionnement attendu
     - [ ] Connection en local

@@ -312,13 +312,14 @@ def insert_daily_price(cur: sqlite3.Cursor, card: dict, today: str) -> None:
 def main() -> None:
     from datetime import date
 
-    bulk_path = next(Path("tools/data/bulk/").glob("all-cards-*.json.gz"))
+    url, tag, ext = latest_bulk_info()
+    bulk_path     = download_bulk_if_needed(url, tag, ext)
     today = date.today().isoformat()
 
     conn = sqlite3.connect(DB_PATH)
     conn.execute('PRAGMA foreign_keys = ON;')
     cur = conn.cursor()
-
+    ensure_schema(conn)
     seen_oracle_ids = set()
 
     with smart_open(bulk_path) as f:
@@ -329,6 +330,7 @@ def main() -> None:
                 continue
 
             # Insertion des legalities une seule fois par oracle_id
+            set_id = insert_core(cur, card)
             if card["oracle_id"] not in seen_oracle_ids:
                 insert_legalities(cur, card)
                 seen_oracle_ids.add(card["oracle_id"])
@@ -336,7 +338,6 @@ def main() -> None:
             face_cnt = face_count_from_card(card)
             front, back = extract_images(card, face_cnt)
 
-            set_id = insert_core(cur, card)
             insert_print(cur, card, set_id, front, back)
             insert_localization(cur, card, front, back)
             insert_daily_price(cur, card, today)

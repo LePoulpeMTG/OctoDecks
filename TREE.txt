@@ -79,6 +79,9 @@
 │   ├── README.md
 │   ├── README_TEMPLATE.md
 │   └── roadmap_scryfall.md
+├── exports
+│   └── sets.json
+├── github-recovery-codes (1).txt
 ├── octodecks-firebase-adminsdk-fbsvc-d9a9de1b14.json
 ├── pglite-debug.log
 ├── prices_daily.json
@@ -96,9 +99,8 @@
     │   ├── last_bulk_tag.txt
     │   └── layouts_by_face.json
     ├── dev
-    │   └── add_readme_path_header.py
-    ├── export_daily_prices.py
-    ├── export_sets.py
+    │   ├── add_readme_path_header.py
+    │   └── extract_set_from_bulk.py
     └── import_all_cards.py
 
-34 directories, 68 files
+35 directories, 69 files

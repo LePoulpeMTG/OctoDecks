@@ -199,8 +199,8 @@ def insert_core(cur: sqlite3.Cursor, card: dict) -> int:
     cur.execute(
         """
         INSERT OR IGNORE INTO sets
-        (set_code, name, release_date, set_type, icon_svg_uri, total_cards)
-        VALUES (?,?,?,?,?,?)
+        (set_code, name, release_date, set_type, icon_svg_uri)
+        VALUES (?,?,?,?,?)
         """,
         (
             card["set"],
@@ -208,29 +208,10 @@ def insert_core(cur: sqlite3.Cursor, card: dict) -> int:
             card["released_at"],
             card["set_type"],
             card.get("set_icon_svg_uri"),
-            card.get("set_total") or 0
         ),
     )
-
-    # Mise à jour des champs NULL si l'entrée existait déjà
-    cur.execute(
-        """
-        UPDATE sets
-        SET 
-            icon_svg_uri = COALESCE(icon_svg_uri, ?),
-            total_cards = COALESCE(total_cards, ?)
-        WHERE set_code = ?;
-        """,
-        (
-            card.get("set_icon_svg_uri"),
-            card.get("set_total") or 0,
-            card["set"]
-        )
-    )
-
     cur.execute("SELECT set_id FROM sets WHERE set_code = ?;", (card["set"],))
     return cur.fetchone()[0]
-
 
 
 def insert_print(
@@ -328,7 +309,35 @@ def insert_daily_price(cur: sqlite3.Cursor, card: dict, today: str) -> None:
 # MAIN WORKFLOW
 # ───────────────────────────────────────────────
 def main() -> None:
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    seen_oracle_ids = set()
+
+    with smart_open(bulk_path) as f:
+        for card in ijson.items(f, "item"):
+            if card.get("layout") in ("token", "emblem", "art_series", "double_faced_token"):
+                continue
+
+            # Insert card une seule fois
+            if card["oracle_id"] not in seen_oracle_ids:
+                insert_card(cur, card)
+                insert_legalities(cur, card)
+                seen_oracle_ids.add(card["oracle_id"])
+
+            # Récupération images (nécessaire pour print ET localization)
+            face_cnt = face_count_from_card(card)
+            front, back = extract_images(card, face_cnt)
+
+            # Insert core (set + card) et récupère le set_id
+            set_id = insert_core(cur, card)
+
+            # Insert du print physique
+            insert_print(cur, card, set_id, front, back)
+
+            # Localisation (non-EN uniquement)
+            insert_localization(cur, card, front, back)
+
+            # Prix du jour
+            insert_daily_price(cur, card, today)
 
     # 1) DB
     conn = open_db()

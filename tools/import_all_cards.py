@@ -16,6 +16,7 @@ import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
+from datetime import date
 from typing import Dict, Tuple
 
 import ijson
@@ -314,29 +315,31 @@ def main() -> None:
 
     with smart_open(bulk_path) as f:
         for card in ijson.items(f, "item"):
-            if card.get("layout") in ("token", "emblem", "art_series", "double_faced_token"):
-                continue
+        if "oracle_id" not in card:
+            continue
+        if card.get("layout") in ("token", "emblem", "art_series", "double_faced_token"):
+            continue
 
-            # Insert card une seule fois
-            if card["oracle_id"] not in seen_oracle_ids:
-                insert_legalities(cur, card)
-                seen_oracle_ids.add(card["oracle_id"])
+        # Insert card une seule fois
+        if card["oracle_id"] not in seen_oracle_ids:
+            insert_legalities(cur, card)
+            seen_oracle_ids.add(card["oracle_id"])
 
-            # Récupération images (nécessaire pour print ET localization)
-            face_cnt = face_count_from_card(card)
-            front, back = extract_images(card, face_cnt)
+        # Récupération images (nécessaire pour print ET localization)
+        face_cnt = face_count_from_card(card)
+        front, back = extract_images(card, face_cnt)
 
-            # Insert core (set + card) et récupère le set_id
-            set_id = insert_core(cur, card)
+        # Insert core (set + card) et récupère le set_id
+        set_id = insert_core(cur, card)
 
-            # Insert du print physique
-            insert_print(cur, card, set_id, front, back)
+        # Insert du print physique
+        insert_print(cur, card, set_id, front, back)
 
-            # Localisation (non-EN uniquement)
-            insert_localization(cur, card, front, back)
+        # Localisation (non-EN uniquement)
+        insert_localization(cur, card, front, back)
 
-            # Prix du jour
-            insert_daily_price(cur, card, today)
+        # Prix du jour
+        insert_daily_price(cur, card, today)
 
     # 1) DB
     conn = open_db()

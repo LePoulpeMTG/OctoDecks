@@ -39,24 +39,3 @@ Requête à l’API Scryfall pour toutes les cartes trackées (au moins celles e
 Insertion dans prices_daily.
 
 Script CRON hebdomadaire
-
-Copie ou synthèse de prices_daily dans prices_weekly.
-
-🧠 PHASE 3 — Améliorations et usage app
-Ajout des tags, keywords et types dans la BDD
-
-Pour aider à la recherche/filtering dans les apps.
-
-Ajout des traductions dans une table dédiée
-
-Par oracle_id ou scryfall_id + langue.
-
-Export des données vers Firebase / CDN
-
-En fichiers JSON compressés par set ou par bloc.
-
-Ou exposer une API perso si besoin.
-
-Documentation et format standard d’import
-
-Pour les apps Flutter, WinDev, Web Admin, etc.

@@ -75,9 +75,9 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 
 ## 🚧 Roadmap fonctionnelle
 
-- [x] Schéma SQLite de référence (`schema_octobase.sql`)
-- [x] Synchronisation des données Scryfall
-- [x] BDD hébergée sur firebase
+- [ ] Schéma SQLite de référence (`schema_octobase.sql`)
+- [ ] Synchronisation des données Scryfall
+- [ ] BDD hébergée sur firebase
 - [ ] Creation API REST
 - [ ] UI filtres type *Magic Arena*
 - [ ] Scan de cartes (Manabox → OctoDeck)
@@ -86,8 +86,93 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 - [ ] Authentification avec rôles
 - [ ] Publication publique (démo utilisable en ligne)
 
----
+------------------------------------------------------------------------------------
+## 📈 Gestion projet 
+------------------------------------------------------------------------------------
+### ✨ CORE
+Le CORE gère la maj depuis le bulk scryfall, met a dispo les données et agrege les datas pour l'API REST.
+#### ✨ CORE BASE-Fonctionnement attendu
+- [ ] Le core met a jour une bdd en ligne(firebase)
+    PHASE 1 — Initialisation de la BDD Scryfall (Base de Référence)
+    - [ ] Définir le schéma cible
+    - [ ] Créations des Tables : cards, sets, prices, oracle_cards, layouts_by_face, etc.
+    - [ ] Créer un script d’import JSON Scryfall
+    - [ ] Téléchargement de l’énorme all-cards.json.
+    - [ ] Traitement des layouts 1 face / 2 faces proprement. (y compris en cas de nouveau format)
+    - [ ] Filtrage des champs utiles et normalisation.
+    - [ ] Remplissage initial de la BDD
+    PHASE 2 — Suivi des cotes
+    - [ ] Création d’une table prices_daily_card,prices_daily_set,prices_weekly_card,prices_weekly_set
+        - [ ]Historique quotidient des cartes sur 90jours
+        - [ ]Historique quotidient des sets sur 90jours
+        - [ ]Historique weekly des cartes (pas de limites)
+        - [ ]Historique weekly des sets (pas de limites)
+    - [ ] Agrégation des prix (moyenne, min, max )
+    - [ ] Script CRON journalier sur bulk scryfall.Json ( voir comment faire des appels toutes les heures pour ne pas se prendre un decalage trop important)
+        - [ ] déclenchement de l'Insertion dans prices_daily_card,prices_daily_set
+        - [ ] si dimanche: déclenchement de l'Insertion dans prices_weekly_card,prices_weekly_set
+#### ✨ CORE USER-Fonctionnement attendu
+    - [ ] Connection en local
+    - [ ] Connection en ligne (si posible ajouter connection avec Google / Facebook)
+    - [ ] Gerer la synchro BDD Local (cartes dispo, en trade, en collection) avec le serveur 
+#### ✨ CORE Trade-Fonctionnement attendu
+    - [ ] fonction de comparaison de liste de trade vs liste wanted entre 2 utilisateurs
+#### ✨ CORE MarketPlace
+    - [ ] fonction de mise a disposition de carte sur le market
+    
+#### ✨ CORE API REST
+- [ ] Le service API REST met a dispositions les data aux app
+- [ ] Les app utilisent l'API REST 
 
+------------------------------------------------------------------------------------
+### 🔖 WebAdmin:adminoctodecks.web.app
+c'est le tableau de bord du capitaine
+- [ ] Accessible par authentificatoion sur adminoctodecks.web.app
+#### 🔖 WebAdmin-Page KPI
+   - [ ] Suivi des utilisateurs connectés
+   - [ ] Suivi des dons
+   - [ ] Suivi du nombre de cartes dans la BDD
+   - [ ] Suivi du nombre de sets dans la BDD
+   - [ ] Suivi des cycles d'uptade du CORE
+
+#### 🔖 WebAdmin-Page Set_explore
+   - [ ] Exploration des sets comme sur https://scryfall.com/sets
+#### 🔖 WebAdmin-Page Set_detail
+   - [ ] Affichage du detail SET comme sur https://scryfall.com/sets/tdm
+#### 🔖 WebAdmin-Page Card_detail
+   - [ ] Affichage du détail card comme sur https://scryfall.com/card/tdm/2/anafenza-unyielding-lineage
+    
+------------------------------------------------------------------------------------
+### 🙌 WebUser:octodecks.web.app
+c'est le tableau de bord de l'utilisateur
+- [ ] Accessible par authentificatoion sur octodecks.web.app
+#### 🙌 WebUser-Page KPI
+   - [ ] Suivi valeur des cartes possédées
+   - [ ] Suivi valeur des cartes en possession
+   - [ ] Suivi valeur des cartes en vente  
+   - [ ] Suivi du nombre de cartes dans la BDD
+   - [ ] Suivi des cycles d'uptade du CORE
+   - [ ] Suivi des cycles d'uptade du LOCAL
+#### 🙌 WebUser-Page MesCartes_explore
+   - [ ] Parcourir mes cartes
+   - [ ] Stats sur mes cartes
+#### 🙌 WebUser-Page MesSets_explore
+   - [ ] Parcourir mes sets
+   - [ ] Stats sur mes sets
+#### 🙌 WebUser-Page Set_explore
+   - [ ] Exploration des sets comme sur https://scryfall.com/sets
+#### 🙌 WebUser-Page Set_detail
+   - [ ] Affichage du detail SET comme sur https://scryfall.com/sets/tdm
+#### 🙌 WebUser-Page Card_detail
+   - [ ] Affichage du détail card comme sur https://scryfall.com/card/tdm/2/anafenza-unyielding-lineage
+#### 🙌 WebUser-deckbuilding (facon arena)
+#### 🙌 WebUser-Acquisition carte (facon arena)
+#### 🙌 WebUser-Parametres
+#### 🙌 WebUser-Profil
+
+
+
+------------------------------------------------------------------------------------
 ## 🙌 Esprit du projet
 
 > "Ce projet est open source, pensé pour durer, pour rendre service à la commu',  

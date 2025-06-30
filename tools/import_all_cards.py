@@ -310,36 +310,40 @@ def insert_daily_price(cur: sqlite3.Cursor, card: dict, today: str) -> None:
 # MAIN WORKFLOW
 # ───────────────────────────────────────────────
 def main() -> None:
+    from datetime import date
+
     bulk_path = next(Path("tools/data/bulk/").glob("all-cards-*.json.gz"))
+    today = date.today().isoformat()
+
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute('PRAGMA foreign_keys = ON;')
+    cur = conn.cursor()
+
     seen_oracle_ids = set()
 
     with smart_open(bulk_path) as f:
         for card in ijson.items(f, "item"):
-        if "oracle_id" not in card:
-            continue
-        if card.get("layout") in ("token", "emblem", "art_series", "double_faced_token"):
-            continue
+            if "oracle_id" not in card:
+                continue
+            if card.get("layout") in ("token", "emblem", "art_series", "double_faced_token"):
+                continue
 
-        # Insert card une seule fois
-        if card["oracle_id"] not in seen_oracle_ids:
-            insert_legalities(cur, card)
-            seen_oracle_ids.add(card["oracle_id"])
+            # Insertion des legalities une seule fois par oracle_id
+            if card["oracle_id"] not in seen_oracle_ids:
+                insert_legalities(cur, card)
+                seen_oracle_ids.add(card["oracle_id"])
 
-        # Récupération images (nécessaire pour print ET localization)
-        face_cnt = face_count_from_card(card)
-        front, back = extract_images(card, face_cnt)
+            face_cnt = face_count_from_card(card)
+            front, back = extract_images(card, face_cnt)
 
-        # Insert core (set + card) et récupère le set_id
-        set_id = insert_core(cur, card)
+            set_id = insert_core(cur, card)
+            insert_print(cur, card, set_id, front, back)
+            insert_localization(cur, card, front, back)
+            insert_daily_price(cur, card, today)
 
-        # Insert du print physique
-        insert_print(cur, card, set_id, front, back)
+    conn.commit()
+    conn.close()
 
-        # Localisation (non-EN uniquement)
-        insert_localization(cur, card, front, back)
-
-        # Prix du jour
-        insert_daily_price(cur, card, today)
 
     # 1) DB
     conn = open_db()

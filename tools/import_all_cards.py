@@ -199,8 +199,8 @@ def insert_core(cur: sqlite3.Cursor, card: dict) -> int:
     cur.execute(
         """
         INSERT OR IGNORE INTO sets
-        (set_code, name, release_date, set_type, icon_svg_uri)
-        VALUES (?,?,?,?,?)
+        (set_code, name, release_date, set_type, icon_svg_uri, total_cards)
+        VALUES (?,?,?,?,?,?)
         """,
         (
             card["set"],
@@ -208,10 +208,29 @@ def insert_core(cur: sqlite3.Cursor, card: dict) -> int:
             card["released_at"],
             card["set_type"],
             card.get("set_icon_svg_uri"),
+            card.get("set_total") or 0
         ),
     )
+
+    # Mise à jour des champs NULL si l'entrée existait déjà
+    cur.execute(
+        """
+        UPDATE sets
+        SET 
+            icon_svg_uri = COALESCE(icon_svg_uri, ?),
+            total_cards = COALESCE(total_cards, ?)
+        WHERE set_code = ?;
+        """,
+        (
+            card.get("set_icon_svg_uri"),
+            card.get("set_total") or 0,
+            card["set"]
+        )
+    )
+
     cur.execute("SELECT set_id FROM sets WHERE set_code = ?;", (card["set"],))
     return cur.fetchone()[0]
+
 
 
 def insert_print(

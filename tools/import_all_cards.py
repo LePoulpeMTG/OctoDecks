@@ -309,7 +309,7 @@ def insert_daily_price(cur: sqlite3.Cursor, card: dict, today: str) -> None:
 # MAIN WORKFLOW
 # ───────────────────────────────────────────────
 def main() -> None:
-
+    bulk_path = next(Path("tools/data/bulk/").glob("all-cards-*.json.gz"))
     seen_oracle_ids = set()
 
     with smart_open(bulk_path) as f:

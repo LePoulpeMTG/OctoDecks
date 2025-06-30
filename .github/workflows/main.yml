@@ -20,7 +20,8 @@ jobs:
       run: |
         rm -f database/octobase_reference.db tools/data/last_bulk_tag.txt
         python tools/import_all_cards.py
-
+    - name: Generate daily prices JSON
+      run: python tools/export_daily_prices.py
     # ── Upload vers Firebase Storage ───────────────────
     - name: Upload DB + JSON
       env:

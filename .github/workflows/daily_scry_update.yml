@@ -47,7 +47,7 @@ jobs:
           os.system("python tools/import_all_cards.py")
 
           # ───── Étape 2 : ajout des prix quotidiens ─────
-          os.system("python tools/prices_card_daily_add.py")
+          #os.system("python tools/prices_card_daily_add.py")
           os.system("python tools/prices_set_daily_add.py")
           os.system("python tools/generate_set_statistics.py")
           

@@ -18,6 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from datetime import date
 from typing import Dict, Tuple
+from tools.generate_set_statistics import main as generate_statistics_for_all_sets
 
 import ijson
 import requests
@@ -401,3 +402,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    generate_statistics_for_all_sets()

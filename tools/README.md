@@ -15,3 +15,23 @@
 
 > Les scripts ne dépendent que de `sqlite3`, `ijson`, `tqdm`, `requests`.  
 > Lancer `python tools/import_all_cards.py` crée la base et charge **~500 000** impressions en 3-4 min sur une machine locale décente.
+# 🧪 Outils de Debug — CORE OctoDecks
+
+Ce dossier contient les outils internes de test pour valider le fonctionnement du **core** (import Scryfall, historique de prix, intégrité des données).
+
+---
+
+## 📂 Contenu
+
+| Script                          | Description |
+|---------------------------------|-------------|
+| `reset_daily_scry_update.py`    | Supprime les prix journaliers de la date du jour (`prices_daily_*`) |
+| `reset_weekly_scry_update.py`   | Supprime les prix hebdomadaires de la semaine courante (`prices_weekly_*`) |
+| `debug_core.py`                 | Outil CLI pour enchaîner facilement les tests (reset, run, check) |
+
+---
+
+## ⚙️ Utilisation de `debug_core.py`
+
+```bash
+python tools/dev/debug_core.py [options]

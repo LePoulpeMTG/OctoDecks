@@ -96,11 +96,12 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 - [🟧] Créer un script d’import JSON Scryfall : `import_all_cards.py`
   - [🟧] Téléchargement de l’énorme `all-cards.json` (date différente de `last_bulk_tag.txt`)
   - [🟧] Traitement des layouts 1 face / 2 faces proprement (y compris en cas de nouveau format)
+  - [🟧] Historique quotidien des cartes sur 90 jours
   - [🟧] Remplissage initial de la BDD
 
 **PHASE 2 — Suivi des cotes**
 - [🟧] Créer un script (`prices_card_daily_add.py`) d'ajout des données quotidiennes à la table `prices_daily_card`
-  - [🟧] Historique quotidien des cartes sur 90 jours
+  - 
 - [🟧] Créer un script (`prices_set_daily_add.py`) d'ajout des données quotidiennes à la table `prices_daily_set`
   - [🟧] Historique quotidien des sets sur 90 jours
 - [🟧] Créer un script (`prices_card_weekly_add.py`) d'ajout des données hebdo à la table `prices_weekly_card`
@@ -126,13 +127,17 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 #### ✨ CORE Trade-Fonctionnement attendu
     - [ ] fonction de comparaison de liste de trade vs liste wanted entre 2 utilisateurs
 #### ✨ CORE MarketPlace
+    - [ ] Le service API REST met à disposition les données aux apps Flutter (mobile/web/desktop)
     - [ ] fonction de mise a disposition de carte sur le market
     
 #### ✨ CORE API REST
 - [ ] Le service API REST met a dispositions les data aux app
-- [ ] Les app utilisent l'API REST 
+- [ ] Les apps accèdent uniquement aux données via l'API REST (pas de lecture directe sur SQLite)
+- [ ] L’API REST s’appuie sur la base octobase_reference.db (mode lecture seule dans un premier temps)
+- [ ] L’API REST est développée dans core/api_rest/ en FastAPI (Python)
 
 ------------------------------------------------------------------------------------
+
 ### 🔖 WebAdmin:adminoctodecks.web.app
 c'est le tableau de bord du capitaine
 - [ ] Accessible par authentificatoion sur adminoctodecks.web.app

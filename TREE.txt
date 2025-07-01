@@ -96,7 +96,10 @@
     │   └── update-octobase.yml
     ├── dev
     │   ├── add_readme_path_header.py
-    │   └── extract_set_from_bulk.py
+    │   ├── debug_core.py
+    │   ├── extract_set_from_bulk.py
+    │   ├── reset_daily_scry_update.py
+    │   └── reset_weekly_scry_update.py
     ├── import_all_cards.py
     ├── prices_card_daily_add.py
     ├── prices_card_weekly_add.py
@@ -104,4 +107,4 @@
     ├── prices_set_weekly_add.py
     └── purge_old_daily_prices.py
 
-34 directories, 71 files
+34 directories, 74 files

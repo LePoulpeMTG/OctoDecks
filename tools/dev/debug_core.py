@@ -37,7 +37,6 @@ def reset_daily():
 
 def run_script(script_name):
     path = {
-        "card": "tools/prices_card_daily_add.py",
         "set": "tools/prices_set_daily_add.py",
     }.get(script_name)
 
@@ -66,7 +65,7 @@ def check_daily_counts():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--reset", action="store_true", help="Supprimer les données du jour")
-    parser.add_argument("--run", choices=["card", "set"], help="Lancer un script de traitement")
+    parser.add_argument("--run", choices=["set", "week_card", "week_set"], help="Lancer un script de traitement")
     parser.add_argument("--check", action="store_true", help="Afficher les lignes insérées")
     args = parser.parse_args()
 

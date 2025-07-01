@@ -46,6 +46,9 @@
 │       └── README.md
 ├── core
 │   ├── README.md
+│   ├── api_rest
+│   │   ├── README.md
+│   │   └── main.py
 │   ├── auth
 │   │   └── README.md
 │   ├── lib
@@ -101,10 +104,9 @@
     │   ├── reset_daily_scry_update.py
     │   └── reset_weekly_scry_update.py
     ├── import_all_cards.py
-    ├── prices_card_daily_add.py
     ├── prices_card_weekly_add.py
     ├── prices_set_daily_add.py
     ├── prices_set_weekly_add.py
     └── purge_old_daily_prices.py
 
-34 directories, 74 files
+35 directories, 75 files

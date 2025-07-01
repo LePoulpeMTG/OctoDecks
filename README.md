@@ -119,6 +119,13 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
     - [🟧] Si dimanche : déclenchement de l'insertion dans `prices_weekly_card`, `prices_weekly_set`
     - [🟧] Purge des daily (`purge_old_daily_prices.py`)
     - [🟧] Upload sur Firebase
+    
+#### ✨ CORE API REST
+- [ ] Le service API REST met à disposition les data aux apps Flutter
+- [ ] Les apps accèdent uniquement aux données via l'API REST (pas de lecture directe sur SQLite)
+- [ ] L’API REST s’appuie sur la base `octobase_reference.db` (mode lecture seule dans un premier temps)
+- [ ] L’API REST est développée avec FastAPI (Python), dans `core/api_rest/`
+- [ ] Entrée principale : `main.py` expose `/`, `/cards`, `/sets`
 
 #### ✨ CORE USER-Fonctionnement attendu
     - [ ] Connection en local
@@ -129,12 +136,7 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 #### ✨ CORE MarketPlace
     - [ ] Le service API REST met à disposition les données aux apps Flutter (mobile/web/desktop)
     - [ ] fonction de mise a disposition de carte sur le market
-    
-#### ✨ CORE API REST
-- [ ] Le service API REST met a dispositions les data aux app
-- [ ] Les apps accèdent uniquement aux données via l'API REST (pas de lecture directe sur SQLite)
-- [ ] L’API REST s’appuie sur la base octobase_reference.db (mode lecture seule dans un premier temps)
-- [ ] L’API REST est développée dans core/api_rest/ en FastAPI (Python)
+
 
 ------------------------------------------------------------------------------------
 

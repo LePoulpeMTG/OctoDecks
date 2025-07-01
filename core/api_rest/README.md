@@ -62,24 +62,45 @@ GET	/prices/daily/set/{set_code}	Historique prix set
 🔐 Sécurité / Auth (plus tard)
 Pour l’instant : tout est public
 
-Plus tard : token Firebase pour les routes d’écriture
 
-✅ TODO technique
- Créer main.py, database.py, models.py
+## 📚 À FAIRE (plan de développement de l'API REST)
+## 🧱 **1. Base de code**
+- [ ] Créer `main.py` avec FastAPI + routes de test
+- [ ] Créer `database.py` pour connecter la base SQLite (lecture seule)
+- [ ] Créer `models.py` avec les schémas Pydantic pour :
+  - `Set`, `Card`, `Print`, `PriceDailyCard`, `PriceWeeklySet`, etc.
 
- Exposer route /sets et /sets/{code}
+📦 **2. Modules CRUD (`crud/`)**
+- [ ] `crud/sets.py` :
+  - [ ] Fonction `get_all_sets()`
+  - [ ] Fonction `get_set_by_code(set_code)`
+- [ ] `crud/cards.py` :
+  - [ ]Fonction `get_card_by_id(scryfall_id)`
+  - [ ] Fonction `search_cards(set_code, rarity, lang, name, etc.)`
+- [ ] `crud/prices.py` :
+  - [ ] Fonction `get_daily_prices_card(scryfall_id)`
+  - [ ] Fonction `get_daily_prices_set(set_code)`
+  - [ ] Fonction `get_weekly_prices_card(scryfall_id)`
+  - [ ] Fonction `get_weekly_prices_set(set_code)`
 
- Ajouter route /cards/{id} puis filtrage /cards
+🌐 **3. Routes API (`routers/`)**
+- [ ] Route `/` de test
+- [ ] Router `/sets` et `/sets/{code}`
+- [ ] Router `/cards` et `/cards/{scryfall_id}`
+- [ ] Router `/prices/daily/card/{scryfall_id}`
+- [ ] Router `/prices/daily/set/{set_code}`
+- [ ] Router `/prices/weekly/card/{scryfall_id}`
+- [ ] Router `/prices/weekly/set/{set_code}`
+- [ ] Router `/localizations/{oracle_id}?lang=fr`
 
- Intégrer lecture historique prices_*
+🧪 **4. Tests et vérifications**
+- [ ]Test Swagger (`/docs`)
+- [ ] Tester tous les cas 404
+- [ ] Vérifier cohérence JSON retourné avec les schémas Pydantic
+- [ ] Gérer erreurs SQLite (ex: base absente, données incomplètes)
 
- Tests unitaires simples (ex: 404, valid JSON)
-
-🔄 Déploiement (plus tard)
- Docker (optionnel)
-
- Firebase Cloud Run (avec build automatique via GitHub Action)
-
- Hébergement sur sous-domaine api.octodecks.app
-
+🚀 **5. Déploiement futur**
+- [ ] Dockerisation de l’API
+- [ ] Déploiement Firebase Cloud Run
+- [ ] Accès public via `api.octodecks.app`
  

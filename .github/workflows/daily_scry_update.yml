@@ -1,8 +1,9 @@
 name: Daily Scryfall Update
 
 on:
-  schedule:
-    - cron: "0 * * * *"   # Toutes les heures
+  #Desactivation temporaire pour debug
+  #schedule:
+  #  - cron: "0 * * * *"   # Toutes les heures
   workflow_dispatch:
 
 jobs:

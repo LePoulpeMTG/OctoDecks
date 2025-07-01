@@ -128,17 +128,16 @@ CREATE TABLE IF NOT EXISTS prices_weekly_card (
   FOREIGN KEY (scryfall_id) REFERENCES prints (scryfall_id)
 );
 
--- ------------------------------
--- prices_daily_set
--- ------------------------------
 CREATE TABLE IF NOT EXISTS prices_daily_set (
-  set_code    TEXT NOT NULL,
-  date        TEXT NOT NULL,
-  avg_eur     REAL,
-  avg_usd     REAL,
-  total_eur   REAL,      -- valeur totale €
-  total_usd   REAL,      -- valeur totale $
-  total_cards INTEGER,
+  set_code         TEXT NOT NULL,
+  date             TEXT NOT NULL,
+  avg_eur          REAL,
+  avg_usd          REAL,
+  total_eur        REAL,
+  total_usd        REAL,
+  cards_priced_eur INTEGER,
+  cards_priced_usd INTEGER,
+  total_cards      INTEGER,
   PRIMARY KEY (set_code, date),
   FOREIGN KEY (set_code) REFERENCES sets (set_code)
 );

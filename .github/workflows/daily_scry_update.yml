@@ -74,3 +74,5 @@ jobs:
           upload("prices_daily.json", f"prices/daily/{today}.json", "application/json")
 
           PY
+      - name: Générer les statistiques par set
+        run: python tools/generate_set_statistics.py

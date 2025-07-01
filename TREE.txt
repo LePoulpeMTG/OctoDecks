@@ -45,7 +45,6 @@
 │   └── web_user
 │       └── README.md
 ├── core
-│   ├── README.md
 │   ├── api_rest
 │   │   ├── README.md
 │   │   └── main.py
@@ -109,4 +108,4 @@
     ├── prices_set_weekly_add.py
     └── purge_old_daily_prices.py
 
-35 directories, 75 files
+35 directories, 74 files

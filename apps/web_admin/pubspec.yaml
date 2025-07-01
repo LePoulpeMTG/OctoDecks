@@ -29,4 +29,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/icons/banner/banner_octodecks_1.png
+    - ../../assets/icons/banner/banner_octodecks_1.png

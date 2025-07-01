@@ -1,4 +1,3 @@
-<!-- 📁 chemin relatif : core\api_rest\README.md -->
  🧠 API REST — OctoDecks
 
 Cette API REST sert de **pont entre la base SQLite Octobase (`octobase_reference.db`) et les applications Flutter** (web, desktop, mobile).
@@ -65,6 +64,7 @@ Pour l’instant : tout est public
 
 
 ## 📚 À FAIRE (plan de développement de l'API REST)
+## [ ]-Non fait 🟧-Créé mais non testé ✅-Validé
 ## 🧱 **1. Base de code**
 - [ ] Créer `main.py` avec FastAPI + routes de test
 - [ ] Créer `database.py` pour connecter la base SQLite (lecture seule)

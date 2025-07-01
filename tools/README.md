@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : tools\README.md -->
 # Scripts back-office OctoDecks
 
 | Script | Rôle | Lance… |

@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : core\lib\README.md -->
 # 📁 lib/
 
 Contient le **code Dart exporté** par le package `core`.

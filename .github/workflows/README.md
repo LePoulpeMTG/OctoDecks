@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : .github\workflows\README.md -->
 # ⚙️ Workflows GitHub Actions – OctoDeck
 
 Ce dossier contient tous les workflows d'automatisation utilisés par le projet OctoDeck.  

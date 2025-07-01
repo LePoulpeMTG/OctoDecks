@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : assets\icons\lang\README.md -->
 ## 📘 Liste des langues supportées
 
 | Nom (Français)         | Nom (Anglais)         | Code fichier |

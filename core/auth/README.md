@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : core\auth\README.md -->
 # 🔐 Authentification – OctoDeck
 
 Ce module contiendra la logique d'authentification pour les différentes plateformes OctoDeck.  

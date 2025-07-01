@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : apps\web_admin\README.md -->
 README_deploy
 # 🛠️ OctoDeck - Interface Web Admin
 

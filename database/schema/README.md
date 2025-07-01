@@ -1,50 +1,72 @@
-# 🗄️ Schéma SQL – OctoBase
+<!-- 📁 chemin relatif : database/schema/README.md -->
 
-Ce dossier contient le schéma de base de données SQLite utilisé comme **référence commune** entre toutes les plateformes OctoDeck (desktop, mobile, web).
+# 🔠 Schéma de la base de données OctoBase
 
----
+Ce dossier contient le fichier `schema_octobase.sql` qui définit le schéma initial de la base SQLite utilisée par le projet **OctoDeck**.
 
-## 📄 Contenu
-
-| Fichier                | Rôle |
-|------------------------|------|
-| `schema_octobase.sql`  | Schéma SQL de référence décrivant la structure complète de la base MTG (cartes, sets, types, légalité, prix...) |
+Il est automatiquement appliqué à la première exécution du script `tools/import_all_cards.py` si la base est vide.
 
 ---
 
-## 🎯 Objectif
+## 🏛️ Tables principales
 
-Le fichier `schema_octobase.sql` sert à :
-
-- Définir la structure normalisée de la base SQLite
-- Être utilisé comme source de vérité pour :
-  - les scripts Python d'import/export
-  - les apps Flutter (`floor`, `drift`, etc.)
-  - les outils de visualisation (web_admin, viewer)
-- Permettre une réinitialisation facile de la base locale
-
----
-
-## 🔗 Dépendances et usage
-
-- Utilisé par les scripts Python :
-  - `import_all_cards.py`
-  - `build_weekly_prices.py`
-- Compatible avec Flutter SQLite (via plugins comme `sqflite`, `drift`, etc.)
-- Le schéma peut être chargé via un script ou à l’init d’une app.
+| Table                  | Description |
+|------------------------|-------------|
+| `cards`               | Infos globales (oracle_id, nom, type, cmc...) |
+| `sets`                | Infos sur les extensions Magic (code, nom, date) |
+| `prints`              | Déclinaisons de cartes (scryfall_id, collector_number, rarity...) |
+| `card_localizations`  | Données localisées (nom VF, texte oracle...) |
+| `card_legalities`     | Format & statut de légalité par oracle_id |
+| `layouts_by_face`     | Mappage layout → nombre de faces (1 ou 2) |
+| `prices_daily_card`   | Historique quotidien des prix par carte (sur 90 jours) |
+| `prices_daily_set`    | Historique quotidien des prix agrégés par set |
+| `prices_weekly_card`  | Historique hebdomadaire (min, max, moy) par carte |
+| `prices_weekly_set`   | Historique hebdomadaire (moy, total, cartes pricées) par set |
 
 ---
 
-## ✅ Avancement
+## 🔢 Flux d'alimentation des données
 
-- [x] Structure initiale terminée
-- [x] Champs clefs documentés
-- [ ] Documentation technique associée (ex : ERD, relations visuelles)
+### 📅 PHASE 1 : Import initial depuis Scryfall
+
+- Script : [`tools/import_all_cards.py`](../../tools/import_all_cards.py)
+- Fonction :
+  - Télécharge le bulk `all-cards.json` de Scryfall si besoin
+  - Crée les tables si la base est vide (`ensure_schema()`)
+  - Insère toutes les cartes, sets, impressions, localisations, legalités
+  - Remplit `prices_daily_card` avec les prix du jour
+  - Met à jour `layouts_by_face.json` si un nouveau layout est rencontré
+
+### ⏰ PHASE 2 : Mise à jour quotidienne (historique)
+
+- Scripts :
+  - [`tools/prices_card_daily_add.py`](../../tools/prices_card_daily_add.py)
+  - [`tools/prices_set_daily_add.py`](../../tools/prices_set_daily_add.py)
+- Fonction :
+  - Ajoute les prix du jour dans `prices_daily_card` et `prices_daily_set`
+  - Supprime les données > 90 jours automatiquement (via `purge_old_daily_prices.py`)
+
+### 🌐 PHASE 3 : Historique hebdomadaire
+
+- Scripts :
+  - [`tools/prices_card_weekly_add.py`](../../tools/prices_card_weekly_add.py)
+  - [`tools/prices_set_weekly_add.py`](../../tools/prices_set_weekly_add.py)
+- Fonction :
+  - Calcule et insère la moyenne, le min et le max des prix sur 7 jours glissants
+  - Les données sont conservées **sans limite** dans le temps
 
 ---
 
-## 🗂️ Liens utiles
+## ⚖️ Fréquence et automatisation
 
-- 📁 [Snapshots & données](../../data/)
-- 📄 [Roadmap base Scryfall](../../shared/data/roadmap_scryfall_db.md)
-- 📜 [Script import principal](../../tools/import_all_cards.py)
+Tout ce pipeline est orchestré par :
+- [`daily_scry_update.yml`](../../.github/workflows/daily_scry_update.yml) : 
+  - Exécuté chaque heure
+  - Ne fait une mise à jour que si Scryfall a publié un nouveau bulk
+  - Gère l’import + l’agrégation + l’upload Firebase
+
+---
+
+## 🚀 Prochaine étape
+
+L’API REST s’appuiera sur ces tables pour exposer les données aux interfaces Flutter (Viewer, WebAdmin).

@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : core\lib\services\README.md -->
 # 🔌 Services
 
 Ce dossier contient tous les services **généraux** d’accès aux données partagées.

@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : core\README.md -->
 # 📦 core/
 
 Ce dossier contient tout le code **partagé** entre les différentes applications Flutter du projet **OctoDecks**.

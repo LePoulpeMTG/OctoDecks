@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : core\lib\models\README.md -->
 # 🧩 Modèles de données
 
 Définitions des modèles de données communs utilisés dans tout OctoDeck.

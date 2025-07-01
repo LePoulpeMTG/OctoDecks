@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : assets\README.md -->
 Assets, ici sont stockés les image/visuels etc
 Ce dossier contient l'ensemble des ressources graphiques du projet.
 

@@ -1,3 +1,4 @@
+<!-- 📁 chemin relatif : README.md -->
 # 🐙 OctoDeck
 
 **OctoDeck** est un projet open-source de gestion de collection de cartes *Magic: The Gathering*.  

@@ -25,6 +25,7 @@
 │   │   ├── lib
 │   │   │   ├── main.dart
 │   │   │   ├── pages
+│   │   │   │   ├── home_page.dart
 │   │   │   │   └── set_explore_page.dart
 │   │   │   └── screens
 │   │   │       └── set_explore.dart
@@ -101,11 +102,13 @@
     │   ├── debug_core.py
     │   ├── extract_set_from_bulk.py
     │   ├── reset_daily_scry_update.py
-    │   └── reset_weekly_scry_update.py
+    │   ├── reset_weekly_scry_update.py
+    │   └── sync_shared_assets.py
+    ├── generate_set_statistics.py
     ├── import_all_cards.py
     ├── prices_card_weekly_add.py
     ├── prices_set_daily_add.py
     ├── prices_set_weekly_add.py
     └── purge_old_daily_prices.py
 
-35 directories, 74 files
+35 directories, 77 files

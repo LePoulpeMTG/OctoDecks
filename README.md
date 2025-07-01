@@ -115,6 +115,7 @@ Ce fichier reflète fidèlement l’état actuel du dépôt à chaque mise à jo
 - [🟧] Créer un YML : `daily_scry_update.yml`
   - [🟧] Toutes les heures, test si maj du bulk Scryfall
     - [🟧] Script CRON journalier sur bulk `scryfall.json` (voir comment faire des appels toutes les heures pour ne pas se prendre un décalage trop important)
+    - [🟧] generer les stats des sets  `generate_set_statistics.py`
     - [🟧] Déclenchement de l'insertion dans `prices_daily_card`, `prices_daily_set`
     - [🟧] Si dimanche : déclenchement de l'insertion dans `prices_weekly_card`, `prices_weekly_set`
     - [🟧] Purge des daily (`purge_old_daily_prices.py`)

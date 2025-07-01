@@ -1,5 +1,5 @@
 <!-- 📁 chemin relatif : README.md -->
-# 🐙 OctoDeck
+# 🐙 OctoDeck-test auré
 
 **OctoDeck** est un projet open-source de gestion de collection de cartes *Magic: The Gathering*.  
 Pensé par un joueur autiste pour des joueurs exigeants, OctoDeck vise la **simplicité d’usage**, la **puissance des filtres** et une **autonomie totale** de l’utilisateur.

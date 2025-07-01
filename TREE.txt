@@ -1,12 +1,10 @@
 .
+├── .gitattributes
 ├── .github
 │   └── workflows
 │       ├── README.md
-│       ├── daily_prices.yml
 │       ├── daily_scry_update.yml
-│       ├── main.yml
-│       ├── tree.yml
-│       └── weekly_prices.yml
+│       └── tree.yml
 ├── .gitignore
 ├── README.md
 ├── TREE.txt
@@ -79,8 +77,6 @@
 ├── docs
 │   ├── README.md
 │   └── README_TEMPLATE.md
-├── exports
-│   └── sets.json
 ├── github-recovery-codes (1).txt
 ├── octodecks-firebase-adminsdk-fbsvc-d9a9de1b14.json
 ├── pglite-debug.log
@@ -94,18 +90,18 @@
 │       └── roadmap_scryfall_db.md
 └── tools
     ├── README.md
-    ├── build_weekly_prices.py
     ├── data
     │   ├── last_bulk_tag.txt
-    │   └── layouts_by_face.json
+    │   ├── layouts_by_face.json
+    │   └── update-octobase.yml
     ├── dev
     │   ├── add_readme_path_header.py
     │   └── extract_set_from_bulk.py
-    ├── export_daily_prices.py
     ├── import_all_cards.py
     ├── prices_card_daily_add.py
     ├── prices_card_weekly_add.py
     ├── prices_set_daily_add.py
-    └── prices_set_weekly_add.py
+    ├── prices_set_weekly_add.py
+    └── purge_old_daily_prices.py
 
-35 directories, 74 files
+34 directories, 71 files

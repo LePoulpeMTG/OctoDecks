@@ -39,17 +39,25 @@ class HomePage extends StatelessWidget {
             ),
 
             // ONGLET NAVIGATION
-            const TabBar(
-              labelColor: Colors.amber,
-              unselectedLabelColor: Colors.grey,
-              indicatorColor: Colors.amber,
-              tabs: [
-                Tab(text: "KPI"),
-                Tab(text: "Sets"),
-                Tab(text: "Détail Set"),
-                Tab(text: "Carte"),
-              ],
+          const TabBar(
+            labelColor: Colors.blue, // 🟦 Texte bleu si actif
+            unselectedLabelColor: Colors.grey,
+            indicatorColor: Colors.blue,
+            labelStyle: TextStyle(
+              fontWeight: FontWeight.bold,  // Gras si actif
+              fontSize: 16,
             ),
+            unselectedLabelStyle: TextStyle(
+              fontWeight: FontWeight.normal,
+              fontSize: 16,
+            ),
+            tabs: [
+              Tab(text: "KPI"),
+              Tab(text: "Sets"),
+              Tab(text: "Détail Set"),
+              Tab(text: "Carte"),
+            ],
+          ),
 
             // CONTENU PAR ONGLET
             const Expanded(

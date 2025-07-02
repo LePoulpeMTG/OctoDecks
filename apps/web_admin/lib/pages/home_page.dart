@@ -17,14 +17,14 @@ class HomePage extends StatelessWidget {
               flex: 2,
               child: Container(
                 width: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage("assets/icons/banner/banner_octodecks_1.png"),
                     fit: BoxFit.cover,
                   ),
                 ),
                 alignment: Alignment.center,
-                child: Text(
+                child: const Text(
                   "OctoDeck - Tableau de bord Capitaine",
                   style: TextStyle(
                     color: Colors.white,

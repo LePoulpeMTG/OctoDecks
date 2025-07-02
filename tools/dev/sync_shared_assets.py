@@ -23,5 +23,26 @@ def sync_shared_assets():
                 shutil.copy2(src, dst)
                 print(f"✅ Copié : {src} → {dst}")
 
+SHARED_THEME_DIR = 'assets/theme/shared'
+THEME_TARGETS = [
+    'apps/web_admin/lib/theme',
+]
+
+def sync_shared_theme():
+    if not os.path.exists(SHARED_THEME_DIR):
+        print("Erreur : thème partagé introuvable.")
+        return
+
+    for target in THEME_TARGETS:
+        os.makedirs(target, exist_ok=True)
+        for file in os.listdir(SHARED_THEME_DIR):
+            if file.endswith('.dart'):
+                src = os.path.join(SHARED_THEME_DIR, file)
+                dst = os.path.join(target, file)
+                shutil.copy2(src, dst)
+                print(f"🎨 Copié : {src} → {dst}")                
+
 if __name__ == '__main__':
     sync_shared_assets()
+    sync_shared_theme()
+    

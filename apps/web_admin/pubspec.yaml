@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-    
+  google_fonts: ^6.1.0  # ou la version la plus récente stable
+      
   flutter_svg: ^2.0.10+1
   http: ^1.2.1
 

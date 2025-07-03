@@ -69,9 +69,6 @@ jobs:
               print(f"↑ {remote}")
 
           # Upload direct du fichier SQLite non compressé
+          print("🔄 Upload de database/octobase_reference.db en cours...")
           upload("database/octobase_reference.db", "octobase/octobase_reference.db", "application/octet-stream")
-
-          # Upload du JSON quotidien
-          today = datetime.utcnow().strftime("%Y-%m-%d")
-          upload("prices_daily.json", f"prices/daily/{today}.json", "application/json")
-
+          assert Path("database/octobase_reference.db").exists(), "❌ Base SQLite introuvable avant upload"

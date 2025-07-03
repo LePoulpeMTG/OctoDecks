@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'set_explore_page.dart'; // à adapter selon le nom exact
-
+import 'lib/theme/styleguide_page.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 

@@ -27,7 +27,15 @@ SHARED_THEME_DIR = 'assets/theme/shared'
 THEME_TARGETS = [
     'apps/web_admin/lib/theme',
 ]
+def sync_shared_styleguide():
+    if not os.path.exists(SHARED_STYLEGUIDE_FILE):
+        print("Erreur : styleguide_page.dart introuvable.")
+        return
 
+    for target in STYLEGUIDE_TARGETS:
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        shutil.copy2(SHARED_STYLEGUIDE_FILE, target)
+        print(f"📘 Copié : {SHARED_STYLEGUIDE_FILE} → {target}")
 def sync_shared_theme():
     if not os.path.exists(SHARED_THEME_DIR):
         print("Erreur : thème partagé introuvable.")
@@ -45,4 +53,4 @@ def sync_shared_theme():
 if __name__ == '__main__':
     sync_shared_assets()
     sync_shared_theme()
-    
+    sync_shared_styleguide()

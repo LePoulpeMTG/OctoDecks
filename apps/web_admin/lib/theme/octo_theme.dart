@@ -33,14 +33,14 @@ class OctoTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         ),
       ),
       cardTheme: CardThemeData(
         color: OctoColors.surface,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
-          side: const BorderSide(color: OctoColors.borderNeon, width: 1.5),
+          side: BorderSide(color: OctoColors.borderNeon, width: 1.5),
         ),
         elevation: 4,
         shadowColor: OctoColors.borderNeon.withOpacity(0.4),
@@ -50,26 +50,26 @@ class OctoTheme {
         fillColor: OctoColors.surface,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: OctoColors.borderNeon),
+          borderSide: BorderSide(color: OctoColors.borderNeon),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: OctoColors.borderNeon),
+          borderSide: BorderSide(color: OctoColors.borderNeon),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: OctoColors.pinkNeon),
+          borderSide: BorderSide(color: OctoColors.pinkNeon),
         ),
-        labelStyle: const TextStyle(color: OctoColors.text),
+        labelStyle: TextStyle(color: OctoColors.text),
       ),
       chipTheme: ChipThemeData(
         backgroundColor: OctoColors.surface,
         disabledColor: OctoColors.disabled,
         selectedColor: OctoColors.greenNeon.withOpacity(0.2),
         secondarySelectedColor: OctoColors.greenNeon.withOpacity(0.4),
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        labelStyle: const TextStyle(color: OctoColors.text),
-        secondaryLabelStyle: const TextStyle(color: OctoColors.text),
+        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        labelStyle: TextStyle(color: OctoColors.text),
+        secondaryLabelStyle: TextStyle(color: OctoColors.text),
         brightness: Brightness.dark,
       ),
     );

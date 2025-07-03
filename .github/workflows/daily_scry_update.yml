@@ -68,9 +68,10 @@ jobs:
               blob.upload_from_filename(local, content_type=ctype)
               print(f"↑ {remote}")
 
-          upload("octobase_reference.db.gz", "octobase/octobase_reference.db.gz", "application/gzip")
+          # Upload direct du fichier SQLite non compressé
+          upload("database/octobase_reference.db", "octobase/octobase_reference.db", "application/octet-stream")
 
+          # Upload du JSON quotidien
           today = datetime.utcnow().strftime("%Y-%m-%d")
           upload("prices_daily.json", f"prices/daily/{today}.json", "application/json")
 
-          PY

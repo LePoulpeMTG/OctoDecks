@@ -1,6 +1,7 @@
 // lib/pages/styleguide_page.dart
 import 'package:flutter/material.dart';
 import '../theme/octo_theme.dart';
+import '../widgets/octo_button.dart';
 
 class StyleguidePage extends StatelessWidget {
   const StyleguidePage({super.key});
@@ -15,6 +16,32 @@ class StyleguidePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+        const SizedBox(height: 32),
+        Text('OctoButton Demo', style: OctoTheme.heading),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action principale',
+          onPressed: () {},
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action cyan',
+          onPressed: () {},
+          variant: OctoButtonVariant.cyan,
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action désactivée',
+          onPressed: null,
+          variant: OctoButtonVariant.disabled,
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action large',
+          onPressed: () {},
+          expand: true,
+        ),
+
             Text('Typographie', style: theme.textTheme.headlineLarge),
             const SizedBox(height: 8),
             Text('Headline Medium', style: theme.textTheme.headlineMedium),
@@ -27,6 +54,32 @@ class StyleguidePage extends StatelessWidget {
             Wrap(
               spacing: 8,
               children: [
+        const SizedBox(height: 32),
+        Text('OctoButton Demo', style: OctoTheme.heading),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action principale',
+          onPressed: () {},
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action cyan',
+          onPressed: () {},
+          variant: OctoButtonVariant.cyan,
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action désactivée',
+          onPressed: null,
+          variant: OctoButtonVariant.disabled,
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action large',
+          onPressed: () {},
+          expand: true,
+        ),
+
                 ElevatedButton(onPressed: () {}, child: const Text('Primary')),
                 OutlinedButton(onPressed: () {}, child: const Text('Secondary')),
                 TextButton(onPressed: () {}, child: const Text('TextButton')),
@@ -39,6 +92,32 @@ class StyleguidePage extends StatelessWidget {
             Wrap(
               spacing: 8,
               children: [
+        const SizedBox(height: 32),
+        Text('OctoButton Demo', style: OctoTheme.heading),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action principale',
+          onPressed: () {},
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action cyan',
+          onPressed: () {},
+          variant: OctoButtonVariant.cyan,
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action désactivée',
+          onPressed: null,
+          variant: OctoButtonVariant.disabled,
+        ),
+        SizedBox(height: 12),
+        OctoButton(
+          label: 'Action large',
+          onPressed: () {},
+          expand: true,
+        ),
+
                 Chip(label: const Text('Chip normal')),
                 FilterChip(
   label: const Text('Chip sélectionné'),

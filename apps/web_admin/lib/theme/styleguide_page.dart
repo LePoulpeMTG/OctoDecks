@@ -36,20 +36,20 @@ class StyleguidePage extends StatelessWidget {
             const Divider(height: 32),
             Text('Chip + Card', style: theme.textTheme.headlineSmall),
             const SizedBox(height: 8),
-            const Wrap(
+            Wrap(
               spacing: 8,
               children: [
-                Chip(label: Text('Chip normal')),
-                Chip(label: Text('Chip sélectionné'), selected: true),
+                Chip(label: const Text('Chip normal')),
+                Chip(label: const Text('Chip sélectionné'), selected: true),
               ],
             ),
             const SizedBox(height: 16),
-            const Card(
+            Card(
               child: Padding(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     Text('Carte exemple'),
                     SizedBox(height: 4),
                     Text('Contenu dans une Card personnalisée.'),
@@ -61,8 +61,8 @@ class StyleguidePage extends StatelessWidget {
             const Divider(height: 32),
             Text('InputField', style: theme.textTheme.headlineSmall),
             const SizedBox(height: 8),
-            const TextField(
-              decoration: InputDecoration(
+            TextField(
+              decoration: const InputDecoration(
                 labelText: 'Champ de saisie themed',
                 hintText: 'Tape ici',
               ),

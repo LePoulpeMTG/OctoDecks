@@ -1,7 +1,6 @@
 // lib/pages/styleguide_page.dart
 import 'package:flutter/material.dart';
 import '../theme/octo_theme.dart';
-import '../widgets/octo_button.dart';
 
 class StyleguidePage extends StatelessWidget {
   const StyleguidePage({super.key});
@@ -20,9 +19,12 @@ class StyleguidePage extends StatelessWidget {
         Text('OctoButton Demo', style: OctoTheme.heading),
         SizedBox(height: 12),
         OctoButton(
-          label: 'Action principale',
+          label: 'Action cyan',
           onPressed: () {},
-        ),
+          icon: Icons.star,
+          variant: OctoButtonVariant.cyan,
+          expand: true,
+        ),  
         SizedBox(height: 12),
         OctoButton(
           label: 'Action cyan',

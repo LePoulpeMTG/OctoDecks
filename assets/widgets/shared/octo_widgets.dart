@@ -1,3 +1,2 @@
 export 'octo_button.dart';
-
-// et tous les autres widgets partagés...
+export 'octo_button_variant.dart';

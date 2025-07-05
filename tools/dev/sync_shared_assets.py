@@ -62,10 +62,12 @@ def sync_shared_widgets():
                 src = os.path.join(SHARED_WIDGETS_DIR, file)
                 dst = os.path.join(target, file)
                 shutil.copy2(src, dst)
-                print(f"🔧 Copié : {src} → {dst}")
+                print(f"🧩 Widget copié : {src} → {dst}")
+
 
 # === MAIN EXECUTION ===
 if __name__ == '__main__':
     sync_shared_assets()
     sync_shared_theme()
     sync_shared_widgets()
+    sync_shared_widgets() 

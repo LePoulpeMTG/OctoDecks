@@ -5,6 +5,8 @@ class OctoColors {
   static const Color background = Color(0xFF1D1F23); // Anthracite sombre
   static const Color surface = Color(0xFF2A2D32);     // Un peu plus clair pour les containers
 
+  static const Color borderNeon = Color(0xFF00FFFF);
+
   static const Color octoPink = Color(0xFFFF2EC4);     // Néon rose (logo)
   static const Color octoCyan = Color(0xFF00F0FF);     // Néon cyan (accents, bordures)
   static const Color octoYellow = Color(0xFFFFF740);   // Néon jaune (texte secondaire)
@@ -13,6 +15,11 @@ class OctoColors {
 
   static const Color white = Colors.white;
   static const Color disabled = Colors.grey;
+  // dans OctoColors
+  static const Color purpleNeon = Color(0xFFB388FF);
+  static const Color redNeon = Color(0xFFFF4D4D);      // Rouge néon (erreur, alertes)
+  static const Color greenNeon = Color(0xFF00FF00);    // Vert néon (succès, confirmations)
+  static const Color blueNeon = Color(0xFF00BFFF);     // Bleu néon (informations, liens) 
 }
 
 class OctoTheme {

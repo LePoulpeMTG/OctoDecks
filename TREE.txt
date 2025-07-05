@@ -21,6 +21,23 @@
 │   │   ├── README.md
 │   │   ├── README_deploy.md
 │   │   ├── analysis_options.yaml
+│   │   ├── assets
+│   │   │   └── icons
+│   │   │       ├── banner
+│   │   │       ├── lang
+│   │   │       │   ├── README.md
+│   │   │       │   ├── btn
+│   │   │       │   ├── fixed
+│   │   │       │   └── transparent
+│   │   │       ├── mana
+│   │   │       │   ├── fixed
+│   │   │       │   └── transparent
+│   │   │       ├── rarity
+│   │   │       │   ├── fixed
+│   │   │       │   └── transparent
+│   │   │       └── usure
+│   │   │           ├── fixed
+│   │   │           └── transparent
 │   │   ├── firebase.json
 │   │   ├── lib
 │   │   │   ├── main.dart
@@ -38,16 +55,69 @@
 │   │   ├── pubspec.lock
 │   │   ├── pubspec.yaml
 │   │   └── web
-│   │       ├── favicon.png
 │   │       ├── icons
-│   │       │   ├── Icon-192.png
-│   │       │   ├── Icon-512.png
-│   │       │   ├── Icon-maskable-192.png
-│   │       │   └── Icon-maskable-512.png
 │   │       ├── index.html
 │   │       └── manifest.json
 │   └── web_user
 │       └── README.md
+├── assets
+│   ├── README.md
+│   ├── export
+│   │   ├── lang
+│   │   │   ├── btn
+│   │   │   ├── fixed
+│   │   │   └── transparent
+│   │   ├── mana
+│   │   │   ├── fixed
+│   │   │   └── transparent
+│   │   ├── rarity
+│   │   │   ├── fixed
+│   │   │   └── transparent
+│   │   └── usure
+│   │       ├── fixed
+│   │       └── transparent
+│   ├── icons
+│   │   └── shared
+│   │       ├── banner
+│   │       ├── lang
+│   │       │   ├── README.md
+│   │       │   ├── btn
+│   │       │   ├── fixed
+│   │       │   └── transparent
+│   │       ├── mana
+│   │       │   ├── fixed
+│   │       │   └── transparent
+│   │       ├── rarity
+│   │       │   ├── fixed
+│   │       │   └── transparent
+│   │       └── usure
+│   │           ├── fixed
+│   │           └── transparent
+│   ├── sources
+│   │   ├── README.md
+│   │   └── illustrator
+│   │       ├── CLR.ai
+│   │       ├── LNG.ai
+│   │       ├── RAR.ai
+│   │       ├── README.md
+│   │       ├── USURE.ai
+│   │       ├── lang.ai
+│   │       └── unverified
+│   │           ├── CLR.ai
+│   │           ├── DVR.ai
+│   │           ├── EMP.ai
+│   │           ├── ETAT.ai
+│   │           ├── FLTR.ai
+│   │           ├── RAR.ai
+│   │           └── STS.ai
+│   ├── theme
+│   │   └── shared
+│   │       ├── octo_theme.dart
+│   │       └── styleguide_page.dart
+│   └── widgets
+│       └── shared
+│           ├── octo_button.dart
+│           └── octo_widgets.dart
 ├── core
 │   ├── api_rest
 │   │   ├── README.md
@@ -114,4 +184,4 @@
     ├── prices_set_weekly_add.py
     └── purge_old_daily_prices.py
 
-36 directories, 79 files
+90 directories, 95 files

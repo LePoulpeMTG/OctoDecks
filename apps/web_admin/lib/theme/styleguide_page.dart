@@ -40,7 +40,11 @@ class StyleguidePage extends StatelessWidget {
               spacing: 8,
               children: [
                 Chip(label: const Text('Chip normal')),
-                Chip(label: const Text('Chip sélectionné'), selected: true),
+                FilterChip(
+  label: const Text('Chip sélectionné'),
+  selected: true,
+  onSelected: (_) {},
+),
               ],
             ),
             const SizedBox(height: 16),

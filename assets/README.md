@@ -74,3 +74,45 @@ Parce que le projet OctoDecks est un **monorepo modulaire** multi-apps :
 ➡️ une seule source de vérité, synchronisée proprement pour éviter les dérives UI.
 
 ---
+## ✅ Checklist des Widgets OctoDecks
+
+### 🎛️ Filtres et UI deckbuilding
+- [ ] `OctoFilterChip` — Puce de filtre cliquable (mana, rareté…)
+- [ ] `OctoFilterBar` — Barre horizontale avec groupes de filtres
+- [ ] `OctoSegmentedControl` — Toggle multiple (ex : Toutes / Possédées / Manquantes)
+- [ ] `OctoDropdown` — Menu déroulant customisé
+- [ ] `OctoRangeSlider` — Slider double (mana cost, prix…)
+- [ ] `OctoSearchField` — Barre de recherche avec icône
+
+---
+
+### 🧩 Composants visuels réutilisables
+- [ ] `OctoCardTile` — Affichage d’une carte (image + nom + rareté)
+- [ ] `OctoSetTile` — Affichage résumé d’un set
+- [ ] `OctoPriceTag` — Étiquette de prix (avec variation)
+- [ ] `OctoSectionHeader` — Titre de section (avec collapse optionnel)
+- [ ] `OctoTag` — Petit label stylisé
+
+---
+
+### 🖱️ Interaction et navigation
+- [ ] `OctoButton` — Bouton principal (avec variantes)
+- [ ] `OctoIconButton` — Bouton circulaire avec icône
+- [ ] `OctoFloatingPanel` — Panneau flottant (comme deck builder Arena)
+- [ ] `OctoTabBar` — Barres d’onglets stylées
+- [ ] `OctoBottomSheet` — Fenêtre modale basse (options ou actions)
+
+---
+
+### 📦 Containers et mises en forme
+- [ ] `OctoCardContainer` — Conteneur avec ombre, bordure, etc.
+- [ ] `OctoGridView` — Grille responsive pour affichage cartes
+- [ ] `OctoListSection` — Liste groupée par section
+
+---
+
+### ⚠️ Statuts / Badges / Tags
+- [ ] `OctoStatusBadge` — Badge d’état (Possédé, En vente, Wanted…)
+- [ ] `OctoRarityIcon` — Icône rareté cohérente (C/U/R/M)
+- [ ] `OctoManaIcon` — Icône de mana (WUBRG, hybrid, phyrexian…)
+- [ ] `OctoLangIcon` — Icône de langue (drapeaux)
